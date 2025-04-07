@@ -44,14 +44,29 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/dgraphics" element={<DGraphics />} />
-        <Route path="/graphicdesign" element={<GraphicDesign />} />
-        <Route path="/illustrations" element={<Illustrations />} />
-        <Route path="/illustrations/:id" element={<IllustrationsDetails />} />
-        <Route path="/graphicdesign/:id" element={<DesignDetails />} />
+        <Route path="/adam-kascak-portfolio" element={<Home />} />
+        <Route path="/adam-kascak-portfolio/about" element={<About />} />
+        <Route path="/adam-kascak-portfolio/contact" element={<Contact />} />
+        <Route
+          path="/adam-kascak-portfolio/dgraphics"
+          element={<DGraphics />}
+        />
+        <Route
+          path="/adam-kascak-portfolio/graphicdesign"
+          element={<GraphicDesign />}
+        />
+        <Route
+          path="/adam-kascak-portfolio/illustrations"
+          element={<Illustrations />}
+        />
+        <Route
+          path="/adam-kascak-portfolio/illustrations/:id"
+          element={<IllustrationsDetails />}
+        />
+        <Route
+          path="/adam-kascak-portfolio/graphicdesign/:id"
+          element={<DesignDetails />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

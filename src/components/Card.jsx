@@ -25,10 +25,10 @@ const Card = () => {
         {/* 3D Graphics Tab */}
         <Tab
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
-          onClick={() => navigate(`/dgraphics`)}
+          onClick={() => navigate(`/adam-kascak-portfolio/dgraphics`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/dgraphics`);
+              navigate(`/adam-kascak-portfolio/dgraphics`);
             }
           }}
         >
@@ -83,10 +83,10 @@ const Card = () => {
         {/* Graphic Design Tab */}
         <Tab
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
-          onClick={() => navigate(`/graphicdesign`)}
+          onClick={() => navigate(`/adam-kascak-portfolio/graphicdesign`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/graphicdesign`);
+              navigate(`/adam-kascak-portfolio/graphicdesign`);
             }
           }}
         >
@@ -147,10 +147,10 @@ const Card = () => {
         {/* Illustrations Tab */}
         <Tab
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
-          onClick={() => navigate(`/illustrations`)}
+          onClick={() => navigate(`/adam-kascak-portfolio/illustrations`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/illustrations`);
+              navigate(`/adam-kascak-portfolio/illustrations`);
             }
           }}
         >
@@ -211,10 +211,10 @@ const Card = () => {
         {/* About Me Tab */}
         <Tab
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
-          onClick={() => navigate(`/about`)}
+          onClick={() => navigate(`/adam-kascak-portfolio/about`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/about`);
+              navigate(`/adam-kascak-portfolio/about`);
             }
           }}
         >

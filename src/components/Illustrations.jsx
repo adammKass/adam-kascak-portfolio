@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { IllustrationLinks } from "../constants";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -13,17 +13,26 @@ const Illustrations = () => {
       <div
         className={`columns-xs ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32`}
       >
-        {IllustrationLinks.map((ilu) => (
-          <div
-            key={ilu.id}
-            className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover}`}
-            onClick={() => navigate(`/illustrations/${ilu.id}`)}
-          >
-            <picture>
-              <img src={ilu.image.jpg} alt={ilu.title} className="w-full " />
-            </picture>
-          </div>
-        ))}
+        {IllustrationLinks.map((ilu) => {
+          return (
+            <div
+              key={ilu.id}
+              className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover}`}
+              onClick={() =>
+                navigate(`/adam-kascak-portfolio/illustrations/${ilu.id}`)
+              }
+            >
+              <picture>
+                <img
+                  src={ilu.image.jpg}
+                  alt={ilu.title}
+                  className="w-full "
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          );
+        })}
       </div>
       <Footer></Footer>
     </div>

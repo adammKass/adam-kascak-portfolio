@@ -34,7 +34,7 @@ const Navbar = () => {
       >
         {/* Wrap logo and text in a flex container */}
         <div className="flex flex-row items-center gap-12">
-          <Link to="/">
+          <Link to="/adam-kascak-portfolio">
             <img
               src={sign}
               alt="adam kascak sign"

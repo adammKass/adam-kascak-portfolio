@@ -12,7 +12,7 @@ const NotFound = () => {
       >
         <p>{t(`notFound.error`)}</p>
         <Link
-          to={"/"}
+          to={"/adam-kascak-portfolio"}
           className="font-bold text-lg sm:text-xl text-PBlack hover:opacity-80 lg:text-2xl w-fit"
         >
           {t(`notFound.return`)}

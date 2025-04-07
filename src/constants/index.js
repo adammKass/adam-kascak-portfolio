@@ -30,27 +30,27 @@ export const navLinks = [
   {
     id: "3dGraphics",
     title: "3D Graphics",
-    to: "/dgraphics",
+    to: "/adam-kascak-portfolio/dgraphics",
   },
   {
     id: "graphicDesign",
     title: "Graphic Design",
-    to: "/graphicdesign",
+    to: "/adam-kascak-portfolio/graphicdesign",
   },
   {
     id: "illustrations",
     title: "Illustrations",
-    to: "/illustrations",
+    to: "/adam-kascak-portfolio/illustrations",
   },
   {
     id: "aboutMe",
     title: "About Me",
-    to: "/about",
+    to: "/adam-kascak-portfolio/about",
   },
   {
     id: "contact",
     title: "Contact",
-    to: "/contact",
+    to: "/adam-kascak-portfolio/contact",
   },
 ];
 
