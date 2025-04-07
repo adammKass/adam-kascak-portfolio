@@ -1,0 +1,111 @@
+{
+  "home": {
+    "title": "Adam Kascak - Freelance Artist",
+    "3dGraphics": "3D Graphics",
+    "graphicDesign": "Graphic Design",
+    "illustrations": "Illustrations",
+    "aboutMe": "About Me"
+  },
+  "navbar": {
+    "3dGraphics": "3D Graphics",
+    "graphicDesign": "Graphic Design",
+    "illustrations": "Illustrations",
+    "aboutMe": "About Me",
+    "contact": "Contact"
+  },
+  "graphicsLinks": {
+    "SD": {
+      "title": "Substance Designer Practice",
+      "text": "Here are some of the materials I created using Substance Designer. The aim of this practice was to improve my skills in Substance Designer. I wanted to achieve a more stylized look. Textures were created in Substance Designer, and the final render was done using Substance Stager."
+    },
+    "FBU": {
+      "title": "Forgotten but Unbroken",
+      "text": "Screenshots of maps I worked on during my time at Centurion Developments. I was part of the team developing Forgotten but Unbroken, a turn-based strategy game set during the events of World War II."
+    },
+    "Oasis": {
+      "title": "Oasis",
+      "text": "Another personal project I created in my free time. This time, I wanted to do something more stylized with a focus on organic elements like rocks and vegetation."
+    },
+    "Tomb": {
+      "title": "Greek Tomb",
+      "text": "A Greek tomb environment I created in my free time."
+    },
+    "more": "Read more on Artstation"
+  },
+  "designLinks": {
+    "Portfolio": {
+      "title": "Portfolio Website",
+      "textShort": "Personal project. I wanted to make a website showcasing some of my work from different areas of visual arts.",
+      "type": "Web Design",
+      "tools": "Design: Figma, Krita, Adobe Illustrator \n Programming: React, Tailwind CSS",
+      "year": "2025",
+      "text": "Personal project. I wanted to make a website showcasing some of my work from different areas of visual arts. I also wanted this website to combine my love for illustrating, so of course simple angular illustrations were used on the home page. I wanted to keep the color palette black and white, as I also like to work mostly with black and white for most of my illustrations. There are a total of 4 colors used on this website: white, light grey, dark grey, and black.\nFonts used are all geometric sans-serif. Circular shapes of Montserrat Alternates complement nicely with sharp edges of illustrations and rectangles on the website. In some places, I also used Futura PT, this time for sharp edges on some of its symbols, like A and F.\nThe website was created by me from start to finish, including web development. I used the React framework with Tailwind CSS, as this is the combination I'm most comfortable with.",
+      "images": [
+        {
+          "title": "Illustration Showcase"
+        },
+        {
+          "title": "Fonts Showcase"
+        },
+        {
+          "title": "Color Palette"
+        }
+      ]
+    },
+    "type": "Project Type",
+    "tools": "Tools",
+    "year": "Year",
+    "more": "Read more"
+  },
+  "illustrationLinks": {
+    "kohut": {
+      "title": "Roosters in Key West",
+      "text": "pen and ink, Letter"
+    },
+    "surfer": {
+      "title": "Feel the Waves",
+      "text": "digital, 1920x1080p"
+    },
+    "shoes": {
+      "title": "Shoes",
+      "text": "pen and ink"
+    },
+    "raven": {
+      "title": "Raven",
+      "text": "pen and ink"
+    },
+    "bird": {
+      "title": "Bird",
+      "text": "Engraving"
+    },
+    "stillLife1": {
+      "title": "Still Life Practice 1",
+      "text": "charcoal, pencil"
+    },
+    "stillLife2": {
+      "title": "Still Life Practice 2",
+      "text": "charcoal, pencil"
+    },
+    "stillLife3": {
+      "title": "Still Life Practice 3",
+      "text": "charcoal, pencil"
+    },
+    "stillLife4": {
+      "title": "Still Life Practice 4",
+      "text": "charcoal, pencil"
+    }
+  },
+
+  "about": {
+    "intro": "My name is Adam Kaščák. I am passionate about different areas connected to graphics and computers. I have a degree in computer science and previous experience working as a 3D artist, but my other areas of expertise include graphic design, web development, and illustrations.",
+    "hobbies": "When I'm not working, I enjoy watching animated movies or reading all sorts of illustrated books. Whenever I have the opportunity, I enjoy swimming, diving, or generally spending as much time as I can near the sea."
+  },
+  "footer": {
+    "rights": "©2025 Adam Kascak. All Rights Reserved"
+  },
+
+  "notFound": {
+    "error": "404 - Page not Found",
+    "return": "Return to Homepage"
+  }
+}

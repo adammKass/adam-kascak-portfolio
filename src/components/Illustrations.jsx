@@ -1,0 +1,33 @@
+import React from "react";
+import { IllustrationLinks } from "../constants";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
+import styles from "../style";
+
+const Illustrations = () => {
+  const navigate = useNavigate();
+  return (
+    <div className="absolute top-0 left-0 w-full overflow-hidden bg-PWhite">
+      <Navbar />
+      <div
+        className={`columns-xs ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32`}
+      >
+        {IllustrationLinks.map((ilu) => (
+          <div
+            key={ilu.id}
+            className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover}`}
+            onClick={() => navigate(`/illustrations/${ilu.id}`)}
+          >
+            <picture>
+              <img src={ilu.image.jpg} alt={ilu.title} className="w-full " />
+            </picture>
+          </div>
+        ))}
+      </div>
+      <Footer></Footer>
+    </div>
+  );
+};
+
+export default Illustrations;
