@@ -10,6 +10,7 @@ import {
   TabList,
   TabPanel,
   TabPanels,
+  Transition,
 } from "@headlessui/react";
 import { menu, sign, cross, uk, sun, moon } from "../assets";
 import { navLinks } from "../constants";
@@ -78,56 +79,43 @@ const Navbar = () => {
         )}
 
         {/* Hamburger menu for smaller screens */}
-        <Menu>
-          {({ open }) => {
-            // Prevent scrolling when the menu is open
-            useEffect(() => {
-              if (open) {
-                document.documentElement.style.overflow = "hidden"; // Disable scrolling on html
-                document.body.style.overflow = "hidden"; // Disable scrolling on body
-              } else {
-                document.documentElement.style.overflow = "auto"; // Re-enable scrolling on html
-                document.body.style.overflow = "auto"; // Re-enable scrolling on body
-              }
-            }, [open]);
-
-            return (
-              <div className="md:hidden">
-                {/* Menu Button */}
-                <MenuButton className="relative z-50">
-                  <div
-                    id="nav-icon3"
-                    className={`${open ? "open" : ""} hover:opacity-50`}
-                  >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </MenuButton>
-
-                {/* Menu Container */}
+        <Menu className="md:hidden" as="div">
+          {({ open }) => (
+            <>
+              <MenuButton>
                 <div
-                  className={`fixed top-0 left-0 w-full h-full z-50 bg-PWhite flex flex-col space-y-6 font-semibold pt-10 px-10 border-b border-PBlack transition-all duration-300 ease-in-out ${
-                    open
-                      ? "opacity-100 pointer-events-auto"
-                      : "opacity-0 pointer-events-none"
-                  }`}
+                  id="nav-icon3"
+                  className={`${open ? "open" : ""} hover:opacity-50`}
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </MenuButton>
+              <Transition
+                show={open}
+                enter="transition ease-out duration-300"
+                enterFrom="opacity-0 -translate-y-5"
+                enterTo="opacity-100 translate-y-0"
+                leave="transition ease-in duration-200"
+                leaveFrom="opacity-100 translate-y-0"
+                leaveTo="opacity-0 -translate-y-5"
+              >
+                <MenuItems
+                  anchor={{ to: "bottom start", gap: "16px" }}
+                  transition
+                  className={`origin-top transition-all w-full h-full z-40 bg-PWhite flex flex-col space-y-6 font-semibold pt-10 px-10 border-b border-PBlack duration-300 ease-in-out`}
                 >
                   {navLinks.map((nav) => (
                     <MenuItem
                       key={t(`navbar.${nav.id}`)}
-                      as="div" // Prevents default behavior of closing the menu
+                      as="div"
                       className="w-full"
                     >
                       <Link
                         to={nav.to}
-                        className="text-PBlack hover:text-PBlack font-extralight text-4xl"
-                        onClick={() => {
-                          // Close the menu after clicking a link
-                          document.documentElement.style.overflow = "auto";
-                          document.body.style.overflow = "auto";
-                        }}
+                        className="text-PBlack font-extralight text-4xl"
                       >
                         {t(`navbar.${nav.id}`)}
                       </Link>
@@ -145,7 +133,7 @@ const Navbar = () => {
                         className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
                       />
                       <button
-                        onClick={() => setIsDark(!isDark)} // Toggle dark mode
+                        onClick={() => setIsDark(!isDark)}
                         className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition`}
                       >
                         <span
@@ -161,10 +149,10 @@ const Navbar = () => {
                       />
                     </div>
                   </MenuItem>
-                </div>
-              </div>
-            );
-          }}
+                </MenuItems>
+              </Transition>
+            </>
+          )}
         </Menu>
       </nav>
     </div>
