@@ -108,8 +108,10 @@ const Navbar = () => {
 
                 {/* Menu Container */}
                 <div
-                  className={`fixed top-0 left-0 w-full h-full z-40 bg-PWhite flex flex-col space-y-6 font-semibold pt-10 px-10 border-b border-PBlack transition-all duration-300 ease-in-out ${
-                    open ? "opacity-100" : "opacity-0 pointer-events-none"
+                  className={`fixed top-0 left-0 w-full h-full z-50 bg-PWhite flex flex-col space-y-6 font-semibold pt-10 px-10 border-b border-PBlack transition-all duration-300 ease-in-out ${
+                    open
+                      ? "opacity-100 pointer-events-auto"
+                      : "opacity-0 pointer-events-none"
                   }`}
                 >
                   {navLinks.map((nav) => (
@@ -121,6 +123,11 @@ const Navbar = () => {
                       <Link
                         to={nav.to}
                         className="text-PBlack hover:text-PBlack font-extralight text-4xl"
+                        onClick={() => {
+                          // Close the menu after clicking a link
+                          document.documentElement.style.overflow = "auto";
+                          document.body.style.overflow = "auto";
+                        }}
                       >
                         {t(`navbar.${nav.id}`)}
                       </Link>

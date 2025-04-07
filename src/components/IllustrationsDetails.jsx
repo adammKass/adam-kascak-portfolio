@@ -18,11 +18,15 @@ const IllustrationsDetails = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "ArrowLeft") {
-        navigate(`/illustrations/${IllustrationLinks[prevIndex].id}`);
+        navigate(
+          `/adam-kascak-portfolio/illustrations/${IllustrationLinks[prevIndex].id}`
+        );
       } else if (e.key === "ArrowRight") {
-        navigate(`/illustrations/${IllustrationLinks[nextIndex].id}`);
+        navigate(
+          `/adam-kascak-portfolio/illustrations/${IllustrationLinks[nextIndex].id}`
+        );
       } else if (e.key === "Escape") {
-        navigate(`/illustrations/`);
+        navigate(`/adam-kascak-portfolio/illustrations/`);
       }
     };
 
@@ -46,7 +50,7 @@ const IllustrationsDetails = () => {
         src={cross}
         alt="close"
         className="absolute top-4 right-4 lg:top-12 lg:right-20 w-[42px] h-[42px] cursor-pointer dark:brightness-[4] dark:saturate-0 dark:opacity-100 hover:opacity-50 dark:hover:opacity-50 transition-opacity duration-300 ease-in-out"
-        onClick={() => navigate(`/illustrations/`)} // Go back to the previous page
+        onClick={() => navigate(`/adam-kascak-portfolio/illustrations/`)} // Go back to the previous page
       />
       <div className="flex flex-row justify-between items-center gap-4 lg:gap-16 px-4 lg:px-20">
         <img
@@ -54,7 +58,9 @@ const IllustrationsDetails = () => {
           alt="previous"
           className="w-[42px] h-[42px] cursor-pointer dark:brightness-[4] dark:saturate-0 dark:opacity-100 hover:opacity-50 dark:hover:opacity-50 transition-opacity duration-300 ease-in-out"
           onClick={() =>
-            navigate(`/illustrations/${IllustrationLinks[prevIndex].id}`)
+            navigate(
+              `/adam-kascak-portfolio/illustrations/${IllustrationLinks[prevIndex].id}`
+            )
           }
         />
         <figure className="flex flex-col items-center">
@@ -72,7 +78,9 @@ const IllustrationsDetails = () => {
           alt="next"
           className="w-[42px] h-[42px] cursor-pointer dark:brightness-[4] dark:saturate-0 dark:opacity-100 hover:opacity-50 dark:hover:opacity-50 transition-opacity duration-300 ease-in-out"
           onClick={() =>
-            navigate(`/illustrations/${IllustrationLinks[nextIndex].id}`)
+            navigate(
+              `/adam-kascak-portfolio/illustrations/${IllustrationLinks[nextIndex].id}`
+            )
           }
         />
       </div>
