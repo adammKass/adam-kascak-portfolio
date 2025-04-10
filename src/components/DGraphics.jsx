@@ -15,6 +15,7 @@ const DGraphics = () => {
     <div className="absolute top-0 left-0 w-full overflow-hidden bg-PWhite">
       <Navbar />
       <main
+        id="main-content"
         className={`flex flex-col gap-8 md:gap-16 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32`}
       >
         {GraphicsLinks.map((link, index) => {
@@ -58,7 +59,7 @@ const DGraphics = () => {
                 <a
                   aria-label="More about project on Artstation"
                   href={link.href}
-                  className="pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl text-PBlack group-hover:text-PBlack"
+                  className={`pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl text-PBlack group-hover:text-PBlack ${styles.focus}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

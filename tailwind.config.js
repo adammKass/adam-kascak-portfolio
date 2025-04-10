@@ -15,5 +15,10 @@ export default {
       montserrat: ['"Montserrat Alternates"', "sans-serif"],
     },
   },
+  variants: {
+    extend: {
+      outline: ["focus-visible"], // Enable focus-visible variant
+    },
+  },
   plugins: [],
 };

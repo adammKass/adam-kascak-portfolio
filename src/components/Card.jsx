@@ -21,12 +21,13 @@ const Card = () => {
     <TabGroup>
       <TabList
         as="main"
+        id="main-content"
         className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 h-full mb-10 lg:mb-[20vh] ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 lg:mt-[20vh]`}
       >
         {/* 3D Graphics Tab */}
         <Tab
           aria-label="3D Graphics Tab"
-          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
+          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus}`}
           onClick={() => navigate(`/adam-kascak-portfolio/dgraphics`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
@@ -85,7 +86,7 @@ const Card = () => {
         {/* Graphic Design Tab */}
         <Tab
           aria-label="Graphic Design Tab"
-          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
+          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus}`}
           onClick={() => navigate(`/adam-kascak-portfolio/graphicdesign`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
@@ -150,7 +151,7 @@ const Card = () => {
         {/* Illustrations Tab */}
         <Tab
           aria-label="Illustrations Tab"
-          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
+          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus}`}
           onClick={() => navigate(`/adam-kascak-portfolio/illustrations`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
@@ -215,7 +216,7 @@ const Card = () => {
         {/* About Me Tab */}
         <Tab
           aria-label="About Me Tab"
-          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
+          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus}`}
           onClick={() => navigate(`/adam-kascak-portfolio/about`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {

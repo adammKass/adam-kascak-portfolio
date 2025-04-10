@@ -35,6 +35,9 @@ body {
 }
 
 @layer base {
+  :focus-visible {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-PBlack;
+  }
   body {
     @apply text-PBlack;
   }
@@ -125,6 +128,23 @@ body {
   src: url("./assets/fonts/MontserratAlternates-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+
+a[href="#main-content"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+a[href="#main-content"]:focus {
+  transform: translateY(0);
+  outline: none;
 }
 
 * {

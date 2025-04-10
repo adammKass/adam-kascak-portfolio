@@ -7,12 +7,13 @@ const Contact = () => {
   return (
     <div className="absolute top-0 left-0 w-full min-h-screen overflow-hidden bg-PWhite">
       <Navbar />
-      <div
+      <main
+        id="main-content"
         className={`flex flex-col justify-center gap-2 h-full ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-52 mt-10 lg:mt-48 border-b lg:border-y border-PBlack text-PBlack`}
       >
         <a
           href="mailto:adam.kascak@protonmail.com"
-          className="text-center  hover:opacity-80 transition-all duration-300 ease-in-out"
+          className={`text-center mb-2 mt-4 hover:opacity-80 transition-all duration-300 ease-in-out ${styles.focus}`}
         >
           adam.kascak@protonmail.com
         </a>
@@ -22,7 +23,7 @@ const Contact = () => {
             <img
               src={artstation}
               alt="artstation"
-              className="w-10 h-10 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out"
+              className={`w-10 h-10 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus}`}
             />
           </a>
 
@@ -33,11 +34,11 @@ const Contact = () => {
             <img
               src={linkedin}
               alt="linkedin"
-              className="w-7 h-6 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out"
+              className={`w-7 h-6 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus}`}
             />
           </a>
         </div>
-      </div>
+      </main>
     </div>
   );
 };

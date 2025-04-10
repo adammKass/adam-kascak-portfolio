@@ -13,6 +13,7 @@ const GraphicDesign = () => {
     <div className="absolute top-0 left-0 w-full  min-h-screen overflow-hidden bg-PWhite ">
       <Navbar />
       <main
+        id="main-content"
         className={`flex flex-col gap-8 md:gap-16 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-52 mt-10 lg:mt-32 min-h-[480px]`}
       >
         {DesignLinks.map((link, index) => (
@@ -43,7 +44,7 @@ const GraphicDesign = () => {
               <Link
                 aria-label="More information about project"
                 to={`/graphicdesign/${link.id}`}
-                className="pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl group-hover:text-PBlack text-PBlack"
+                className={`pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl group-hover:text-PBlack text-PBlack ${styles.focus}`}
               >
                 {t(`designLinks.more`)}
               </Link>

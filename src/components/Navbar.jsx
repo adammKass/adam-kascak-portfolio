@@ -30,12 +30,18 @@ const Navbar = () => {
 
   return (
     <div className="w-full border-b border-PBlack shadow-md">
+      <a
+        href="#main-content"
+        className="absolute top-0 left-0 p-2 bg-PBlack text-PWhite transform -translate-y-full transition-transform duration-300"
+      >
+        Skip to Main Content
+      </a>
       <header
         className={`w-full flex flex-row justify-between items-center bg-PWhite z-10 ${styles.boxWidth} ${styles.paddingXA} mx-auto py-3 overflow-hidden`}
       >
         {/* Wrap logo and text in a flex container */}
         <div className="flex flex-row items-center gap-12">
-          <Link to="/adam-kascak-portfolio">
+          <Link to="/adam-kascak-portfolio" className={`${styles.focus}`}>
             <img
               src={sign}
               alt="Signature of Adam Kascak"
@@ -54,7 +60,7 @@ const Navbar = () => {
                 {navLinks.map((nav) => (
                   <Tab
                     key={nav.id}
-                    className="bg-PWhite font-extralight hover:text-PBlack group"
+                    className={`bg-PWhite font-extralight hover:text-PBlack group ${styles.focus}`}
                     onClick={() => navigate(nav.to)}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {

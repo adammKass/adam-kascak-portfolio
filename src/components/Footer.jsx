@@ -26,7 +26,7 @@ const Footer = () => {
             <button
               aria-label="Toggle dark mode"
               onClick={() => setIsDark(!isDark)} // Toggle dark mode
-              className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition`}
+              className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition ${styles.focus}`}
             >
               <span
                 className={`inline-block h-4 w-4 transform rounded-full bg-PGrey transition ${

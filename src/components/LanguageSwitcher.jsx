@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { uk, sk } from "../assets"; // Import flag assets
+import styles from "../style";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation(); // Access i18n instance
@@ -16,7 +17,7 @@ const LanguageSwitcher = () => {
   return (
     <button
       onClick={toggleLanguage}
-      className="w-[32px] h-[20px] flex-shrink-0 saturate-0 hover:saturate-100 transition-all ease-in-out duration-300"
+      className={`w-[32px] h-[20px] flex-shrink-0 saturate-0 hover:saturate-100 transition-all ease-in-out duration-300 ${styles.focus}`}
     >
       <img
         src={language === "en" ? sk : uk}

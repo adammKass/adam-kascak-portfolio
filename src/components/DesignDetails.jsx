@@ -15,6 +15,7 @@ const DesignDetails = () => {
     <div className="absolute top-0 left-0 w-full overflow-hidden bg-PWhite">
       <Navbar />
       <main
+        id="main-content"
         className={`flex flex-col gap-8 md:gap-16 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32 text-PBlack`}
       >
         {/* Responsive Title */}

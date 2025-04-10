@@ -14,6 +14,7 @@ const Illustrations = () => {
 
       <TabGroup
         as="main"
+        id="main-content"
         className={`columns-xs ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32`}
       >
         <TabList>
@@ -22,7 +23,7 @@ const Illustrations = () => {
               <Tab
                 aria-label="Image fullscreen"
                 key={ilu.id}
-                className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover}`}
+                className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover} ${styles.focus}`}
                 onClick={() =>
                   navigate(`/adam-kascak-portfolio/illustrations/${ilu.id}`)
                 }
