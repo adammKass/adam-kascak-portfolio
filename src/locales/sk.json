@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Adam Kaščák - grafik",
+    "title": "Adam Kaščák - Freelance Umelec",
     "3dGraphics": "3D Grafika",
     "graphicDesign": "Grafický Dizajn",
     "illustrations": "Ilustrácie",
@@ -13,100 +13,115 @@
     "aboutMe": "O Mne",
     "contact": "Kontakt"
   },
-
   "graphicsLinks": {
     "SD": {
-      "title": "Cvičenie v Substance Designer",
-      "text": "Tu sú niektoré z materiálov, ktoré som vytvoril pomocou Substance Designer. Cieľom tohto cvičenia bolo zlepšiť moje zručnosti v Substance Designer. Chcel som dosiahnuť viac štylizovaný vzhľad. Textúry boli vytvorené v Substance Designer a finálny render bol urobený pomocou Substance Stager."
+      "title": "Substance Designer Prax",
+      "alt": "Render materiálu skaly vytvoreného pomocou Substance Designer",
+      "text": "Tu sú niektoré z materiálov, ktoré som vytvoril pomocou Substance Designer. Cieľom tejto praxe bolo zlepšiť moje zručnosti v Substance Designer. Chcel som dosiahnuť viac štylizovaný vzhľad. Textúry boli vytvorené v Substance Designer a finálny render bol urobený pomocou Substance Stager."
     },
     "FBU": {
-      "title": "Zabudnuté, ale nezlomené",
-      "text": "Snímky máp, na ktorých som pracoval počas môjho pôsobenia v Centurion Developments. Bol som súčasťou tímu, ktorý vyvíjal Forgotten but Unbroken, ťahovú stratégiu zasadenú do udalostí druhej svetovej vojny."
+      "title": "Forgotten but Unbroken",
+      "alt": "Screenshot nepriateľského tábora z videohry Forgotten but Unbroken",
+      "text": "Screenshoty máp, na ktorých som pracoval počas môjho pôsobenia v Centurion Developments. Bol som súčasťou tímu vyvíjajúceho Forgotten but Unbroken, ťahovú strategickú hru zasadenú do udalostí druhej svetovej vojny."
     },
     "Oasis": {
       "title": "Oáza",
+      "alt": "Screenshot 3D prostredia oázy",
       "text": "Ďalší osobný projekt, ktorý som vytvoril vo svojom voľnom čase. Tentokrát som chcel urobiť niečo viac štylizované so zameraním na organické prvky, ako sú skaly a vegetácia."
     },
     "Tomb": {
-      "title": "Grécka hrobka",
-      "text": "Grécka hrobka, ktorú som vytvoril vo svojom voľnom čase."
+      "title": "Grécka Hrobka",
+      "alt": "Screenshot gréckeho hrobkového 3D prostredia",
+      "text": "Grécke hrobkové prostredie, ktoré som vytvoril vo svojom voľnom čase."
     },
-    "more": "Viacej na Artstatione"
+    "more": "Prečítajte si viac na Artstation"
   },
-
   "designLinks": {
     "Portfolio": {
       "title": "Portfólio Webstránka",
+      "alt": "Webová ikona portfóliovej webstránky Adama Kaščáka",
       "textShort": "Osobný projekt. Chcel som vytvoriť webstránku, ktorá by prezentovala niektoré z mojich prác z rôznych oblastí vizuálneho umenia.",
-      "type": "Web dizajn",
+      "type": "Web Dizajn",
       "tools": "Dizajn: Figma, Krita, Adobe Illustrator \n Programovanie: React, Tailwind CSS",
       "year": "2025",
-      "text": "Osobný projekt. Chcel som vytvoriť webstránku, ktorá by prezentovala niektoré z mojich prác z rôznych oblastí vizuálneho umenia. Tiež som chcel, aby táto webstránka kombinovala moju lásku k ilustrovaniu, takže som samozrejme použil jednoduché uhlové ilustrácie na domovskej stránke. Chcel som zachovať farebnú paletu čiernobielu, pretože rád pracujem prevažne s čiernou a bielou pre väčšinu mojich ilustrácií. Na tejto webstránke sú použité celkovo 4 farby: biela, svetlosivá, tmavosivá a čierna.\nPoužité fonty sú všetky geometrické sans-serif. Kruhové tvary Montserrat Alternates pekne dopĺňajú ostré hrany ilustrácií a obdĺžnikov na webstránke. Na niektorých miestach som tiež použil Futura PT, tentokrát pre ostré hrany niektorých jeho symbolov, ako sú A a F.\nWebstránka bola vytvorená mnou od začiatku do konca, vrátane webového vývoja. Použil som framework React s Tailwind CSS, pretože je to kombinácia, s ktorou som najviac oboznámený.",
+      "text": "Osobný projekt. Chcel som vytvoriť webstránku, ktorá by prezentovala niektoré z mojich prác z rôznych oblastí vizuálneho umenia. Tiež som chcel, aby táto webstránka kombinovala moju lásku k ilustrovaniu, takže som na domovskej stránke použil jednoduché uhlové ilustrácie. Chcel som zachovať farebnú paletu čierno-bielu, pretože rád pracujem prevažne s čiernou a bielou pre väčšinu svojich ilustrácií. Na tejto webstránke sú použité celkovo 4 farby: biela, svetlo sivá, tmavo sivá a čierna.\nPoužité fonty sú všetky geometrické sans-serif. Kruhové tvary Montserrat Alternates pekne dopĺňajú ostré hrany ilustrácií a obdĺžnikov na webstránke. Na niektorých miestach som tiež použil Futura PT, tentokrát pre ostré hrany niektorých jeho symbolov, ako sú A a F.\nWebstránku som vytvoril od začiatku do konca vrátane webového vývoja. Použil som framework React s Tailwind CSS, pretože je to kombinácia, s ktorou som najviac pohodlný.",
       "images": [
         {
-          "title": "Prezentácia Ilustrácií"
+          "title": "Prezentácia Ilustrácií",
+          "alt": "Prezentácia svetlých a tmavých variácií ilustrácií použitých na portfóliovej webstránke"
         },
         {
-          "title": "Prezentácia Fontov"
+          "title": "Prezentácia Fontov",
+          "alt": "Prezentácia fontov použitých na portfóliovej webstránke"
         },
         {
-          "title": "Farebná Paleta"
+          "title": "Farebná Paleta",
+          "alt": "Prezentácia 4 farieb použitých na portfóliovej webstránke"
         }
       ]
     },
-    "type": "Typ projektu",
+    "type": "Typ Projektu",
     "tools": "Nástroje",
     "year": "Rok",
-    "more": "Čítať ďalej"
+    "more": "Prečítajte si viac"
   },
   "illustrationLinks": {
     "kohut": {
-      "title": "Kohúty na Key Weste",
-      "text": "perokresba, Letter"
+      "title": "Kohúty v Key West",
+      "alt": "Ilustrácia perom a atramentom kohúta",
+      "text": "pero a atrament, Letter"
     },
     "surfer": {
-      "title": "Na vlnách",
-      "text": "digitál, 1920x1080p"
+      "title": "Cíťte Vlny",
+      "alt": "Digitálna čierno-biela ilustrácia surfera na vlnách",
+      "text": "digitálne, 1920x1080p"
     },
     "shoes": {
       "title": "Topánky",
-      "text": "perokresba"
+      "alt": "Ilustrácia perom a atramentom topánok na drevenej podlahe",
+      "text": "pero a atrament"
     },
     "raven": {
       "title": "Havran",
-      "text": "perokresba"
+      "alt": "Ilustrácia perom a atramentom havrana sediaceho na vetve",
+      "text": "pero a atrament"
     },
     "bird": {
-      "title": "Vtáčik",
-      "text": "lept"
+      "title": "Vták",
+      "alt": "Rytina vtáka sediaceho na vetve",
+      "text": "Rytina"
     },
     "stillLife1": {
-      "title": "Zátišie tréning 1",
-      "text": "uhlík, ceruzka"
+      "title": "Cvičenie Zátišia 1",
+      "alt": "Štúdia uhlíkom niekoľkých šálok rôznych tvarov a obrus",
+      "text": "uhlie, ceruzka"
     },
     "stillLife2": {
-      "title": "Zátišie tréning 2",
-      "text": "uhlík, ceruzka"
+      "title": "Cvičenie Zátišia 2",
+      "alt": "Štúdia uhlíkom stoličky s niekoľkými objektmi na vrchu",
+      "text": "uhlie, ceruzka"
     },
     "stillLife3": {
-      "title": "Zátišie tréning 3",
-      "text": "uhlík, ceruzka"
+      "title": "Cvičenie Zátišia 3",
+      "alt": "Štúdia uhlíkom porcelánového slona",
+      "text": "uhlie, ceruzka"
     },
     "stillLife4": {
-      "title": "Zátišie tréning 4",
-      "text": "uhlík, ceruzka"
+      "title": "Cvičenie Zátišia 4",
+      "alt": "Štúdia uhlíkom sklenených nádob a štetcov",
+      "text": "uhlie, ceruzka"
     }
   },
-
   "about": {
-    "intro": "Volám sa Adam Kaščák. Som nadšený pre rôzne oblasti spojené s grafikou a počítačmi. Mám titul z informatiky a predchádzajúce skúsenosti ako 3D umelec, ale moje ďalšie oblasti odbornosti zahŕňajú grafický dizajn, vývoj webových stránok a ilustrácie.",
-    "hobbies": "Keď nepracujem, rád sledujem animované filmy alebo čítam rôzne ilustrované knihy. Kedykoľvek mám príležitosť, rád plávam, potápam sa alebo trávim čo najviac času pri mori."
+    "intro": "Volám sa Adam Kaščák. Som nadšený pre rôzne oblasti spojené s grafikou a počítačmi. Mám titul z informatiky a predchádzajúce skúsenosti ako 3D umelec, ale moje ďalšie oblasti odbornosti zahŕňajú grafický dizajn, webový vývoj a ilustrácie.",
+    "hobbies": "Keď nepracujem, rád sledujem animované filmy alebo čítam rôzne ilustrované knihy. Kedykoľvek mám príležitosť, rád plávam, potápam sa alebo trávim čo najviac času pri mori.",
+    "alt": "Adam Kaščák sa usmieva pred plachetnicou"
   },
   "footer": {
     "rights": "©2025 Adam Kaščák. Všetky práva vyhradené"
   },
   "notFound": {
-    "error": "404 - Stránka sa nenašla",
-    "return": "Vrátiť sa na domovskú stránku"
+    "error": "404 - Stránka nenájdená",
+    "return": "Vrátiť sa na Domovskú Stránku"
   }
 }

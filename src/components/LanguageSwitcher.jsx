@@ -19,8 +19,8 @@ const LanguageSwitcher = () => {
       className="w-[32px] h-[20px] flex-shrink-0 saturate-0 hover:saturate-100 transition-all ease-in-out duration-300"
     >
       <img
-        src={language === "en" ? sk : uk} // Display appropriate flag
-        alt={language === "en" ? "English" : "Slovak"}
+        src={language === "en" ? sk : uk}
+        alt={language === "en" ? "Change to Slovak" : "Change to English"}
         className="w-full h-full object-cover"
       />
     </button>

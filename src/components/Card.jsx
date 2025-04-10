@@ -20,10 +20,12 @@ const Card = () => {
   return (
     <TabGroup>
       <TabList
-        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 h-full mb-10 lg:mb-52 ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 lg:mt-48`}
+        as="main"
+        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 h-full mb-10 lg:mb-[20vh] ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 lg:mt-[20vh]`}
       >
         {/* 3D Graphics Tab */}
         <Tab
+          aria-label="3D Graphics Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
           onClick={() => navigate(`/adam-kascak-portfolio/dgraphics`)}
           onKeyDown={(e) => {
@@ -82,6 +84,7 @@ const Card = () => {
 
         {/* Graphic Design Tab */}
         <Tab
+          aria-label="Graphic Design Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
           onClick={() => navigate(`/adam-kascak-portfolio/graphicdesign`)}
           onKeyDown={(e) => {
@@ -103,14 +106,14 @@ const Card = () => {
                   {/* For smaller screens, change image based on visibility */}
                   <img
                     src={GraphicDesignOn}
-                    alt="Graphic Design On"
+                    alt="Graphic Design - Highlighted state"
                     className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-100" : "opacity-0"
                     }`}
                   />
                   <img
                     src={GraphicDesignOff}
-                    alt="Graphic Design Off"
+                    alt="Graphic Design - Default state"
                     className={`lg:hidden dark:brightness-[0.7] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-0" : "opacity-100"
                     }`}
@@ -119,7 +122,7 @@ const Card = () => {
                   {/* For larger screens, change image based on hover */}
                   <img
                     src={GraphicDesignOff}
-                    alt="Graphic Design"
+                    alt="Graphic Design - Default state"
                     className={`hidden lg:block dark:brightness-[0.7] ${
                       hover ? "opacity-0" : "opacity-100"
                     } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
@@ -128,7 +131,7 @@ const Card = () => {
                   />
                   <img
                     src={GraphicDesignOn}
-                    alt="Graphic Design Hover"
+                    alt="Graphic Design - Highlighted state"
                     className={`hidden lg:block ${
                       hover ? "opacity-100" : "opacity-0"
                     } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
@@ -146,6 +149,7 @@ const Card = () => {
 
         {/* Illustrations Tab */}
         <Tab
+          aria-label="Illustrations Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
           onClick={() => navigate(`/adam-kascak-portfolio/illustrations`)}
           onKeyDown={(e) => {
@@ -167,14 +171,14 @@ const Card = () => {
                   {/* For smaller screens, change image based on visibility */}
                   <img
                     src={IllustrationsOn}
-                    alt="Illustrations On"
+                    alt="Illustrations - Highlighted state"
                     className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-100" : "opacity-0"
                     }`}
                   />
                   <img
                     src={IllustrationsOff}
-                    alt="Illustrations Off"
+                    alt="Illustrations - Default state"
                     className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-0" : "opacity-100"
                     }`}
@@ -183,7 +187,7 @@ const Card = () => {
                   {/* For larger screens, change image based on hover */}
                   <img
                     src={IllustrationsOff}
-                    alt="Illustrations"
+                    alt="Illustrations - Default state"
                     className={`hidden lg:block ${
                       hover ? "opacity-0" : "opacity-100"
                     } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
@@ -192,7 +196,7 @@ const Card = () => {
                   />
                   <img
                     src={IllustrationsOn}
-                    alt="Illustrations Hover"
+                    alt="Illustrations - Highlighted state"
                     className={`hidden lg:block ${
                       hover ? "opacity-100" : "opacity-0"
                     } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
@@ -210,6 +214,7 @@ const Card = () => {
 
         {/* About Me Tab */}
         <Tab
+          aria-label="About Me Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform}`}
           onClick={() => navigate(`/adam-kascak-portfolio/about`)}
           onKeyDown={(e) => {
@@ -231,14 +236,14 @@ const Card = () => {
                   {/* For smaller screens, change image based on visibility */}
                   <img
                     src={AboutMeOn}
-                    alt="About Me On"
+                    alt="About Me - Highlighted state"
                     className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-100" : "opacity-0"
                     }`}
                   />
                   <img
                     src={AboutMeOff}
-                    alt="About Me Off"
+                    alt="About Me - Default state"
                     className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-0" : "opacity-100"
                     }`}
@@ -247,7 +252,7 @@ const Card = () => {
                   {/* For larger screens, change image based on hover */}
                   <img
                     src={AboutMeOff}
-                    alt="About Me"
+                    alt="About Me - Default state"
                     className={`hidden lg:block ${
                       hover ? "opacity-0" : "opacity-100"
                     } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
@@ -256,7 +261,7 @@ const Card = () => {
                   />
                   <img
                     src={AboutMeOn}
-                    alt="About Me Hover"
+                    alt="About Me - Highlighted state"
                     className={`hidden lg:block ${
                       hover ? "opacity-100" : "opacity-0"
                     } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${

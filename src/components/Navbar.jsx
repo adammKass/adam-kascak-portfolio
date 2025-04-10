@@ -25,12 +25,12 @@ const Navbar = () => {
   const [isDark, setIsDark] = useDarkMode();
   const location = useLocation();
   const navigate = useNavigate();
-  const isHomepage = location.pathname === "/";
+  const isHomepage = location.pathname === "/adam-kascak-portfolio";
   const { t } = useTranslation();
 
   return (
     <div className="w-full border-b border-PBlack shadow-md">
-      <nav
+      <header
         className={`w-full flex flex-row justify-between items-center bg-PWhite z-10 ${styles.boxWidth} ${styles.paddingXA} mx-auto py-3 overflow-hidden`}
       >
         {/* Wrap logo and text in a flex container */}
@@ -38,22 +38,17 @@ const Navbar = () => {
           <Link to="/adam-kascak-portfolio">
             <img
               src={sign}
-              alt="adam kascak sign"
-              className="w-[58px] h-[58px] dark:brightness-[4] dark:saturate-0 dark:opacity-100 flex-shrink-0 opacity-100 hover:opacity-50 dark:hover:opacity-50 focus-visible:opacity-50 transition-opacity duration-300 ease-in-out"
-              tabIndex={0} // Makes the image focusable via Tab key
+              alt="Signature of Adam Kascak"
+              className={`${styles.iconSize} ${styles.iconHover}`}
             />
           </Link>
 
-          {isHomepage && (
-            <span className="text-lg font-medium text-PBlack">
-              {t(`home.title`)}
-            </span>
-          )}
+          {isHomepage && <h1>{t(`home.title`)}</h1>}
         </div>
 
         {/* Show nav links if not on homepage */}
         {!isHomepage && (
-          <div className="hidden md:flex">
+          <nav className="hidden md:flex">
             <TabGroup>
               <TabList className="flex flex-row items-center gap-5">
                 {navLinks.map((nav) => (
@@ -75,14 +70,14 @@ const Navbar = () => {
                 ))}
               </TabList>
             </TabGroup>
-          </div>
+          </nav>
         )}
 
         {/* Hamburger menu for smaller screens */}
         <Menu className="md:hidden" as="div">
           {({ open }) => (
             <>
-              <MenuButton>
+              <MenuButton aria-label="Menu">
                 <div
                   id="nav-icon3"
                   className={`${open ? "open" : ""} hover:opacity-50`}
@@ -115,7 +110,7 @@ const Navbar = () => {
                     >
                       <Link
                         to={nav.to}
-                        className="text-PBlack font-extralight text-4xl"
+                        className="text-PBlack font-extralight text-xl lg:text-4xl"
                       >
                         {t(`navbar.${nav.id}`)}
                       </Link>
@@ -133,6 +128,7 @@ const Navbar = () => {
                         className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
                       />
                       <button
+                        aria-label="Toggle dark mode"
                         onClick={() => setIsDark(!isDark)}
                         className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition`}
                       >
@@ -154,7 +150,7 @@ const Navbar = () => {
             </>
           )}
         </Menu>
-      </nav>
+      </header>
     </div>
   );
 };

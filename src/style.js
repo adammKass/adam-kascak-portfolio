@@ -1,13 +1,8 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
-  heading2:
-    "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
-  paragraph:
-    "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
-
-  flexCenter: "flex justify-center items-center",
-  flexStart: "flex justify-center items-start",
+  heading1: "text-lg lg:text-xl",
+  heading2: "text-lg lg:text-xl",
 
   cards:
     "bg-PWhite border-4 rounded-sm shadow-2xl border-PBlack min-w-42 basis-1/4 ",
@@ -22,6 +17,10 @@ const styles = {
 
   tabHover:
     "group hover:cursor-pointer hover:bg-PGrey hover:rounded-lg hover:translate-x-4 transition-all ease-in-out duration-300",
+
+  iconSize: "w-[29px] h-[29px] lg:w-[58px] lg:h-[58px]",
+  iconHover:
+    "dark:brightness-[4] dark:saturate-0 opacity-100 hover:opacity-50 transition-opacity duration-300 ease-in-out cursor-pointer",
 
   illustHover:
     "hover:opacity-100 hover:-translate-y-2 transition-all ease-in-out duration-300",

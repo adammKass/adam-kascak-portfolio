@@ -14,7 +14,7 @@ const DGraphics = () => {
   return (
     <div className="absolute top-0 left-0 w-full overflow-hidden bg-PWhite">
       <Navbar />
-      <div
+      <main
         className={`flex flex-col gap-8 md:gap-16 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32`}
       >
         {GraphicsLinks.map((link, index) => {
@@ -22,7 +22,7 @@ const DGraphics = () => {
           const isVisible = useIsVisible(ref); // Check visibility using the hook
 
           return (
-            <div
+            <article
               ref={ref} // Attach the ref to the container
               key={index}
               className={`flex flex-col md:flex-row justify-center items-center md:justify-start md:items-center gap-2 md:gap-11 ${
@@ -40,25 +40,23 @@ const DGraphics = () => {
               <div className="w-72 h-72 shrink-0 rounded-lg">
                 <img
                   src={link.thumb}
-                  alt={link.title}
+                  alt={t(`graphicsLinks.${link.id}.alt`)}
                   className="object-fill saturate-0 group-hover:saturate-100 rounded-lg"
+                  loading="lazy"
                 />
               </div>
 
               <div className="flex flex-col pt-2 md:pt-10 justify-center items-center md:justify-between md:items-start text-center md:text-start">
                 <div>
                   {/* Responsive title text */}
-                  <h3 className="text-PBlack font-extralight text-3xl sm:text-4xl lg:text-5xl">
-                    {t(`graphicsLinks.${link.id}.title`)}
-                  </h3>
+                  <h2>{t(`graphicsLinks.${link.id}.title`)}</h2>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-PBlack mt-2 mb-4"></span>
                   {/* Responsive paragraph text */}
-                  <p className="text-base text-PBlack sm:text-lg lg:text-xl">
-                    {t(`graphicsLinks.${link.id}.text`)}
-                  </p>
+                  <p>{t(`graphicsLinks.${link.id}.text`)}</p>
                 </div>
 
                 <a
+                  aria-label="More about project on Artstation"
                   href={link.href}
                   className="pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl text-PBlack group-hover:text-PBlack"
                   target="_blank"
@@ -67,10 +65,10 @@ const DGraphics = () => {
                   {t(`graphicsLinks.more`)}
                 </a>
               </div>
-            </div>
+            </article>
           );
         })}
-      </div>
+      </main>
       <Footer></Footer>
     </div>
   );

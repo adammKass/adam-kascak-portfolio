@@ -3,6 +3,7 @@ import { arrowLeft, arrowRight, cross } from "../assets";
 import { IllustrationLinks } from "../constants";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import styles from "../style";
 
 const IllustrationsDetails = () => {
   const { id } = useParams();
@@ -44,49 +45,56 @@ const IllustrationsDetails = () => {
   }
 
   return (
-    <div className="absolute top-0 left-0 w-full min-h-screen bg-PWhite overflow-hidden flex items-center justify-center">
+    <header className="absolute top-0 left-0 w-full min-h-screen bg-PWhite overflow-hidden flex items-center justify-center">
       {/* Close button */}
-      <img
-        src={cross}
-        alt="close"
-        className="absolute top-4 right-4 lg:top-12 lg:right-20 w-[42px] h-[42px] cursor-pointer dark:brightness-[4] dark:saturate-0 dark:opacity-100 hover:opacity-50 dark:hover:opacity-50 transition-opacity duration-300 ease-in-out"
-        onClick={() => navigate(`/adam-kascak-portfolio/illustrations/`)} // Go back to the previous page
-      />
-      <div className="flex flex-row justify-between items-center gap-4 lg:gap-16 px-4 lg:px-20">
+      <button className="absolute top-4 right-4 lg:top-12 lg:right-20">
         <img
-          src={arrowLeft}
-          alt="previous"
-          className="w-[42px] h-[42px] cursor-pointer dark:brightness-[4] dark:saturate-0 dark:opacity-100 hover:opacity-50 dark:hover:opacity-50 transition-opacity duration-300 ease-in-out"
-          onClick={() =>
-            navigate(
-              `/adam-kascak-portfolio/illustrations/${IllustrationLinks[prevIndex].id}`
-            )
-          }
+          src={cross}
+          alt="Close image"
+          className={`${styles.iconSize} ${styles.iconHover}`}
+          onClick={() => navigate(`/adam-kascak-portfolio/illustrations/`)} // Go back to the previous page
         />
+      </button>
+
+      <main className="flex flex-row w-full justify-between items-center gap-4 lg:gap-16 px-4 lg:px-20">
+        <button>
+          <img
+            src={arrowLeft}
+            alt="Previous Image"
+            className={`${styles.iconSize} ${styles.iconHover}`}
+            onClick={() =>
+              navigate(
+                `/adam-kascak-portfolio/illustrations/${IllustrationLinks[prevIndex].id}`
+              )
+            }
+          />
+        </button>
         <figure className="flex flex-col items-center">
           <img
             src={ilu.image.jpg}
-            alt={t(`illustrationLinks.${ilu.id}.title`)}
+            alt={t(`illustrationLinks.${ilu.id}.alt`)}
             className="max-h-[90vh] max-w-screen object-contain"
           />
           <figcaption className="mt-4 text-sm text-PBlack">
             {t(`illustrationLinks.${ilu.id}.title`)}
           </figcaption>
         </figure>
-        <img
-          src={arrowRight}
-          alt="next"
-          className="w-[42px] h-[42px] cursor-pointer dark:brightness-[4] dark:saturate-0 dark:opacity-100 hover:opacity-50 dark:hover:opacity-50 transition-opacity duration-300 ease-in-out"
-          onClick={() =>
-            navigate(
-              `/adam-kascak-portfolio/illustrations/${IllustrationLinks[nextIndex].id}`
-            )
-          }
-        />
-      </div>
+        <button>
+          <img
+            src={arrowRight}
+            alt="Next Image"
+            className={`${styles.iconSize} ${styles.iconHover}`}
+            onClick={() =>
+              navigate(
+                `/adam-kascak-portfolio/illustrations/${IllustrationLinks[nextIndex].id}`
+              )
+            }
+          />
+        </button>
+      </main>
 
       {/* Main image */}
-    </div>
+    </header>
   );
 };
 

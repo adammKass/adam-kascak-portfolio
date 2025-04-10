@@ -14,9 +14,7 @@ const Footer = () => {
       <div
         className={`w-full py-4 flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 justify-between items-center ${styles.boxWidth} ${styles.paddingXA} mx-auto`}
       >
-        <p className="text-center text-PBlack text-extralight">
-          {t(`footer.rights`)}
-        </p>
+        <p className="text-center text-sm lg:text-lg">{t(`footer.rights`)}</p>
         <div className="flex items-center justify-start gap-8">
           <LanguageSwitcher></LanguageSwitcher>
           <div className="flex items-center gap-2">
@@ -26,6 +24,7 @@ const Footer = () => {
               className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
             />
             <button
+              aria-label="Toggle dark mode"
               onClick={() => setIsDark(!isDark)} // Toggle dark mode
               className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition`}
             >
