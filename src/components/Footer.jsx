@@ -14,7 +14,7 @@ const Footer = () => {
       <div
         className={`w-full py-4 flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 justify-between items-center ${styles.boxWidth} ${styles.paddingXA} mx-auto`}
       >
-        <p className="text-center text-sm lg:text-lg">{t(`footer.rights`)}</p>
+        <p className="text-center text-sm lg:text-base">{t(`footer.rights`)}</p>
         <div className="flex items-center justify-start gap-8">
           <LanguageSwitcher></LanguageSwitcher>
           <div className="flex items-center gap-2">

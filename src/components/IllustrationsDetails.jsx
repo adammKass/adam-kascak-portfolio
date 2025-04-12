@@ -70,11 +70,19 @@ const IllustrationsDetails = () => {
           />
         </button>
         <figure className="flex flex-col items-center">
-          <img
-            src={ilu.image.jpg}
-            alt={t(`illustrationLinks.${ilu.id}.alt`)}
-            className="max-h-[90vh] max-w-screen object-contain"
-          />
+          <picture>
+            {/* AVIF format */}
+            <source srcSet={ilu.image.avif} type="image/avif" />
+            {/* WebP format */}
+            <source srcSet={ilu.image.webp} type="image/webp" />
+            {/* Fallback to JPG */}
+            <img
+              src={ilu.image.jpg}
+              alt={t(`illustrationLinks.${ilu.id}.alt`)}
+              className="max-h-[90vh] max-w-screen object-contain"
+              loading="lazy"
+            />
+          </picture>
           <figcaption className="mt-4 text-sm text-PBlack">
             {t(`illustrationLinks.${ilu.id}.title`)}
           </figcaption>

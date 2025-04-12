@@ -32,6 +32,7 @@ const GraphicDesign = () => {
                 src={link.thumb}
                 alt={t(`designLinks.${link.id}.alt`)}
                 className="object-fill saturate-0 rounded-lg"
+                loading="lazy"
               />
             </div>
 

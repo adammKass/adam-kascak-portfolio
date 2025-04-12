@@ -19,6 +19,7 @@ const About = () => {
             src={profile}
             alt={t(`about.alt`)}
             className="object-fill saturate-0 rounded-lg"
+            loading="lazy"
           />
         </div>
         <section className="flex flex-col justify-between py-4 md:py-16 text-PBlack">

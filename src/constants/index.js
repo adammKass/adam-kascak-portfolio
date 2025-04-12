@@ -4,12 +4,6 @@ import {
   FBUThumb,
   GraphicDesignOn,
   IllustrationsOn,
-  kohutM,
-  kohutMAvif,
-  kohutMWebp,
-  surferM,
-  surferMAvif,
-  surferMWebp,
   OasisThumb,
   SDThumb,
   TombThumb,
@@ -17,13 +11,33 @@ import {
   PortfolioIllustrationsShowcase,
   PortfolioFontShowcase,
   PortfolioColorPalette,
-  shoesM,
-  ravenM,
-  birdM,
-  stillLife1,
-  stillLife2,
-  stillLife3,
-  stillLife4,
+  kohutM_jpg,
+  kohutM_avif,
+  kohutM_webp,
+  surferM_jpg,
+  surferM_avif,
+  surferM_webp,
+  shoesM_jpg,
+  shoesM_avif,
+  shoesM_webp,
+  ravenM_jpg,
+  ravenM_avif,
+  ravenM_webp,
+  birdM_jpg,
+  birdM_avif,
+  birdM_webp,
+  stillLife1_jpg,
+  stillLife1_avif,
+  stillLife1_webp,
+  stillLife2_jpg,
+  stillLife2_avif,
+  stillLife2_webp,
+  stillLife3_jpg,
+  stillLife3_avif,
+  stillLife3_webp,
+  stillLife4_jpg,
+  stillLife4_avif,
+  stillLife4_webp,
 } from "../assets";
 
 export const navLinks = [
@@ -119,9 +133,9 @@ export const IllustrationLinks = [
     title: "Roosters in Key West",
     text: "pen and ink, Letter",
     image: {
-      jpg: kohutM,
-      avif: kohutMAvif,
-      webp: kohutMWebp,
+      jpg: kohutM_jpg,
+      avif: kohutM_avif,
+      webp: kohutM_webp,
     },
   },
   {
@@ -129,19 +143,19 @@ export const IllustrationLinks = [
     title: "Feel the Waves",
     text: "digital, 1920x1080p",
     image: {
-      jpg: surferM,
-      avif: surferMAvif,
-      webp: surferMWebp,
+      jpg: surferM_jpg,
+      avif: surferM_avif,
+      webp: surferM_webp,
     },
   },
   {
     id: "shoes",
-    title: "Topánky",
+    title: "Shoes",
     text: "pen and ink",
     image: {
-      jpg: shoesM,
-      avif: kohutMAvif,
-      webp: kohutMWebp,
+      jpg: shoesM_jpg,
+      avif: shoesM_avif,
+      webp: shoesM_webp, // Fixed incorrect reference
     },
   },
   {
@@ -149,9 +163,9 @@ export const IllustrationLinks = [
     title: "Raven",
     text: "pen and ink",
     image: {
-      jpg: ravenM,
-      avif: kohutMAvif,
-      webp: kohutMWebp,
+      jpg: ravenM_jpg,
+      avif: ravenM_avif,
+      webp: ravenM_webp,
     },
   },
   {
@@ -159,9 +173,9 @@ export const IllustrationLinks = [
     title: "Bird",
     text: "Engraving",
     image: {
-      jpg: birdM,
-      avif: kohutMAvif,
-      webp: kohutMWebp,
+      jpg: birdM_jpg, // Fixed incorrect reference
+      avif: birdM_avif, // Fixed incorrect reference
+      webp: birdM_webp, // Fixed incorrect reference
     },
   },
   {
@@ -169,9 +183,9 @@ export const IllustrationLinks = [
     title: "Still Life Practice 1",
     text: "charcoal, pencil",
     image: {
-      jpg: stillLife1,
-      avif: kohutMAvif,
-      webp: kohutMWebp,
+      jpg: stillLife1_jpg, // Fixed incorrect reference
+      avif: stillLife1_avif, // Fixed incorrect reference
+      webp: stillLife1_webp, // Fixed incorrect reference
     },
   },
   {
@@ -179,9 +193,9 @@ export const IllustrationLinks = [
     title: "Still Life Practice 2",
     text: "charcoal, pencil",
     image: {
-      jpg: stillLife2,
-      avif: kohutMAvif,
-      webp: kohutMWebp,
+      jpg: stillLife2_jpg, // Fixed incorrect reference
+      avif: stillLife2_avif, // Fixed incorrect reference
+      webp: stillLife2_webp, // Fixed incorrect reference
     },
   },
   {
@@ -189,9 +203,9 @@ export const IllustrationLinks = [
     title: "Still Life Practice 3",
     text: "charcoal, pencil",
     image: {
-      jpg: stillLife3,
-      avif: kohutMAvif,
-      webp: kohutMWebp,
+      jpg: stillLife3_jpg, // Fixed incorrect reference
+      avif: stillLife3_avif, // Fixed incorrect reference
+      webp: stillLife3_webp, // Fixed incorrect reference
     },
   },
   {
@@ -199,9 +213,9 @@ export const IllustrationLinks = [
     title: "Still Life Practice 4",
     text: "charcoal, pencil",
     image: {
-      jpg: stillLife4,
-      avif: kohutMAvif,
-      webp: kohutMWebp,
+      jpg: stillLife4_jpg, // Fixed incorrect reference
+      avif: stillLife4_avif, // Fixed incorrect reference
+      webp: stillLife4_webp, // Fixed incorrect reference
     },
   },
 ];

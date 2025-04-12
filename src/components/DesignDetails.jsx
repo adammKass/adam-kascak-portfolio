@@ -50,6 +50,7 @@ const DesignDetails = () => {
               src={ilu.image}
               alt={t(`designLinks.${link.id}.images.${index}.alt`)}
               className="w-full rounded-lg"
+              loading="lazy"
             />
             <span className="text-sm lg:text-lg py-3 text-center">
               {t(`designLinks.${link.id}.images.${index}.title`)}
