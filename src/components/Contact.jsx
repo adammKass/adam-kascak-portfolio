@@ -5,7 +5,9 @@ import { artstation, linkedin } from "../assets";
 import styles from "../style";
 const Contact = () => {
   return (
-    <div className="absolute top-0 left-0 w-full min-h-screen overflow-hidden bg-PWhite">
+    <div
+      className={`absolute top-0 left-0 w-full min-h-screen overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+    >
       <Navbar />
       <main
         id="main-content"
@@ -13,7 +15,7 @@ const Contact = () => {
       >
         <a
           href="mailto:adam.kascak@protonmail.com"
-          className={`text-center mb-2 mt-4 hover:opacity-80 transition-all duration-300 ease-in-out ${styles.focus}`}
+          className={`text-center mb-2 mt-4 hover:opacity-80 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
         >
           adam.kascak@protonmail.com
         </a>
@@ -23,7 +25,7 @@ const Contact = () => {
             <img
               src={artstation}
               alt="artstation"
-              className={`w-10 h-10 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus}`}
+              className={`w-10 h-10 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
             />
           </a>
 
@@ -34,7 +36,7 @@ const Contact = () => {
             <img
               src={linkedin}
               alt="linkedin"
-              className={`w-7 h-6 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus}`}
+              className={`w-7 h-6 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
             />
           </a>
         </div>

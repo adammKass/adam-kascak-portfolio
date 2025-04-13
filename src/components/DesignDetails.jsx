@@ -12,14 +12,18 @@ const DesignDetails = () => {
   const link = DesignLinks.find((item) => item.id === id);
 
   return (
-    <div className="absolute top-0 left-0 w-full overflow-hidden bg-PWhite">
+    <div
+      className={`absolute top-0 left-0 w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+    >
       <Navbar />
       <main
         id="main-content"
         className={`flex flex-col gap-8 md:gap-16 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32 text-PBlack`}
       >
         {/* Responsive Title */}
-        <h3 className="mb-6">{t(`designLinks.${link.id}.title`)}</h3>
+        <h3 className={`mb-6 ${styles.cursorText}`}>
+          {t(`designLinks.${link.id}.title`)}
+        </h3>
 
         {/* Responsive Details Section */}
         <section className="flex flex-col gap-5">

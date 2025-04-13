@@ -9,7 +9,9 @@ import { Tab, TabGroup, TabList } from "@headlessui/react";
 const Illustrations = () => {
   const navigate = useNavigate();
   return (
-    <div className="absolute top-0 left-0 w-full overflow-hidden bg-PWhite">
+    <div
+      className={`absolute top-0 left-0 w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+    >
       <Navbar />
 
       <TabGroup
@@ -23,7 +25,7 @@ const Illustrations = () => {
               <Tab
                 aria-label="Image fullscreen"
                 key={ilu.id}
-                className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover} ${styles.focus}`}
+                className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover} ${styles.focus} ${styles.cursorPointer}`}
                 onClick={() =>
                   navigate(`/adam-kascak-portfolio/illustrations/${ilu.id}`)
                 }

@@ -8,19 +8,25 @@ import { useIsVisible } from "./isVisible";
 import { useTranslation } from "react-i18next";
 
 const DGraphics = () => {
-  const navigate = useNavigate();
-  const { t } = useTranslation();
+  const navigate = useNavigate(); // Navigation handler
+  const { t } = useTranslation(); // Translation hook
 
   return (
-    <div className="absolute top-0 left-0 w-full overflow-hidden bg-PWhite">
+    <div
+      className={`absolute top-0 left-0 w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+    >
+      {/* Navbar */}
       <Navbar />
+
+      {/* Main Content */}
       <main
         id="main-content"
         className={`flex flex-col gap-8 md:gap-16 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32`}
       >
+        {/* Render Graphics Links */}
         {GraphicsLinks.map((link, index) => {
           const ref = useRef(null); // Create a ref for each container
-          const isVisible = useIsVisible(ref); // Check visibility using the hook
+          const isVisible = useIsVisible(ref); // Check visibility using the custom hook
 
           return (
             <article
@@ -30,14 +36,15 @@ const DGraphics = () => {
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
-              }  ${styles.tabHover}`}
-              onClick={() => window.open(link.href, "_blank")}
+              } ${styles.tabHover} ${styles.cursorPointer}`}
+              onClick={() => window.open(link.href, "_blank")} // Open link in a new tab
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   window.open(link.href, "_blank");
                 }
               }}
             >
+              {/* Thumbnail Image */}
               <div className="w-72 h-72 shrink-0 rounded-lg">
                 <img
                   src={link.thumb}
@@ -47,19 +54,21 @@ const DGraphics = () => {
                 />
               </div>
 
+              {/* Text Content */}
               <div className="flex flex-col pt-2 md:pt-10 justify-center items-center md:justify-between md:items-start text-center md:text-start">
                 <div>
-                  {/* Responsive title text */}
+                  {/* Title */}
                   <h2>{t(`graphicsLinks.${link.id}.title`)}</h2>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-PBlack mt-2 mb-4"></span>
-                  {/* Responsive paragraph text */}
+                  {/* Description */}
                   <p>{t(`graphicsLinks.${link.id}.text`)}</p>
                 </div>
 
+                {/* External Link */}
                 <a
                   aria-label="More about project on Artstation"
                   href={link.href}
-                  className={`pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl text-PBlack group-hover:text-PBlack ${styles.focus}`}
+                  className={`pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl text-PBlack group-hover:text-PBlack ${styles.focus} ${styles.cursorPointer}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -70,7 +79,9 @@ const DGraphics = () => {
           );
         })}
       </main>
-      <Footer></Footer>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

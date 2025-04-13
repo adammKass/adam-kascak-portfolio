@@ -10,7 +10,9 @@ const GraphicDesign = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
   return (
-    <div className="absolute top-0 left-0 w-full  min-h-screen overflow-hidden bg-PWhite ">
+    <div
+      className={`absolute top-0 left-0 w-full  min-h-screen overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+    >
       <Navbar />
       <main
         id="main-content"
@@ -18,7 +20,7 @@ const GraphicDesign = () => {
       >
         {DesignLinks.map((link, index) => (
           <article
-            className={`flex flex-col md:flex-row justify-center items-center md:justify-start md:items-center gap-2 md:gap-11 ${styles.tabHover}`}
+            className={`flex flex-col md:flex-row justify-center items-center md:justify-start md:items-center gap-2 md:gap-11 ${styles.tabHover} ${styles.cursorPointer}`}
             key={index}
             onClick={() => navigate(link.id)}
             onKeyDown={(e) => {
@@ -45,7 +47,7 @@ const GraphicDesign = () => {
               <Link
                 aria-label="More information about project"
                 to={`/graphicdesign/${link.id}`}
-                className={`pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl group-hover:text-PBlack text-PBlack ${styles.focus}`}
+                className={`pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl group-hover:text-PBlack text-PBlack ${styles.focus} ${styles.cursorPointer}`}
               >
                 {t(`designLinks.more`)}
               </Link>

@@ -6,7 +6,6 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import RoutesAnimate from "./components/RoutesAnimate";
 
 import {
   NotFound,
@@ -26,15 +25,16 @@ import PageWrapper from "./components/PageWrapper";
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Loading state
 
-  // Simulate loading (e.g., fetching data)
+  // Simulate a loading screen with a timeout
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false); // Hide loading screen after 2 seconds
+      setIsLoading(false); // Hide loading screen after 200ms
     }, 200);
 
-    return () => clearTimeout(timer); // Cleanup timer
+    return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
+  // Render the loading screen if the app is still loading
   if (isLoading) {
     return (
       <div className="absolute top-0 left-0 w-full h-screen flex justify-center items-center bg-PWhite z-10">
@@ -48,6 +48,7 @@ function App() {
     );
   }
 
+  // Render the main application with routes
   return (
     <Router>
       <AnimatedRoutes />
@@ -55,12 +56,14 @@ function App() {
   );
 }
 
+// Component to handle animated page transitions and routing
 function AnimatedRoutes() {
-  const location = useLocation();
+  const location = useLocation(); // Get the current location for routing
+
   return (
-    // Add a return statement here
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
+        {/* Home Route */}
         <Route
           path="/adam-kascak-portfolio"
           element={
@@ -69,6 +72,8 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+
+        {/* About Route */}
         <Route
           path="/adam-kascak-portfolio/about"
           element={
@@ -77,6 +82,8 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+
+        {/* Contact Route */}
         <Route
           path="/adam-kascak-portfolio/contact"
           element={
@@ -85,6 +92,8 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+
+        {/* Digital Graphics Route */}
         <Route
           path="/adam-kascak-portfolio/dgraphics"
           element={
@@ -93,6 +102,8 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+
+        {/* Graphic Design Route */}
         <Route
           path="/adam-kascak-portfolio/graphicdesign"
           element={
@@ -101,6 +112,8 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+
+        {/* Illustrations Route */}
         <Route
           path="/adam-kascak-portfolio/illustrations"
           element={
@@ -109,6 +122,8 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+
+        {/* Illustration Details Route */}
         <Route
           path="/adam-kascak-portfolio/illustrations/:id"
           element={
@@ -117,6 +132,8 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+
+        {/* Graphic Design Details Route */}
         <Route
           path="/adam-kascak-portfolio/graphicdesign/:id"
           element={
@@ -125,6 +142,8 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+
+        {/* Fallback Route for 404 Not Found */}
         <Route
           path="*"
           element={

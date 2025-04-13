@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
   return (
     <button
       onClick={toggleLanguage}
-      className={`w-[32px] h-[20px] flex-shrink-0 saturate-0 hover:saturate-100 transition-all ease-in-out duration-300 ${styles.focus}`}
+      className={`w-[32px] h-[20px] flex-shrink-0 saturate-0 hover:saturate-100 transition-all ease-in-out duration-300 ${styles.focus} ${styles.cursorPointer}`}
     >
       <img
         src={language === "en" ? sk : uk}

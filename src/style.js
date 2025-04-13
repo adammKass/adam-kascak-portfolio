@@ -1,11 +1,16 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
-  heading1: "text-lg lg:text-xl",
   heading2: "text-lg lg:text-xl",
 
   cards:
     "bg-PWhite border-4 rounded-sm shadow-2xl border-PBlack min-w-42 basis-1/4 ",
+  cursorText:
+    "cursor-[url('/cursors/cursor-text.svg')_0_10,text] dark:cursor-[url('/cursors/cursor-text_dark.svg')_0_10,text]",
+  cursorPointer:
+    "cursor-[url('/cursors/cursor-pointer.svg')_0_0,pointer] dark:cursor-[url('/cursors/cursor-pointer_dark.svg')_0_0,pointer]",
+  cursorAuto:
+    "cursor-[url('/cursors/cursor-auto.svg')_0_0,default] dark:cursor-[url('/cursors/cursor-auto_dark.svg')_0_0,default]",
 
   paddingX: "px-2 md:px-20 lg:px-48 xl:px-62 2xl:px-96",
   paddingXA: "px-10 lg:px-20",

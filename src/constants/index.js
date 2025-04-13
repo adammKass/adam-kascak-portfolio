@@ -1,9 +1,5 @@
 import {
-  AboutMeOn,
-  dgraphicsOn,
   FBUThumb,
-  GraphicDesignOn,
-  IllustrationsOn,
   OasisThumb,
   SDThumb,
   TombThumb,
