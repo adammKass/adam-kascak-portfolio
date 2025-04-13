@@ -26,7 +26,7 @@ const DesignDetails = () => {
         </h3>
 
         {/* Responsive Details Section */}
-        <section className="flex flex-col gap-5">
+        <section className={`flex flex-col gap-5 ${styles.cursorText} `}>
           <div className="border-b border-PBlack pb-4">
             <h4 className="mb-2">{t(`designLinks.type`)}</h4>
             <p>{t(`designLinks.${link.id}.type`)}</p>
@@ -42,7 +42,9 @@ const DesignDetails = () => {
         </section>
 
         {/* Responsive Description */}
-        <p className="leading-relaxed">{t(`designLinks.${link.id}.text`)}</p>
+        <p className={`leading-relaxed ${styles.cursorText}`}>
+          {t(`designLinks.${link.id}.text`)}
+        </p>
 
         {/* Responsive Images Section */}
         {link.images.map((ilu, index) => (
@@ -56,7 +58,9 @@ const DesignDetails = () => {
               className="w-full rounded-lg"
               loading="lazy"
             />
-            <span className="text-sm lg:text-lg py-3 text-center">
+            <span
+              className={`text-sm lg:text-lg py-3 text-center ${styles.cursorText}`}
+            >
               {t(`designLinks.${link.id}.images.${index}.title`)}
             </span>
           </section>

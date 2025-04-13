@@ -21,7 +21,9 @@ const Navbar = () => {
   const [isDark, setIsDark] = useDarkMode(); // Dark mode state
   const location = useLocation(); // Current location
   const navigate = useNavigate(); // Navigation handler
-  const isHomepage = location.pathname === "/adam-kascak-portfolio"; // Check if on homepage
+  const isHomepage =
+    location.pathname === "/adam-kascak-portfolio" ||
+    "https://adammkass.github.io/adam-kascak-portfolio/"; // Check if on homepage
   const { t } = useTranslation(); // Translation hook
 
   return (

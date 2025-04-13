@@ -17,7 +17,7 @@
     "SD": {
       "title": "Substance Designer Prax",
       "alt": "Render materiálu skaly vytvoreného pomocou Substance Designer",
-      "text": "Tu sú niektoré z materiálov, ktoré som vytvoril pomocou Substance Designer. Cieľom tejto praxe bolo zlepšiť moje zručnosti v Substance Designer. Chcel som dosiahnuť viac štylizovaný vzhľad. Textúry boli vytvorené v Substance Designer a finálny render bol urobený pomocou Substance Stager."
+      "text": "Tu sú niektoré z materiálov, ktoré som vytvoril pomocou Substance Designer. Cieľom tohto tréningu bolo zlepšiť moje zručnosti v Substance Designeri. Chcel som dosiahnuť viac štylizovaný vzhľad. Textúry boli vytvorené v Substance Designeri a finálny render bol urobený pomocou Substance Stagera."
     },
     "FBU": {
       "title": "Forgotten but Unbroken",
@@ -31,8 +31,8 @@
     },
     "Tomb": {
       "title": "Grécka Hrobka",
-      "alt": "Screenshot gréckeho hrobkového 3D prostredia",
-      "text": "Grécke hrobkové prostredie, ktoré som vytvoril vo svojom voľnom čase."
+      "alt": "Screenshot gréckeho 3D prostredia hrobky",
+      "text": "Grécke prostredie hrobky, ktoré som vytvoril vo svojom voľnom čase."
     },
     "more": "Prečítajte si viac na Artstation"
   },
@@ -121,7 +121,7 @@
     "rights": "©2025 Adam Kaščák. Všetky práva vyhradené"
   },
   "notFound": {
-    "error": "404 - Stránka nenájdená",
+    "error": "404 - Stránka sa nenašla",
     "return": "Vrátiť sa na Domovskú Stránku"
   }
 }
