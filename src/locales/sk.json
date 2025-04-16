@@ -60,6 +60,53 @@
         }
       ]
     },
+    "Divers Lenses": {
+      "title": "Webstránka Diver's Lenses",
+      "alt": "Logo webstránky Diver's Lenses",
+      "textShort": "Osobný projekt. Chcel som zlepšiť svoje zručnosti s Figma - hlavne s vytváraním wireframov rôznych stránok webstránky, nielen úvodnej stránky. Rozhodol som sa navrhnúť webstránku na prezentáciu množstva fotografií.",
+      "type": "Web dizajn, wireframing",
+      "tools": "Dizajn: Figma",
+      "year": "2024",
+      "text": "Osobný projekt. Chcel som zlepšiť svoje zručnosti s Figma - hlavne s vytváraním wireframov rôznych stránok webstránky, nielen úvodnej stránky. Túto webstránku som vytvoril po absolvovaní kurzu Vako Shviliho o dizajne webstránok. Rozhodol som sa navrhnúť webstránku na prezentáciu množstva fotografií. Zvolil som tému podvodnej fotografie, hlavne preto, že voda a potápanie sú mi blízke.\nFarby boli, samozrejme, spojené s morom - modré a zelené, ktoré sa postupne stmavujú pri posúvaní nadol, čím simulujú potápanie v mori. Jednoduchý font Noto Sans bol zvolený pre jeho menej formálny a prívetivý vzhľad.\nNavigačný panel obsahuje odkaz na samostatný blog, tlačidlá na registráciu a vyhľadávací panel na rýchle vyhľadávanie obrázkov alebo fotografov. Pre úvodný banner som mal nápad prezentovať jeden z obrázkov na webstránke, ktorý by sa menil v priebehu času. Pätička obsahuje podrobnejšie odkazy a odkazy na sociálne siete.\nStránky iné ako úvodná stránka zostali iba ako wireframe. Niektoré z týchto stránok zahŕňajú hlavnú stránku blogu, stránku príspevku na blogu, stránku s jednotlivými obrázkami, stránku na úpravu používateľa atď.\nKrásne podvodné fotografie pre úvodnú stránku boli použité z Unsplash.",
+      "images": [
+        {
+          "title": "Dizajnové štýly",
+          "alt": "Prezentácia farieb a variácií fontov použitých na webstránke"
+        },
+        {
+          "title": "Úvodná stránka - Desktop",
+          "alt": "Desktopová verzia úvodnej stránky s podvodnými fotografiami"
+        },
+        {
+          "title": "Úvodná stránka - Mobil",
+          "alt": "Mobilná verzia úvodnej stránky s podvodnými fotografiami"
+        },
+        {
+          "title": "Stránka blogu - Desktop",
+          "alt": "Wireframe desktopovej verzie hlavnej stránky blogu"
+        },
+        {
+          "title": "Stránka príspevku na blogu - Desktop",
+          "alt": "Wireframe desktopovej verzie stránky príspevku na blogu"
+        },
+        {
+          "title": "Stránka obrázku - Desktop",
+          "alt": "Wireframe desktopovej verzie stránky na prezentáciu obrázku"
+        },
+        {
+          "title": "Stránka obrázku - Mobil",
+          "alt": "Wireframe mobilnej verzie stránky na prezentáciu obrázku"
+        },
+        {
+          "title": "Stránka používateľa - Desktop",
+          "alt": "Wireframe desktopovej verzie stránky zobrazujúcej prihláseného používateľa"
+        },
+        {
+          "title": "Stránka na úpravu používateľa - Desktop",
+          "alt": "Wireframe desktopovej verzie stránky s možnosťami na úpravu profilu používateľa"
+        }
+      ]
+    },
     "type": "Typ Projektu",
     "tools": "Nástroje",
     "year": "Rok",

@@ -1,5 +1,5 @@
 import styles from "../style";
-import useDarkMode from "./useDarkMode";
+import useDarkMode from "./utils/useDarkMode";
 import { moon, sun } from "../assets";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";

@@ -1,9 +1,9 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { arrowLeft, arrowRight, cross } from "../assets";
-import { IllustrationLinks } from "../constants";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import styles from "../style";
+import { arrowLeft, arrowRight, cross } from "../../assets";
+import { IllustrationLinks } from "../../constants";
+import styles from "../../style";
 
 const IllustrationsDetails = () => {
   const { id } = useParams(); // Get the current illustration ID from the URL

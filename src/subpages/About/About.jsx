@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import { profile, artstation, linkedin } from "../assets";
-import styles from "../style";
+
 import { useTranslation } from "react-i18next";
+import { Footer, Navbar } from "../../components";
+import styles from "../../style";
+import { artstation, linkedin, profile } from "../../assets";
 
 const About = () => {
   const { t } = useTranslation();
@@ -34,7 +34,7 @@ const About = () => {
           <div className="flex flex-col justify-center border-t border-PBlack">
             <a
               href="mailto:adam.kascak@protonmail.com"
-              className={`text-center mb-2 mt-4 hover:opacity-80 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
+              className={`text-center mb-2 mt-4 hover:opacity-50 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
             >
               adam.kascak@protonmail.com
             </a>

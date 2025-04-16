@@ -1,15 +1,15 @@
-import React from "react";
+/*import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import DGraphics from "./DGraphics";
-import GraphicDesign from "./GraphicDesign";
-import Illustrations from "./Illustrations";
-import IllustrationsDetails from "./IllustrationsDetails";
-import DesignDetails from "./DesignDetails";
-import NotFound from "./NotFound";
+import Home from "../subpages/Home/Home";
+import About from "../About";
+import Contact from "../subpages/Contact/Contact";
+import DGraphics from "../subpages/DGraphics/DGraphics";
+import GraphicDesign from "../subpages/GraphicDesign/GraphicDesign";
+import Illustrations from "../subpages/Illustrations/Illustrations";
+import IllustrationsDetails from "../IllustrationsDetails";
+import DesignDetails from "../subpages/GraphicDesign/DesignDetails";
+import NotFound from "../subpages/NotFound/NotFound";
 import PageWrapper from "./PageWrapper";
 
 const RoutesWithAnimation = () => {
@@ -95,4 +95,4 @@ const RoutesWithAnimation = () => {
   );
 };
 
-export default RoutesWithAnimation;
+export default RoutesWithAnimation;*/

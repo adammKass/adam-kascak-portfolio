@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import { DesignLinks } from "../constants";
-import styles from "../style";
+
 import { useTranslation } from "react-i18next";
-import { arrowLeft } from "../assets";
+
+import { Footer, Navbar } from "../../components";
+import { DesignLinks } from "../../constants";
+import styles from "../../style";
+import { arrowLeft } from "../../assets";
 
 const DesignDetails = () => {
   const { id } = useParams();
@@ -50,12 +51,12 @@ const DesignDetails = () => {
         {link.images.map((ilu, index) => (
           <section
             key={index}
-            className="w-full mb-10 rounded-sm border-PBlack flex flex-col items-center"
+            className="w-full mb-10 rounded-sm flex flex-col items-center "
           >
             <img
               src={ilu.image}
               alt={t(`designLinks.${link.id}.images.${index}.alt`)}
-              className="w-full rounded-lg"
+              className="max-w-[50vw] rounded-lg border-4 shadow-2xl border-PBlack"
               loading="lazy"
             />
             <span

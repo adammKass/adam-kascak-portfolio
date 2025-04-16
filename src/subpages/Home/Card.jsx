@@ -6,12 +6,13 @@ import {
   GraphicDesignOn,
   IllustrationsOff,
   IllustrationsOn,
-} from "../assets";
+} from "../../assets";
 import { useNavigate } from "react-router-dom";
-import styles from "../style";
+
 import { useRef } from "react";
-import { useIsVisible } from "./isVisible";
 import { useTranslation } from "react-i18next";
+import { useIsVisible } from "../../components";
+import styles from "../../style";
 
 const Card = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Card = () => {
 
   return (
     <TabGroup>
-      {/* Main Content */}
+      {/* Main Content - Tabs seperate for illustration handling*/}
       <TabList
         as="main"
         id="main-content"

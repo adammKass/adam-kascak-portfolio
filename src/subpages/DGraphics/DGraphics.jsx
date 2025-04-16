@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import { GraphicsLinks } from "../constants";
-import styles from "../style";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import { GraphicsLinks } from "../../constants";
+import styles from "../../style";
 import { useNavigate } from "react-router-dom";
-import { useIsVisible } from "./isVisible";
 import { useTranslation } from "react-i18next";
+import { useIsVisible } from "../../components";
 
 const DGraphics = () => {
   const navigate = useNavigate(); // Navigation handler

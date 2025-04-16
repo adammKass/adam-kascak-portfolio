@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
-import { IllustrationLinks } from "../constants";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import React from "react";
+import { IllustrationLinks } from "../../constants";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
-import styles from "../style";
+import styles from "../../style";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
 
 const Illustrations = () => {

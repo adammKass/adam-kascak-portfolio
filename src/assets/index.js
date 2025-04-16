@@ -1,12 +1,11 @@
 // Main page
-import sign from "./Sign.svg";
-import dgraphicsOn from "./3DGraphicsOn.svg";
-import GraphicDesignOn from "./GraphicDesignOn.svg";
-import GraphicDesignOff from "./GraphicDesignOff.svg";
-import IllustrationsOn from "./IllustrationsOn.svg";
-import IllustrationsOff from "./IllustrationsOff.svg";
-import AboutMeOn from "./AboutMeOn.svg";
-import AboutMeOff from "./AboutMeOff.svg";
+import sign from "./icons/Sign.svg";
+import GraphicDesignOn from "./Home/GraphicDesignOn.svg";
+import GraphicDesignOff from "./Home/GraphicDesignOff.svg";
+import IllustrationsOn from "./Home/IllustrationsOn.svg";
+import IllustrationsOff from "./Home/IllustrationsOff.svg";
+import AboutMeOn from "./Home/AboutMeOn.svg";
+import AboutMeOff from "./Home/AboutMeOff.svg";
 
 // Graphic Thumbnails
 import FBUThumb from "./GraphicsThumbnails/FBUThumb.jpg";
@@ -16,18 +15,30 @@ import TombThumb from "./GraphicsThumbnails/TombThumb.jpg";
 
 // Design Thumbnails
 import PortfolioThumb from "./GraphicDesign/Portfolio/PortfolioThumb.svg";
+import UnderwaterThumb from "./GraphicDesign/Underwater/UnderwaterThumb.svg";
 
 //Graphic Design
+//Portfolio
 import PortfolioIllustrationsShowcase from "./GraphicDesign/Portfolio/IllustrationsShowcase.svg";
 import PortfolioFontShowcase from "./GraphicDesign/Portfolio/FontShowcase.svg";
 import PortfolioColorPalette from "./GraphicDesign/Portfolio/ColorPalette.svg";
+
+//Underwater
+import UnderwaterDesignStyles from "./GraphicDesign/Underwater/Design Styles.svg";
+import UnderwaterBlogPage from "./GraphicDesign/Underwater/Desktop - Blog Page.svg";
+import UnderwaterBlogPost from "./GraphicDesign/Underwater/Desktop - Blog Post.svg";
+import UnderwaterEditUserPage from "./GraphicDesign/Underwater/Desktop - Edit User Page.svg";
+import UnderwaterImagePage from "./GraphicDesign/Underwater/Desktop - Image Page.svg";
+import UnderwaterImagePageMobile from "./GraphicDesign/Underwater/Mobile - Image Page.svg";
+import UnderwaterLandingPage from "./GraphicDesign/Underwater/Desktop - Landing Page.svg";
+import UnderwaterManagePortfolioPage from "./GraphicDesign/Underwater/Desktop - Manage Portfolio Page.svg";
+import UnderwaterUserPage from "./GraphicDesign/Underwater/Desktop - User Page.svg";
+import UnderwaterLandingPageMobile from "./GraphicDesign/Underwater/Mobile - Landing Page.svg";
 
 // Contact
 import linkedin from "./logos/linkedin.png";
 import artstation from "./logos/artstation.svg";
 import profile from "./profile.jpg";
-import sk from "./sk.svg";
-import uk from "./uk.svg";
 
 // Illustrations
 import kohutM_avif from "./Illustrations/kohut/kohut-M.avif";
@@ -67,24 +78,21 @@ import stillLife4_webp from "./Illustrations/stillLife/stillLife4-M.webp";
 import stillLife4_jpg from "./Illustrations/stillLife/stillLife4-M.jpg";
 
 // Icons
-import fullscreen from "./fullscreen.svg";
-import cross from "./cross.svg";
-import menu from "./menu.svg";
-import moon from "./moon.svg";
-import sun from "./sun.svg";
-import arrowLeft from "./arrow-left.svg";
-import arrowRight from "./arrow-right.svg";
+import cross from "./icons/cross.svg";
+import moon from "./icons/moon.svg";
+import sun from "./icons/sun.svg";
+import arrowLeft from "./icons/arrow-left.svg";
+import arrowRight from "./icons/arrow-right.svg";
+import sk from "./icons/sk.svg";
+import uk from "./icons/uk.svg";
 
 export {
   sign,
-  fullscreen,
   cross,
-  menu,
   sun,
   moon,
   arrowLeft,
   arrowRight,
-  dgraphicsOn,
   GraphicDesignOn,
   GraphicDesignOff,
   AboutMeOff,
@@ -128,7 +136,18 @@ export {
   stillLife4_webp,
   stillLife4_avif,
   PortfolioThumb,
+  UnderwaterThumb,
   PortfolioIllustrationsShowcase,
   PortfolioFontShowcase,
   PortfolioColorPalette,
+  UnderwaterBlogPage,
+  UnderwaterBlogPost,
+  UnderwaterEditUserPage,
+  UnderwaterImagePage,
+  UnderwaterImagePageMobile,
+  UnderwaterLandingPage,
+  UnderwaterManagePortfolioPage,
+  UnderwaterUserPage,
+  UnderwaterLandingPageMobile,
+  UnderwaterDesignStyles,
 };

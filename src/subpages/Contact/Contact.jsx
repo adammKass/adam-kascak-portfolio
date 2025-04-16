@@ -1,8 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import { artstation, linkedin } from "../assets";
-import styles from "../style";
+import Navbar from "../../components/Navbar";
+import { artstation, linkedin } from "../../assets";
+import styles from "../../style";
 const Contact = () => {
   return (
     <div

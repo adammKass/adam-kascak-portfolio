@@ -12,20 +12,24 @@ import {
   TabPanels,
   Transition,
 } from "@headlessui/react";
-import { menu, sign, cross, uk, sun, moon } from "../assets";
+import { sign, sun, moon } from "../assets";
 import { navLinks } from "../constants";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Fragment, useEffect, useState } from "react";
 import styles from "../style";
-import useDarkMode from "./useDarkMode";
+
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import DarkModeSwitcher from "./darkModeSwitcher";
 
 const Navbar = () => {
-  const [isDark, setIsDark] = useDarkMode();
   const location = useLocation();
   const navigate = useNavigate();
-  const isHomepage = location.pathname === "/adam-kascak-portfolio";
+  const isHomepage =
+    location.pathname === "/adam-kascak-portfolio" ||
+    location.pathname === "/adam-kascak-portfolio/" ||
+    window.location.href ===
+      "https://adammkass.github.io/adam-kascak-portfolio/";
   const { t } = useTranslation();
 
   return (
@@ -49,7 +53,9 @@ const Navbar = () => {
             />
           </Link>
 
-          {isHomepage && <h1>{t(`home.title`)}</h1>}
+          {isHomepage && (
+            <h1 className={`${styles.cursorText}`}>{t(`home.title`)}</h1>
+          )}
         </div>
 
         {/* Show nav links if not on homepage */}
@@ -60,7 +66,7 @@ const Navbar = () => {
                 {navLinks.map((nav) => (
                   <Tab
                     key={nav.id}
-                    className={`bg-PWhite font-extralight hover:text-PBlack group ${styles.focus}`}
+                    className={`bg-PWhite font-extralight hover:text-PBlack group ${styles.focus} ${styles.cursorPointer}`}
                     onClick={() => navigate(nav.to)}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
@@ -80,10 +86,13 @@ const Navbar = () => {
         )}
 
         {/* Hamburger menu for smaller screens */}
-        <Menu className="md:hidden" as="div">
+        <Menu className={`md:hidden ${styles.cursorPointer}`} as="div">
           {({ open }) => (
             <>
-              <MenuButton aria-label="Menu">
+              <MenuButton
+                aria-label="Menu"
+                className={`${styles.cursorPointer}`}
+              >
                 <div
                   id="nav-icon3"
                   className={`${open ? "open" : ""} hover:opacity-50`}
@@ -127,29 +136,7 @@ const Navbar = () => {
                     className="flex items-center justify-start gap-8"
                   >
                     <LanguageSwitcher />
-                    <div className="flex items-center gap-2">
-                      <img
-                        src={sun}
-                        alt="light mode"
-                        className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
-                      />
-                      <button
-                        aria-label="Toggle dark mode"
-                        onClick={() => setIsDark(!isDark)}
-                        className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition`}
-                      >
-                        <span
-                          className={`inline-block h-4 w-4 transform rounded-full bg-PGrey transition ${
-                            isDark ? "translate-x-6" : "translate-x-1"
-                          }`}
-                        />
-                      </button>
-                      <img
-                        src={moon}
-                        alt="dark mode"
-                        className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
-                      />
-                    </div>
+                    <DarkModeSwitcher />
                   </MenuItem>
                 </MenuItems>
               </Transition>

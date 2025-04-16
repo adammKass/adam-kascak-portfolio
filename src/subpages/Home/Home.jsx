@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import styles from "../../style";
+import { Footer, Navbar } from "../../components";
 import Card from "./Card";
-import styles from "../style";
+
 const Home = () => {
   return (
     <div

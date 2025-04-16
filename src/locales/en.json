@@ -39,7 +39,7 @@
   "designLinks": {
     "Portfolio": {
       "title": "Portfolio Website",
-      "alt": "Web icon of Adam Kascak's protfolio website",
+      "alt": "Web icon of Adam Kascak's portfolio website",
       "textShort": "Personal project. I wanted to make a website showcasing some of my work from different areas of visual arts.",
       "type": "Web Design",
       "tools": "Design: Figma, Krita, Adobe Illustrator \n Programming: React, Tailwind CSS",
@@ -57,6 +57,53 @@
         {
           "title": "Color Palette",
           "alt": "Showcase of 4 colors used across the portfolio website"
+        }
+      ]
+    },
+    "Divers Lenses": {
+      "title": "Diver's Lenses Website",
+      "alt": "Logo of Diver's Lenses website",
+      "textShort": "Personal project. I wanted to improve my skills with Figma - mostly with wireframing different pages of website, not only landing page. I chose to design a website for showcasing a lot of photos.",
+      "type": "Web design, wireframing",
+      "tools": "Design: Figma",
+      "year": "2024",
+      "text": "Personal project. I wanted to improve my skills with Figma - mostly with wireframing different pages of website, not only landing page. I did this website after watching Vako Shvili's course on website design. I chose to design a website for showcasing a lot of photos. I chose the underwater photography theme, mostly because water and diving are close to my heart. \nColors chosen were, of course, associated with sea - blues and greens, gradually getting darker scrolling to the bottom, simulating diving in the sea. A simple Noto Sans font was chosen for it's less formal and inviting feel.\nNavbar contains link to a seperate blog, sign up CTA buttons as well as search bar for quick searching of images or photographers. For home banner I had an idea of showcasing image of one of the images on the website, which would change over a period of time. Footer includes more detailed links as well as links to social media.\nPages other than landing page stayed only as wireframe. Some of these pages include Blog main page, Blog post page, Individual image page, Edit user page etc.\nBeautiful underwater photos for the landing page were used from Unsplash.",
+      "images": [
+        {
+          "title": "Design styles",
+          "alt": "Showcase of colors and font variations used across website"
+        },
+        {
+          "title": "Landing page - Desktop",
+          "alt": "Desktop version of landing page with underwater photos"
+        },
+        {
+          "title": "Landing page - Mobile",
+          "alt": "Mobile version of landing page with underwater photos"
+        },
+        {
+          "title": "Blog page - Desktop",
+          "alt": "Wireframe of desktop version of main page of blog"
+        },
+        {
+          "title": "Blog post page - Desktop",
+          "alt": "Wireframe of desktop version of a post page of blog"
+        },
+        {
+          "title": "Image page - Desktop",
+          "alt": "Wireframe of desktop version of a image showcase page"
+        },
+        {
+          "title": "Image page - Mobile",
+          "alt": "Wireframe of mobile version of a image showcase page"
+        },
+        {
+          "title": "User page - Desktop",
+          "alt": "Wireframe of desktop version of page showcasing logged user of website"
+        },
+        {
+          "title": "Edit User page - Desktop",
+          "alt": "Wireframe of desktop version of page showcasing options for editing user profile"
         }
       ]
     },

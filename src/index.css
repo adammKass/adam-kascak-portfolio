@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base Styles */
+
 :root {
   font-family: "Montserrat Alternates", sans-serif;
   line-height: 1.5;
@@ -29,6 +31,36 @@ body {
   box-sizing: border-box;
 }
 
+/* Fonts import */
+
+@theme {
+  --font-display: "MontserratAlternates", "sans-serif";
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("./assets/fonts/MontserratAlternates-ExtraLight.ttf")
+    format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("./assets/fonts/MontserratAlternates-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("./assets/fonts/MontserratAlternates-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Text styles */
+
 @layer base {
   :focus-visible {
     @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-PBlack;
@@ -53,6 +85,9 @@ body {
     @apply text-base lg:text-xl;
   }
 }
+
+/* 3D Cube styles for Home page */
+
 .scene {
   perspective: 800px;
   width: 100px;
@@ -94,36 +129,7 @@ body {
   transform: rotateX(-90deg) translateZ(50px);
 }
 
-.custom-svg {
-  --color1: #f0f0f0; /* Set background to a light grey */
-  --color2: #ff5733; /* Set black color to a red color */
-  --color3: #00bcd4; /* Set grey to a turquoise color */
-}
-@theme {
-  --font-display: "MontserratAlternates", "sans-serif";
-}
-
-@font-face {
-  font-family: "Montserrat Alternates";
-  src: url("./assets/fonts/MontserratAlternates-ExtraLight.ttf")
-    format("truetype");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat Alternates";
-  src: url("./assets/fonts/MontserratAlternates-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat Alternates";
-  src: url("./assets/fonts/MontserratAlternates-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
+/* Skip to main button styling */
 
 a[href="#main-content"] {
   position: absolute;
@@ -141,6 +147,8 @@ a[href="#main-content"]:focus {
   transform: translateY(0);
   outline: none;
 }
+
+/* Hamburger menu to cross button styles start ------------*/
 
 * {
   margin: 0;
@@ -407,16 +415,7 @@ a[href="#main-content"]:focus {
   left: 8px;
 }
 
-.dark {
-  --primary: 40 40 40; /* Dark mode colors */
-  --primaryDark: 130 130 130;
-  --primaryLight: 90 90 90;
-  --secondary: 150 150 150;
-}
-
-html {
-  color: rgb(var(--primary)); /* Apply the primary color to all text */
-}
+/* Size change for screens less than lg */
 
 @media (max-width: 1024px) {
   #nav-icon1,
@@ -447,4 +446,15 @@ html {
     width: 0%;
     left: 50%;
   }
+}
+
+/* Hamburger End -------------*/
+
+/* Dark mode colors change */
+
+.dark {
+  --primary: 40 40 40; /* Dark mode colors */
+  --primaryDark: 130 130 130;
+  --primaryLight: 90 90 90;
+  --secondary: 150 150 150;
 }

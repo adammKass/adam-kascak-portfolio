@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { useState, useEffect } from "react";
 import {
   Route,
@@ -7,20 +6,20 @@ import {
   useLocation,
 } from "react-router-dom";
 
-import {
-  NotFound,
-  Contact,
-  About,
-  Home,
-  DGraphics,
-  GraphicDesign,
-  Illustrations,
-  IllustrationsDetails,
-  DesignDetails,
-} from "./components";
+import { PageWrapper } from "./components";
 import { sign } from "./assets";
 import { AnimatePresence } from "framer-motion";
-import PageWrapper from "./components/PageWrapper";
+import {
+  About,
+  Contact,
+  DesignDetails,
+  DGraphics,
+  GraphicDesign,
+  Home,
+  Illustrations,
+  IllustrationsDetails,
+  NotFound,
+} from "./subpages";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Loading state
