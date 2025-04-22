@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Adam Kascak - Freelance Artist",
+    "title": "Adam Kascak - Artist/Designer",
     "3dGraphics": "3D Graphics",
     "graphicDesign": "Graphic Design",
     "illustrations": "Illustrations",
@@ -17,7 +17,7 @@
     "SD": {
       "title": "Substance Designer Practice",
       "alt": "Render of rock material created using Substance Designer",
-      "text": "Here are some of the materials I created using Substance Designer. The aim of this practice was to improve my skills in Substance Designer. I wanted to achieve a more stylized look. Textures were created in Substance Designer, and the final render was done using Substance Stager."
+      "text": "Here are some of the materials I created using Substance Designer. The aim of this practice was to improve my skills in Substance Designer."
     },
     "FBU": {
       "title": "Forgotten but Unbroken",

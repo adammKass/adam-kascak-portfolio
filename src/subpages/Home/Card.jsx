@@ -77,9 +77,9 @@ const Card = () => {
                     </div>
                   </div>
                 </div>
-                <h5 className="mb-4 text-center text-PBlack">
+                <h2 className="mb-4 text-center text-PBlack text-base">
                   {t(`home.3dGraphics`)}
-                </h5>
+                </h2>
               </>
             );
           }}
@@ -142,9 +142,9 @@ const Card = () => {
                     }`}
                   />
                 </div>
-                <h5 className="mb-4 text-center text-PBlack">
+                <h2 className="mb-4 text-center text-PBlack text-base">
                   {t(`home.graphicDesign`)}
-                </h5>
+                </h2>
               </>
             );
           }}
@@ -207,9 +207,9 @@ const Card = () => {
                     }`}
                   />
                 </div>
-                <h5 className="mb-4 text-center text-PBlack">
+                <h2 className="mb-4 text-center text-PBlack text-base">
                   {t(`home.illustrations`)}
-                </h5>
+                </h2>
               </>
             );
           }}
@@ -272,9 +272,9 @@ const Card = () => {
                     }`}
                   />
                 </div>
-                <h5 className="mb-4 text-center text-PBlack">
+                <h2 className="mb-4 text-center text-PBlack text-base">
                   {t(`home.aboutMe`)}
-                </h5>
+                </h2>
               </>
             );
           }}

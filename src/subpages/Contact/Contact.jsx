@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import { artstation, linkedin } from "../../assets";
 import styles from "../../style";
+import { t } from "i18next";
 const Contact = () => {
   return (
     <div
@@ -12,6 +13,7 @@ const Contact = () => {
         id="main-content"
         className={`flex flex-col justify-center gap-2 h-full ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-52 mt-10 lg:mt-48 border-b lg:border-y border-PBlack text-PBlack`}
       >
+        <h1 className="sr-only">{t(`navbar.contact`)}</h1>
         <a
           href="mailto:adam.kascak@protonmail.com"
           className={`text-center mb-2 mt-4 hover:opacity-80 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}

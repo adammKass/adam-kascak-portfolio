@@ -16,6 +16,7 @@ const About = () => {
         id="main-content"
         className={`flex flex-col md:flex-row gap-2 md:gap-10 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-44 mt-10 lg:mt-32 justify-center items-center md:justify-start md:items-start`}
       >
+        <h1 className="sr-only">{t(`navbar.aboutMe`)}</h1>
         <div className="w-96 h-w-96 px-4 lg:px-0 shrink-0 rounded-lg ">
           <img
             src={profile}

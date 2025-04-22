@@ -99,11 +99,10 @@ const IllustrationsDetails = () => {
               loading="lazy"
             />
           </picture>
-          <figcaption
-            className={`mt-4 text-sm text-PBlack ${styles.cursorText}`}
-          >
+
+          <h1 className={`mt-4 text-sm text-PBlack ${styles.cursorText}`}>
             {t(`illustrationLinks.${ilu.id}.title`)}
-          </figcaption>
+          </h1>
         </figure>
 
         {/* Next Button */}

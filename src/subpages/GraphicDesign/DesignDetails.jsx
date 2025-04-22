@@ -22,22 +22,28 @@ const DesignDetails = () => {
         className={`flex flex-col gap-8 md:gap-16 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32 text-PBlack`}
       >
         {/* Responsive Title */}
-        <h3 className={`mb-6 ${styles.cursorText}`}>
+        <h1 className={`mb-6 ${styles.cursorText} text-5xl lg:text-6xl`}>
           {t(`designLinks.${link.id}.title`)}
-        </h3>
+        </h1>
 
         {/* Responsive Details Section */}
         <section className={`flex flex-col gap-5 ${styles.cursorText} `}>
           <div className="border-b border-PBlack pb-4">
-            <h4 className="mb-2">{t(`designLinks.type`)}</h4>
+            <h2 className="mb-2 text-2xl lg:text-4xl">
+              {t(`designLinks.type`)}
+            </h2>
             <p>{t(`designLinks.${link.id}.type`)}</p>
           </div>
           <div className="border-b border-PBlack pb-4">
-            <h4 className="mb-2">{t(`designLinks.tools`)}</h4>
+            <h2 className="mb-2 text-2xl lg:text-4xl">
+              {t(`designLinks.tools`)}
+            </h2>
             <p>{t(`designLinks.${link.id}.tools`)}</p>
           </div>
           <div className="border-b border-PBlack pb-4">
-            <h4 className="mb-2">{t(`designLinks.year`)}</h4>
+            <h2 className="mb-2 text-2xl lg:text-4xl">
+              {t(`designLinks.year`)}
+            </h2>
             <p>{t(`designLinks.${link.id}.year`)}</p>
           </div>
         </section>
@@ -49,7 +55,7 @@ const DesignDetails = () => {
 
         {/* Responsive Images Section */}
         {link.images.map((ilu, index) => (
-          <section
+          <figure
             key={index}
             className="w-full mb-10 rounded-sm flex flex-col items-center "
           >
@@ -59,12 +65,12 @@ const DesignDetails = () => {
               className="max-w-[50vw] rounded-lg border-4 shadow-2xl border-PBlack"
               loading="lazy"
             />
-            <span
+            <figcaption
               className={`text-sm lg:text-lg py-3 text-center ${styles.cursorText}`}
             >
               {t(`designLinks.${link.id}.images.${index}.title`)}
-            </span>
-          </section>
+            </figcaption>
+          </figure>
         ))}
         <button
           className="flex flex-col cursor-pointer self-center transition-all duration-300 ease-in-out hover:opacity-50 hover:-translate-y-3"

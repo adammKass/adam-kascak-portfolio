@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
 import styles from "../../style";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
+import { t } from "i18next";
 
 const Illustrations = () => {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ const Illustrations = () => {
       className={`absolute top-0 left-0 w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
     >
       <Navbar />
+      <h1 className="sr-only">{t(`navbar.illustrations`)}</h1>
 
       <TabGroup
         as="main"
