@@ -107,6 +107,61 @@
         }
       ]
     },
+    "Cats": {
+      "title": "Ilustrácie Mačiek",
+      "alt": "Ukážka vektorovej ilustrácie veľkej mačky",
+      "textShort": "Osobný projekt. Chcel som vytvoriť niečo zábavné na zlepšenie zručností v Adobe Illustrator.",
+      "type": "Vektorová ilustrácia",
+      "tools": "Adobe Illustrator, Figma",
+      "year": "2025",
+      "text": "Osobný projekt. Chcel som vytvoriť niečo zábavné na zlepšenie zručností v Adobe Illustrator. Rozhodol som sa vytvoriť niekoľko vektorových ilustrácií mačiek. Chcel som ukázať rôzne tvary, tváre a vzory srsti mačiek. Ilustrácie mali byť od začiatku veľmi jednoduché. Rád používam veľa ostrých hrán a rovnakú šírku čiar vo svojich ilustráciách. Pre jednoduchosť som chcel použiť iba 3 farby, ale pridal som ešte jednu pre farbu očí. Aby všetky ilustrácie spolu ladili, použil som rovnaké farby pre všetky mačky.\nPoužil som Adobe Illustrator na vektorové ilustrácie a Figma na zostavenie finálneho obrázka a experimentovanie s farbami. Nakoniec som vytvoril dve farebné palety - jednu svetlú a jednu tmavú.",
+      "images": [
+        {
+          "title": "Svetlé Mačky",
+          "alt": "Ukážka 9 vektorových ilustrácií mačiek vo svetlej farebnej variácii."
+        },
+        {
+          "title": "Tmavé Mačky",
+          "alt": "Ukážka 9 vektorových ilustrácií mačiek v tmavej farebnej variácii."
+        },
+        {
+          "title": "Mačka 1",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Mačka 2",
+          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+        },
+        {
+          "title": "Mačka 3",
+          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+        },
+        {
+          "title": "Mačka 4",
+          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+        },
+        {
+          "title": "Mačka 5",
+          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+        },
+        {
+          "title": "Mačka 6",
+          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+        },
+        {
+          "title": "Mačka 7",
+          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+        },
+        {
+          "title": "Mačka 8",
+          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+        },
+        {
+          "title": "Mačka 9",
+          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+        }
+      ]
+    },
     "type": "Typ Projektu",
     "tools": "Nástroje",
     "year": "Rok",

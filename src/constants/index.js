@@ -44,6 +44,18 @@ import {
   UnderwaterUserPage,
   UnderwaterEditUserPage,
   UnderwaterThumb,
+  CatsThumb,
+  CatsLight,
+  CatsDark,
+  Cat2,
+  Cat3,
+  Cat4,
+  Cat5,
+  Cat6,
+  Cat7,
+  Cat8,
+  Cat9,
+  Cat1,
 } from "../assets";
 
 export const navLinks = [
@@ -138,6 +150,45 @@ export const DesignLinks = [
       },
       {
         image: UnderwaterEditUserPage,
+      },
+    ],
+  },
+  {
+    id: "Cats",
+    thumb: CatsThumb,
+    images: [
+      {
+        image: CatsLight,
+      },
+      {
+        image: CatsDark,
+      },
+      {
+        image: Cat1,
+      },
+      {
+        image: Cat2,
+      },
+      {
+        image: Cat3,
+      },
+      {
+        image: Cat4,
+      },
+      {
+        image: Cat5,
+      },
+      {
+        image: Cat6,
+      },
+      {
+        image: Cat7,
+      },
+      {
+        image: Cat8,
+      },
+      {
+        image: Cat9,
       },
     ],
   },

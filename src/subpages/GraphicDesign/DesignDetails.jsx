@@ -62,7 +62,7 @@ const DesignDetails = () => {
             <img
               src={ilu.image}
               alt={t(`designLinks.${link.id}.images.${index}.alt`)}
-              className="max-w-[50vw] rounded-lg border-4 shadow-2xl border-PBlack"
+              className="rounded-lg border-4 shadow-2xl border-PBlack"
               loading="lazy"
             />
             <figcaption

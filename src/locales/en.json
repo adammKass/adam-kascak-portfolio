@@ -107,6 +107,61 @@
         }
       ]
     },
+    "Cats": {
+      "title": "Cats Illustrations",
+      "alt": "Sample vector illustration of a big cat",
+      "textShort": "Personal project. I wanted to make something fun to improve skills in Adobe Illustrator.",
+      "type": "Vector Illustration",
+      "tools": "Adobe Illustrator, Figma",
+      "year": "2025",
+      "text": "Personal project. I wanted to make something fun to improve skills in Adobe Illustrator. I decided on creating several vector illustrations of cats. I wanted to showcase different shapes, faces, and fur patterns of cats. The illustrations were meant to be very simple from the start. I like to use a lot of sharp edges and same line width in my illustrations. For simplicity I wanted to have only 3 colors, but I sneaked in one more for color of eyes. To tie all illustrations together I used same colors across all the cats.\nI used Adobe Illustrator for vector illustrations and Figma for composing final image and experimenting with colors. In the end I made two palettes - one light and one dark.",
+      "images": [
+        {
+          "title": "Cats Light",
+          "alt": "Showcase of 9 vector illustrations of cats in light color variation."
+        },
+        {
+          "title": "Cats Dark",
+          "alt": "Showcase of 9 vector illustrations of cats in dark color variation."
+        },
+        {
+          "title": "Cat 1",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Cat 2",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Cat 3",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Cat 4",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Cat 5",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Cat 6",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Cat 7",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Cat 8",
+          "alt": "Simple vector illustration of a medium sized cat."
+        },
+        {
+          "title": "Cat 9",
+          "alt": "Simple vector illustration of a medium sized cat."
+        }
+      ]
+    },
     "type": "Project Type",
     "tools": "Tools",
     "year": "Year",

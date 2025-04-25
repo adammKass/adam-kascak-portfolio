@@ -16,12 +16,26 @@ import TombThumb from "./GraphicsThumbnails/TombThumb.jpg";
 // Design Thumbnails
 import PortfolioThumb from "./GraphicDesign/Portfolio/PortfolioThumb.svg";
 import UnderwaterThumb from "./GraphicDesign/Underwater/UnderwaterThumb.svg";
+import CatsThumb from "./GraphicDesign/Cats/CatsThumb.svg";
 
 //Graphic Design
 //Portfolio
 import PortfolioIllustrationsShowcase from "./GraphicDesign/Portfolio/IllustrationsShowcase.svg";
 import PortfolioFontShowcase from "./GraphicDesign/Portfolio/FontShowcase.svg";
 import PortfolioColorPalette from "./GraphicDesign/Portfolio/ColorPalette.svg";
+
+//Cats
+import CatsLight from "./GraphicDesign/Cats/CatsLight.svg";
+import CatsDark from "./GraphicDesign/Cats/CatsDark.svg";
+import Cat1 from "./GraphicDesign/Cats/cat1.svg";
+import Cat2 from "./GraphicDesign/Cats/cat2.svg";
+import Cat3 from "./GraphicDesign/Cats/cat3.svg";
+import Cat4 from "./GraphicDesign/Cats/cat4.svg";
+import Cat5 from "./GraphicDesign/Cats/cat5.svg";
+import Cat6 from "./GraphicDesign/Cats/cat6.svg";
+import Cat7 from "./GraphicDesign/Cats/cat7.svg";
+import Cat8 from "./GraphicDesign/Cats/cat8.svg";
+import Cat9 from "./GraphicDesign/Cats/cat9.svg";
 
 //Underwater
 import UnderwaterDesignStyles from "./GraphicDesign/Underwater/Design Styles.svg";
@@ -137,9 +151,21 @@ export {
   stillLife4_avif,
   PortfolioThumb,
   UnderwaterThumb,
+  CatsThumb,
   PortfolioIllustrationsShowcase,
   PortfolioFontShowcase,
   PortfolioColorPalette,
+  CatsLight,
+  CatsDark,
+  Cat1,
+  Cat2,
+  Cat3,
+  Cat4,
+  Cat5,
+  Cat6,
+  Cat7,
+  Cat8,
+  Cat9,
   UnderwaterBlogPage,
   UnderwaterBlogPost,
   UnderwaterEditUserPage,
