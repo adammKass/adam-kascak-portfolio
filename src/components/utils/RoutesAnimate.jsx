@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Home from "../subpages/Home/Home";
@@ -95,4 +95,4 @@ const RoutesWithAnimation = () => {
   );
 };
 
-export default RoutesWithAnimation;*/
+export default RoutesWithAnimation;

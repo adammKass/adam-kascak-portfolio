@@ -6,7 +6,7 @@ import Card from "./Card";
 const Home = () => {
   return (
     <div
-      className={`absolute top-0 left-0 w-full min-h-screen overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+      className={`absolute top-0 left-0 flex flex-col w-full min-h-screen bg-PWhite ${styles.cursorAuto}`}
     >
       <Navbar />
       <Card />

@@ -14,7 +14,7 @@ const DGraphics = () => {
 
   return (
     <div
-      className={`absolute top-0 left-0 w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+      className={`absolute top-0 left-0 w-full bg-PWhite ${styles.cursorAuto}`}
     >
       {/* Navbar */}
       <Navbar />

@@ -19,6 +19,7 @@
 }
 
 html {
+  scrollbar-gutter: stable;
   color: rgb(var(--primary)); /* Apply the primary color to all text */
 }
 
@@ -457,4 +458,18 @@ a[href="#main-content"]:focus {
   --primaryDark: 130 130 130;
   --primaryLight: 90 90 90;
   --secondary: 150 150 150;
+}
+
+@keyframes bop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bop {
+  animation: bop 1s infinite ease-in-out;
 }

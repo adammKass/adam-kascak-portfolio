@@ -1,9 +1,12 @@
 // Main page
 import sign from "./icons/Sign.svg";
 import GraphicDesignOn from "./Home/GraphicDesignOn.svg";
+import GraphicDesignOn1 from "./Home/GraphicDesignOn1.svg";
+import GraphicDesignOn2 from "./Home/GraphicDesignOn2.svg";
 import GraphicDesignOff from "./Home/GraphicDesignOff.svg";
 import IllustrationsOn from "./Home/IllustrationsOn.svg";
 import IllustrationsOff from "./Home/IllustrationsOff.svg";
+import IllustrationsAnim from "./Home/IllustrationsAnim.json";
 import AboutMeOn from "./Home/AboutMeOn.svg";
 import AboutMeOff from "./Home/AboutMeOff.svg";
 
@@ -108,10 +111,13 @@ export {
   arrowLeft,
   arrowRight,
   GraphicDesignOn,
+  GraphicDesignOn1,
+  GraphicDesignOn2,
   GraphicDesignOff,
   AboutMeOff,
   IllustrationsOn,
   IllustrationsOff,
+  IllustrationsAnim,
   AboutMeOn,
   FBUThumb,
   OasisThumb,

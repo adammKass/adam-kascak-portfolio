@@ -39,7 +39,7 @@ function App() {
       <div className="absolute top-0 left-0 w-full h-screen flex justify-center items-center bg-PWhite z-10">
         <div className="flex flex-col items-center">
           <img src={sign} alt="loading" className="w-[58px] h-[58px] mb-4" />
-          <div className="w-24 h-1 bg-PGrey overflow-hidden">
+          <div className="w-24 h-1 bg-PGrey">
             <div className="h-full bg-PBlack animate-pulse"></div>
           </div>
         </div>

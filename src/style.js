@@ -32,7 +32,7 @@ const styles = {
   // Transitions
   transitionOpacity: "transition duration-300 ease-in-out",
   transitionTransform:
-    "data-[hover]:-translate-y-4 transition-transform duration-300 ease-in-out",
+    "data-[hover]:-translate-y-4 transition-transform duration-300 ease-in-out ",
 };
 
 export default styles;

@@ -1,17 +1,18 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { artstation, linkedin } from "../../assets";
 import styles from "../../style";
 import { t } from "i18next";
 const Contact = () => {
   return (
     <div
-      className={`absolute top-0 left-0 w-full min-h-screen overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+      className={`absolute top-0 left-0 flex flex-col w-full min-h-screen overflow-hidden bg-PWhite ${styles.cursorAuto}`}
     >
       <Navbar />
       <main
         id="main-content"
-        className={`flex flex-col justify-center gap-2 h-full ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-52 mt-10 lg:mt-48 border-b lg:border-y border-PBlack text-PBlack`}
+        className={`flex-grow flex flex-col justify-center gap-2 h-full ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-52 mt-10 lg:mt-48 text-PBlack`}
       >
         <h1 className="sr-only">{t(`navbar.contact`)}</h1>
         <a
@@ -42,6 +43,7 @@ const Contact = () => {
           </a>
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 };

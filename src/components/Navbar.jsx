@@ -41,7 +41,7 @@ const Navbar = () => {
         Skip to Main Content
       </a>
       <header
-        className={`w-full flex flex-row justify-between items-center bg-PWhite z-10 ${styles.boxWidth} ${styles.paddingXA} mx-auto py-3 overflow-hidden`}
+        className={`w-full flex flex-row justify-between mx-auto items-center bg-PWhite z-10 ${styles.boxWidth} ${styles.paddingXA} py-3 overflow-hidden`}
       >
         {/* Wrap logo and text in a flex container */}
         <div className="flex flex-row items-center gap-12">
@@ -52,6 +52,8 @@ const Navbar = () => {
               className={`${styles.iconSize} ${styles.iconHover}`}
             />
           </Link>
+
+          {/* Center the text */}
 
           {isHomepage && (
             <h1 className={`${styles.cursorText}`}>{t(`home.title`)}</h1>

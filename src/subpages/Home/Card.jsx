@@ -4,12 +4,15 @@ import {
   AboutMeOn,
   GraphicDesignOff,
   GraphicDesignOn,
+  GraphicDesignOn1,
+  GraphicDesignOn2,
   IllustrationsOff,
   IllustrationsOn,
 } from "../../assets";
 import { useNavigate } from "react-router-dom";
+import lottie from "lottie-web";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useIsVisible } from "../../components";
 import styles from "../../style";
@@ -19,12 +22,12 @@ const Card = () => {
   const { t } = useTranslation();
 
   return (
-    <TabGroup>
+    <TabGroup className={`flex flex-col flex-grow`}>
       {/* Main Content - Tabs seperate for illustration handling*/}
       <TabList
         as="main"
         id="main-content"
-        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 h-full mb-10 lg:mb-[20vh] ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 lg:mt-[20vh]`}
+        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 h-full mb-10 lg:mb-0 ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 pb-10 lg:pb-[20vh] lg:mt-[20vh]`}
       >
         {/* 3D Graphics Tab */}
         <Tab
@@ -121,7 +124,6 @@ const Card = () => {
                       isVisible ? "opacity-0" : "opacity-100"
                     }`}
                   />
-
                   {/* For larger screens, change image based on hover */}
                   <img
                     src={GraphicDesignOff}
@@ -132,6 +134,25 @@ const Card = () => {
                       styles.transitionOpacity
                     }`}
                   />
+                  {/*}              <img
+                    src={GraphicDesignOn1}
+                    alt="Graphic Design - Highlighted state"
+                    className={`hidden lg:block ${
+                      hover ? "opacity-100" : "opacity-0"
+                    } absolute top-2/3 right-[10%] transform -translate-x-1/4 -translate-y-1/2 h-52 w-40 -rotate-[0.5rad] ${
+                      styles.transitionOpacity
+                    }`}
+                  />
+                  <img
+                    src={GraphicDesignOn2}
+                    alt="Graphic Design - Highlighted state"
+                    className={`hidden lg:block ${
+                      hover ? "opacity-100" : "opacity-0"
+                    } absolute top-1/4 left-[90%] transform -translate-x-1/2 -translate-y-1/2 h-60 w-44 rotate-[3.4rad] ${
+                      styles.transitionOpacity
+                    }`}
+             />
+           {*/}{" "}
                   <img
                     src={GraphicDesignOn}
                     alt="Graphic Design - Highlighted state"
@@ -164,6 +185,22 @@ const Card = () => {
           {({ hover }) => {
             const ref = useRef(null);
             const isVisible = useIsVisible(ref);
+            const animationContainer = useRef(null);
+            useEffect(() => {
+              // Initialize the Lottie animation
+              const animation = lottie.loadAnimation({
+                container: animationContainer.current, // Reference to the container
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                path: "adam-kascak-portfolio/animations/IllustrationsAnim.json", // Replace with the correct path to your animation JSON file
+              });
+
+              return () => {
+                // Cleanup the animation on component unmount
+                animation.destroy();
+              };
+            }, []);
 
             return (
               <>
@@ -186,7 +223,6 @@ const Card = () => {
                       isVisible ? "opacity-0" : "opacity-100"
                     }`}
                   />
-
                   {/* For larger screens, change image based on hover */}
                   <img
                     src={IllustrationsOff}
@@ -199,13 +235,20 @@ const Card = () => {
                   />
                   <img
                     src={IllustrationsOn}
-                    alt="Illustrations - Highlighted state"
+                    alt="Illustrations - Default state"
                     className={`hidden lg:block ${
                       hover ? "opacity-100" : "opacity-0"
                     } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
                       styles.transitionOpacity
                     }`}
                   />
+                  {/*}              <div
+                    ref={animationContainer}
+                    className={`hidden lg:block ${
+                      hover ? "opacity-100" : "opacity-0"
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44`}
+                  ></div>
+     {*/}{" "}
                 </div>
                 <h2 className="mb-4 text-center text-PBlack text-base">
                   {t(`home.illustrations`)}
