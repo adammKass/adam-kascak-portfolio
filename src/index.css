@@ -20,7 +20,10 @@
 
 html {
   scrollbar-gutter: stable;
-  color: rgb(var(--primary)); /* Apply the primary color to all text */
+  color: rgb(var(--primary));
+  background-color: rgb(
+    var(--primary)
+  ); /* Apply the primary color to all text */
 }
 
 body {

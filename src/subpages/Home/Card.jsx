@@ -22,12 +22,12 @@ const Card = () => {
   const { t } = useTranslation();
 
   return (
-    <TabGroup className={`flex flex-col flex-grow`}>
+    <TabGroup className={`flex flex-col flex-grow items-center justify-center`}>
       {/* Main Content - Tabs seperate for illustration handling*/}
       <TabList
         as="main"
         id="main-content"
-        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 h-full mb-10 lg:mb-0 ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 pb-10 lg:pb-[20vh] lg:mt-[20vh]`}
+        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 h-full mb-10 lg:mb-0 ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 mb-10 lg:mb-0 lg:mt-0`}
       >
         {/* 3D Graphics Tab */}
         <Tab
@@ -45,7 +45,7 @@ const Card = () => {
             const isVisible = useIsVisible(ref);
             return (
               <>
-                <div className="relative mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out">
+                <div className="relative min-w-[80%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out">
                   <div className="scene">
                     <div
                       className={`cube transition-transform duration-500 ease-in-out`}
@@ -107,7 +107,7 @@ const Card = () => {
               <>
                 <div
                   ref={ref}
-                  className="relative mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
+                  className="relative min-w-[80%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
                 >
                   {/* For smaller screens, change image based on visibility */}
                   <img
@@ -206,7 +206,7 @@ const Card = () => {
               <>
                 <div
                   ref={ref}
-                  className="relative mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
+                  className="relative min-w-[80%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
                 >
                   {/* For smaller screens, change image based on visibility */}
                   <img
@@ -277,7 +277,7 @@ const Card = () => {
               <>
                 <div
                   ref={ref}
-                  className="relative mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
+                  className="relative min-w-[80%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
                 >
                   {/* For smaller screens, change image based on visibility */}
                   <img

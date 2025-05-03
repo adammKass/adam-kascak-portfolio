@@ -12,7 +12,7 @@ const Contact = () => {
       <Navbar />
       <main
         id="main-content"
-        className={`flex-grow flex flex-col justify-center gap-2 h-full ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-52 mt-10 lg:mt-48 text-PBlack`}
+        className={`flex-grow flex flex-col justify-center items-center gap-2 h-full ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 mb-10 lg:mb-0 lg:mt-0 text-PBlack`}
       >
         <h1 className="sr-only">{t(`navbar.contact`)}</h1>
         <a

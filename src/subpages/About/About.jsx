@@ -9,12 +9,12 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <div
-      className={`absolute top-0 left-0 flex flex-col w-full min-h-screen overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+      className={`absolute top-0 left-0 flex flex-col w-full justify-center items-center min-h-screen overflow-hidden bg-PWhite ${styles.cursorAuto}`}
     >
       <Navbar />
       <main
         id="main-content"
-        className={`flex flex-col flex-grow md:flex-row gap-2 md:gap-10 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-0 mt-10 lg:mt-32 justify-center items-center md:justify-start md:items-start`}
+        className={`flex flex-col flex-grow md:flex-row gap-2 md:gap-10 ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 mb-10 lg:mb-0 lg:mt-0 items-center md:justify-center md:items-center`}
       >
         <h1 className="sr-only">{t(`navbar.aboutMe`)}</h1>
         <div className="w-96 h-w-96 px-4 lg:px-0 shrink-0 rounded-lg ">
@@ -25,7 +25,7 @@ const About = () => {
             loading="lazy"
           />
         </div>
-        <section className="flex flex-col justify-between py-4 md:py-16 text-PBlack">
+        <section className="flex flex-col justify-between py-4 md:py-0 text-PBlack">
           <p className={` font-bold ${styles.cursorText} `}>
             {t(`about.intro`)}
             <br />
