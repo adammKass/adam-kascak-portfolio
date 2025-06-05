@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Footer, Navbar } from "../../components";
 import styles from "../../style";
-import { artstation, linkedin, profile } from "../../assets";
+import { artstation, behance, linkedin, profile } from "../../assets";
 
 const About = () => {
   const { t } = useTranslation();
@@ -41,7 +41,12 @@ const About = () => {
             </a>
 
             <div className="flex flex-row justify-center gap-12">
-              <a href="https://www.artstation.com/adamkascak1">
+              <a
+                href="https://www.artstation.com/adamkascak1"
+                className="flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={artstation}
                   alt="Artstation profile"
@@ -50,12 +55,26 @@ const About = () => {
               </a>
 
               <a
-                href="https://www.artstation.com/adamkascak1"
+                href="www.linkedin.com/in/adam-kascak-2006b3350"
                 className="flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src={linkedin}
                   alt="LinkedIn profile"
+                  className={`w-7 h-6 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
+                />
+              </a>
+              <a
+                href="https://www.behance.net/adamkascak#"
+                className="flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={behance}
+                  alt="behance"
                   className={`w-7 h-6 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
                 />
               </a>

@@ -55,6 +55,7 @@ import UnderwaterLandingPageMobile from "./GraphicDesign/Underwater/Mobile - Lan
 // Contact
 import linkedin from "./logos/linkedin.png";
 import artstation from "./logos/artstation.svg";
+import behance from "./logos/behance.svg";
 import profile from "./profile.jpg";
 
 // Illustrations
@@ -125,6 +126,7 @@ export {
   TombThumb,
   linkedin,
   artstation,
+  behance,
   sk,
   uk,
   profile,
