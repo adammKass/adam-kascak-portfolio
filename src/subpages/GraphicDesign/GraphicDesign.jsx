@@ -7,6 +7,8 @@ import styles from "../../style";
 import { useTranslation } from "react-i18next";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
 
+// Graphic Design Subpage Component
+
 const GraphicDesign = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();

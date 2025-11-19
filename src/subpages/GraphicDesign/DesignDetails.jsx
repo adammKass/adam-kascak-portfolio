@@ -7,6 +7,8 @@ import { DesignLinks } from "../../constants";
 import styles from "../../style";
 import { arrowLeft } from "../../assets";
 
+// Graphic Design Details Subpage Component
+
 const DesignDetails = () => {
   const { id } = useParams();
   const { t } = useTranslation();

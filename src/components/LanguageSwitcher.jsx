@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { uk, sk } from "../assets"; // Import flag assets
+import { uk, sk } from "../assets";
 import styles from "../style";
 
-const LanguageSwitcher = () => {
-  const { i18n } = useTranslation(); // Access i18n instance
-  const [language, setLanguage] = useState(i18n.language); // Track current language
+// Button component for switching languages
 
-  // Function to toggle language
+const LanguageSwitcher = () => {
+  const { i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+
   const toggleLanguage = () => {
     const newLanguage = language === "en" ? "sk" : "en";
-    i18n.changeLanguage(newLanguage); // Change language in i18n
-    setLanguage(newLanguage); // Update state
+    i18n.changeLanguage(newLanguage);
+    setLanguage(newLanguage);
   };
 
   return (

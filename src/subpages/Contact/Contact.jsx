@@ -4,6 +4,9 @@ import Footer from "../../components/Footer";
 import { artstation, behance, linkedin } from "../../assets";
 import styles from "../../style";
 import { t } from "i18next";
+
+// Contact Subpage Component
+
 const Contact = () => {
   return (
     <div

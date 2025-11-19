@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+// Utility hook to manage dark mode state
+
 export default function useDarkMode() {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== "undefined") {

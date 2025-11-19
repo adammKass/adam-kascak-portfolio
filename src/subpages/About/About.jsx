@@ -1,9 +1,9 @@
-import React from "react";
-
 import { useTranslation } from "react-i18next";
 import { Footer, Navbar } from "../../components";
 import styles from "../../style";
 import { artstation, behance, linkedin, profile } from "../../assets";
+
+// About Me Subpage Component
 
 const About = () => {
   const { t } = useTranslation();
@@ -39,6 +39,8 @@ const About = () => {
             >
               adam.kascak@protonmail.com
             </a>
+
+            {/* Socials */}
 
             <div className="flex flex-row justify-center gap-12">
               <a

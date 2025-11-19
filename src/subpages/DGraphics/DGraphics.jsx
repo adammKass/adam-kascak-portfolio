@@ -8,6 +8,8 @@ import { useTranslation } from "react-i18next";
 import { useIsVisible } from "../../components";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
 
+// 3D Graphics Subpage Component
+
 const DGraphics = () => {
   const navigate = useNavigate(); // Navigation handler
   const { t } = useTranslation(); // Translation hook
@@ -30,18 +32,18 @@ const DGraphics = () => {
           {/* Render Graphics Links */}
           {GraphicsLinks.map((link, index) => {
             const ref = useRef(null); // Create a ref for each container
-            const isVisible = useIsVisible(ref); // Check visibility using the custom hook
+            const isVisible = useIsVisible(ref);
 
             return (
               <Tab
-                ref={ref} // Attach the ref to the container
+                ref={ref}
                 key={index}
                 className={`flex flex-col md:flex-row justify-center items-center md:justify-start md:items-center gap-2 md:gap-11 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-10"
                 } ${styles.tabHover} ${styles.cursorPointer}`}
-                onClick={() => window.open(link.href, "_blank")} // Open link in a new tab
+                onClick={() => window.open(link.href, "_blank")}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
                     window.open(link.href, "_blank");

@@ -3,6 +3,8 @@ import styles from "../../style";
 import { Footer, Navbar } from "../../components";
 import Card from "./Card";
 
+// Home Subpage Component
+
 const Home = () => {
   return (
     <div

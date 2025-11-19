@@ -17,6 +17,8 @@ import { useTranslation } from "react-i18next";
 import { useIsVisible } from "../../components";
 import styles from "../../style";
 
+// Home Cards Container Component
+
 const Card = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -134,25 +136,6 @@ const Card = () => {
                       styles.transitionOpacity
                     }`}
                   />
-                  {/*}              <img
-                    src={GraphicDesignOn1}
-                    alt="Graphic Design - Highlighted state"
-                    className={`hidden lg:block ${
-                      hover ? "opacity-100" : "opacity-0"
-                    } absolute top-2/3 right-[10%] transform -translate-x-1/4 -translate-y-1/2 h-52 w-40 -rotate-[0.5rad] ${
-                      styles.transitionOpacity
-                    }`}
-                  />
-                  <img
-                    src={GraphicDesignOn2}
-                    alt="Graphic Design - Highlighted state"
-                    className={`hidden lg:block ${
-                      hover ? "opacity-100" : "opacity-0"
-                    } absolute top-1/4 left-[90%] transform -translate-x-1/2 -translate-y-1/2 h-60 w-44 rotate-[3.4rad] ${
-                      styles.transitionOpacity
-                    }`}
-             />
-           {*/}{" "}
                   <img
                     src={GraphicDesignOn}
                     alt="Graphic Design - Highlighted state"
@@ -242,13 +225,6 @@ const Card = () => {
                       styles.transitionOpacity
                     }`}
                   />
-                  {/*}              <div
-                    ref={animationContainer}
-                    className={`hidden lg:block ${
-                      hover ? "opacity-100" : "opacity-0"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44`}
-                  ></div>
-     {*/}{" "}
                 </div>
                 <h2 className="mb-4 text-center text-PBlack text-base">
                   {t(`home.illustrations`)}

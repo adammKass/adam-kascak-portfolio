@@ -5,6 +5,8 @@ import { arrowLeft, arrowRight, cross } from "../../assets";
 import { IllustrationLinks } from "../../constants";
 import styles from "../../style";
 
+// Illustration Details Subpage Component
+
 const IllustrationsDetails = () => {
   const { id } = useParams(); // Get the current illustration ID from the URL
   const navigate = useNavigate(); // Navigation handler
@@ -19,7 +21,7 @@ const IllustrationsDetails = () => {
     (currentIndex - 1 + IllustrationLinks.length) % IllustrationLinks.length;
   const nextIndex = (currentIndex + 1) % IllustrationLinks.length;
 
-  // Handle keyboard navigation (ArrowLeft, ArrowRight, Escape)
+  // Handle keyboard navigation (ArrowLeft, ArrowRight, Escape) for better UX
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "ArrowLeft") {
@@ -31,7 +33,7 @@ const IllustrationsDetails = () => {
           `/adam-kascak-portfolio/illustrations/${IllustrationLinks[nextIndex].id}`
         );
       } else if (e.key === "Escape") {
-        navigate(`/adam-kascak-portfolio/illustrations/`); // Go back to the illustrations list
+        navigate(`/adam-kascak-portfolio/illustrations/`);
       }
     };
 
@@ -65,7 +67,6 @@ const IllustrationsDetails = () => {
         />
       </button>
 
-      {/* Illustration Viewer */}
       <section
         className={`flex flex-row w-full justify-between items-center gap-4 lg:gap-16 px-4 lg:px-20`}
       >

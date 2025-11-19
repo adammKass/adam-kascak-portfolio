@@ -1,21 +1,16 @@
 import {
-  Button,
   Menu,
   MenuButton,
   MenuItem,
   MenuItems,
-  Switch,
   Tab,
   TabGroup,
   TabList,
-  TabPanel,
-  TabPanels,
   Transition,
 } from "@headlessui/react";
-import { sign, sun, moon } from "../assets";
+import { sign } from "../assets";
 import { navLinks } from "../constants";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Fragment, useEffect, useState } from "react";
 import styles from "../style";
 
 import { useTranslation } from "react-i18next";

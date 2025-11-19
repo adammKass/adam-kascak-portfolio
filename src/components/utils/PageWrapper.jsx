@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
 
+// Wrapper component to add page transition animations
+
 const PageWrapper = ({ children }) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }} // Starting state
-      animate={{ opacity: 1 }} // Final state
-      exit={{ opacity: 0 }} // Exit stat
-      transition={{ duration: 0.3, ease: "easeInOut" }} // Animation duration
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       {children}
     </motion.div>

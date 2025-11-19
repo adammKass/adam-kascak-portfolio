@@ -7,6 +7,8 @@ import styles from "../../style";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
 import { t } from "i18next";
 
+// Illustrations Subpage Component
+
 const Illustrations = () => {
   const navigate = useNavigate();
   return (
