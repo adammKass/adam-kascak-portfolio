@@ -2,17 +2,19 @@
   "home": {
     "title": "Adam Kascak - Artist/Designer",
     "3dGraphics": "3D Graphics",
-    "graphicDesign": "Graphic Design",
+    "graphicDesign": "Web Design",
     "illustrations": "Illustrations",
-    "aboutMe": "About Me"
+    "aboutMe": "About Me",
+    "services": "Services"
   },
   "navbar": {
     "3dGraphics": "3D Graphics",
-    "graphicDesign": "Graphic Design",
+    "graphicDesign": "Web Design",
     "illustrations": "Illustrations",
     "aboutMe": "About Me",
-    "contact": "Contact"
+    "services": "Services"
   },
+  "contactCTA": "Contact",
   "graphicsLinks": {
     "SD": {
       "title": "Substance Designer Practice",
@@ -60,105 +62,109 @@
         }
       ]
     },
-    "Divers Lenses": {
-      "title": "Diver's Lenses Website",
-      "alt": "Logo of Diver's Lenses website",
-      "textShort": "Personal project. I wanted to improve my skills with Figma - mostly with wireframing different pages of website, not only landing page. I chose to design a website for showcasing a lot of photos.",
-      "type": "Web design, wireframing",
-      "tools": "Design: Figma",
-      "year": "2024",
-      "text": "Personal project. I wanted to improve my skills with Figma - mostly with wireframing different pages of website, not only landing page. I did this website after watching Vako Shvili's course on website design. I chose to design a website for showcasing a lot of photos. I chose the underwater photography theme, mostly because water and diving are close to my heart. \nColors chosen were, of course, associated with sea - blues and greens, gradually getting darker scrolling to the bottom, simulating diving in the sea. A simple Noto Sans font was chosen for it's less formal and inviting feel.\nNavbar contains link to a seperate blog, sign up CTA buttons as well as search bar for quick searching of images or photographers. For home banner I had an idea of showcasing image of one of the images on the website, which would change over a period of time. Footer includes more detailed links as well as links to social media.\nPages other than landing page stayed only as wireframe. Some of these pages include Blog main page, Blog post page, Individual image page, Edit user page etc.\nBeautiful underwater photos for the landing page were used from Unsplash.",
+    "Horn": {
+      "title": "Horn Box Gym Website",
+      "alt": "Web icon of website of boxing studio in Bratislava",
+      "textShort": "Fully responsive and accessible website of fictional boxing gym based in Bratislava.",
+      "type": "Web Design",
+      "tools": "Design: Figma, Adobe Illustrator \n Programming: HTML, CSS, Javascript",
+      "year": "2025",
+      "text": "H is a fictional fitness brand built around the spirit of boxing, martial arts, and conditioning training. The goal was to capture the raw energy and discipline of combat sports while keeping the brand approachable and inspiring for everyday athletes The design concept emphasizes boldness and strength while maintaining an approachable and friendly look — powerful but not intimidating. The logo, featuring a stylized bull’s skull, is rounded and simplified to convey energy and determination without aggression. Angled elements are used throughout the layout to enhance a sense of motion and dynamism. The landing page includes the following sections:  Home Banner | Equipment | Trainings | Prices | Instructors | Reviews | Gallery | Footer The design was created in Figma and developed using HTML5, CSS, and JavaScript, with a strong focus on responsive design across all devices, SEO optimization, and accessibility.",
       "images": [
         {
-          "title": "Design styles",
-          "alt": "Showcase of colors and font variations used across website"
+          "title": "Thumbnail",
+          "alt": "Thumbnail of website of boxing studio"
         },
         {
-          "title": "Landing page - Desktop",
-          "alt": "Desktop version of landing page with underwater photos"
+          "title": "Colors Showcase",
+          "alt": "Showcase of colors used in website"
         },
         {
-          "title": "Landing page - Mobile",
-          "alt": "Mobile version of landing page with underwater photos"
+          "title": "Logo Showcase",
+          "alt": "Showcase of logo"
         },
         {
-          "title": "Blog page - Desktop",
-          "alt": "Wireframe of desktop version of main page of blog"
+          "title": "Logo Showcase",
+          "alt": "Showcase of logo"
         },
         {
-          "title": "Blog post page - Desktop",
-          "alt": "Wireframe of desktop version of a post page of blog"
+          "title": "Logo Showcase",
+          "alt": "Showcase of logo in dynamic lighting"
         },
         {
-          "title": "Image page - Desktop",
-          "alt": "Wireframe of desktop version of a image showcase page"
+          "title": "Wireframe in Figma",
+          "alt": "Wireframe in Figma"
         },
         {
-          "title": "Image page - Mobile",
-          "alt": "Wireframe of mobile version of a image showcase page"
+          "title": "Full Desktop version",
+          "alt": "Desktop Version"
         },
         {
-          "title": "User page - Desktop",
-          "alt": "Wireframe of desktop version of page showcasing logged user of website"
-        },
-        {
-          "title": "Edit User page - Desktop",
-          "alt": "Wireframe of desktop version of page showcasing options for editing user profile"
+          "title": "Mobile version",
+          "alt": "Mobile Version"
         }
       ]
     },
-    "Cats": {
-      "title": "Cats Illustrations",
-      "alt": "Sample vector illustration of a big cat",
-      "textShort": "Personal project. I wanted to make something fun to improve skills in Adobe Illustrator.",
-      "type": "Vector Illustration",
-      "tools": "Adobe Illustrator, Figma",
+    "Torse": {
+      "title": "Torse Animation Landing Page",
+      "alt": "Thumbnail of black and white interior design studio",
+      "textShort": "Fully responsive and accessible website of fictional interior design studio using modern animations",
+      "type": "Web Design",
+      "tools": "Design: Figma, Photoshop, Blender \n Programming: React, Tailwind, GSAP",
       "year": "2025",
-      "text": "Personal project. I wanted to make something fun to improve skills in Adobe Illustrator. I decided on creating several vector illustrations of cats. I wanted to showcase different shapes, faces, and fur patterns of cats. The illustrations were meant to be very simple from the start. I like to use a lot of sharp edges and same line width in my illustrations. For simplicity I wanted to have only 3 colors, but I sneaked in one more for color of eyes. To tie all illustrations together I used same colors across all the cats.\nI used Adobe Illustrator for vector illustrations and Figma for composing final image and experimenting with colors. In the end I made two palettes - one light and one dark.",
+      "text": "Torse — Interior Design Studio Landing Page A sleek and high-contrast web landing page concept for a fictional interior design studio. The design emphasizes bold minimalism, featuring a black-and-white color palette and League Spartan typography to convey modernity and strength. Design created in Figma. Developed with React, Tailwind CSS, and GSAP for smooth, dynamic animations. Hero Visual: Rendered in Blender using Freestyle for a stylized, architectural illustration look. Video showcasing the process by Transient at Large is available on Youtube: https://www.youtube.com/watch?v=LElPE7R7Ka0 Explore the live page on GitHub Pages:: https://adammkass.github.io/torse/ ",
       "images": [
         {
-          "title": "Cats Light",
-          "alt": "Showcase of 9 vector illustrations of cats in light color variation."
+          "title": "Thumbnail",
+          "alt": "Thumbnail of website of interior design studio"
         },
         {
-          "title": "Cats Dark",
-          "alt": "Showcase of 9 vector illustrations of cats in dark color variation."
+          "title": "Desktop version",
+          "alt": "Desktop Version"
         },
         {
-          "title": "Cat 1",
-          "alt": "Simple vector illustration of a medium sized cat."
+          "title": "Desktop Loading",
+          "alt": "Desktop Loading Animation"
         },
         {
-          "title": "Cat 2",
-          "alt": "Simple vector illustration of a medium sized cat."
+          "title": "Mobile version",
+          "alt": "Mobile Version"
         },
         {
-          "title": "Cat 3",
-          "alt": "Simple vector illustration of a medium sized cat."
+          "title": "Wireframe in Blender",
+          "alt": "Wireframe view of interior in Blender"
         },
         {
-          "title": "Cat 4",
-          "alt": "Simple vector illustration of a medium sized cat."
+          "title": "Shading",
+          "alt": "Showcase of Black and White shading in Blender"
+        }
+      ]
+    },
+    "ScrollLock": {
+      "title": "ScrollLock Parallax effect",
+      "alt": "Thumbnail of modern landing pages of coffee shop and streetwear fashion brand",
+      "textShort": "Fully responsive modern websites using sleek parallax scrolling to achieve scrolllock effect.",
+      "type": "Web Design",
+      "tools": "Design: Figma \n Programming: React, Tailwind, GSAP, Motion, Lenis",
+      "year": "2025",
+      "text": "Two landing pages using two animation libraries, GSAP an Motion achieving same effect in two versions. Obne version is horizontall slider and other one is vertical scrolling with snap. ",
+      "images": [
+        {
+          "title": "Cof Desktop View",
+          "alt": "Desktop view"
         },
         {
-          "title": "Cat 5",
-          "alt": "Simple vector illustration of a medium sized cat."
+          "title": "Cof Desktop View",
+          "alt": "Desktop View"
+        },
+
+        {
+          "title": "Virignon Desktop View",
+          "alt": "Desktop View"
         },
         {
-          "title": "Cat 6",
-          "alt": "Simple vector illustration of a medium sized cat."
-        },
-        {
-          "title": "Cat 7",
-          "alt": "Simple vector illustration of a medium sized cat."
-        },
-        {
-          "title": "Cat 8",
-          "alt": "Simple vector illustration of a medium sized cat."
-        },
-        {
-          "title": "Cat 9",
-          "alt": "Simple vector illustration of a medium sized cat."
+          "title": "Virignon Landscape View",
+          "alt": "Landcsape"
         }
       ]
     },
@@ -216,9 +222,50 @@
   },
 
   "about": {
-    "intro": "My name is Adam Kaščák. I am passionate about different areas connected to graphics and computers. I have a degree in computer science and previous experience working as a 3D artist, but my other areas of expertise include graphic design, web development, and illustrations.",
-    "hobbies": "When I'm not working, I enjoy watching animated movies or reading all sorts of illustrated books. Whenever I have the opportunity, I enjoy swimming, diving, or generally spending as much time as I can near the sea.",
-    "alt": "Adam Kascak smiling in front of sailing ship"
+    "intro": "My name is Adam Kaščák. I'm a freelance web developer and designer based in Nitra, SLovakia. I focus on designing and creating modern and professional websites.",
+    "hobbies": "With background in both 3D graphics and illustration, I enjoy blending 3D models or hand-painted artwork with web design",
+    "alt": "Adam Kascak smiling in front of sailing ship",
+    "experienceTitle": "Experience",
+    "SD": {
+      "title": "Substance Designer Practice",
+      "alt": "Render of rock material created using Substance Designer",
+      "text": "Here are some of the materials I created using Substance Designer. The aim of this practice was to improve my skills in Substance Designer."
+    },
+    "experience": {
+      "exe": {
+        "company": "exe a.s.",
+        "role": "DTP Specialist",
+        "time": "May 2025 - Present"
+      },
+      "centurion": {
+        "company": "Centurion Developments",
+        "role": "Junior Level Designer / 3D Artist",
+        "time": "January 2024 - August 2024"
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "description": "Develop your passion project with eye catching branding, packaging, web design & illustrations.",
+    "services": {
+      "web": {
+        "title": "Web Design and Development",
+        "areas": "Wireframing - UI Design - Prototyping - Development",
+        "about": "I can redesign or design brand new landing page for your brand and implement it using modern tools, such as Motion, Tailwind or GSAP"
+      },
+      "3d": {
+        "title": "3D Assets and Environment Art",
+        "areas": "Modeling - Texturing - Optimization - Vegetation - Architecture",
+        "about": "I have skills to create 3D assets from scratch to finish, including optimization and lighting in scene. I specialise mostly on props, modular architecture and nature props."
+      },
+      "illustration": {
+        "title": "Illustrations",
+        "areas": "Vector - Infographics - Portraits - Ink",
+        "about": "I can create simple yet striking icons and vector graphics, or I can create traditional illustrations, mostly focusing on portraits and architecture."
+      }
+    },
+    "getInTouch": "If you're interested in working together, feel free to contact me.",
+    "getInTouchButton": "Contact Me"
   },
   "footer": {
     "rights": "©2025 Adam Kascak. All Rights Reserved"

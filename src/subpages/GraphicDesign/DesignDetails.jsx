@@ -21,15 +21,17 @@ const DesignDetails = () => {
       <Navbar />
       <main
         id="main-content"
-        className={`flex flex-col gap-8 md:gap-16 ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32 text-PBlack`}
+        className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mx-auto ${styles.mainMarginY}`}
       >
         {/* Responsive Title */}
-        <h1 className={`mb-6 ${styles.cursorText} text-5xl lg:text-6xl`}>
+        <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
           {t(`designLinks.${link.id}.title`)}
         </h1>
 
         {/* Responsive Details Section */}
-        <section className={`flex flex-col gap-5 ${styles.cursorText} `}>
+        <section
+          className={`flex flex-col gap-4 md:gap-8 self-center max-w-[780px] w-full ${styles.mainMarginY} ${styles.cursorText} `}
+        >
           <div className="border-b border-PBlack pb-4">
             <h2 className="mb-2 text-2xl lg:text-4xl">
               {t(`designLinks.type`)}
@@ -51,7 +53,9 @@ const DesignDetails = () => {
         </section>
 
         {/* Responsive Description */}
-        <p className={`leading-relaxed ${styles.cursorText}`}>
+        <p
+          className={`leading-relaxed  self-center items-center max-w-[780px] mb-8 ${styles.cursorText}`}
+        >
           {t(`designLinks.${link.id}.text`)}
         </p>
 

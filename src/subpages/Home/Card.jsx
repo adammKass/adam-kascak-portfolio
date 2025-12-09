@@ -8,6 +8,12 @@ import {
   GraphicDesignOn2,
   IllustrationsOff,
   IllustrationsOn,
+  service,
+  serviceIllustration,
+  serviceIllustrationOff,
+  serviceOff,
+  serviceWeb,
+  serviceWebOff,
 } from "../../assets";
 import { useNavigate } from "react-router-dom";
 import lottie from "lottie-web";
@@ -29,8 +35,72 @@ const Card = () => {
       <TabList
         as="main"
         id="main-content"
-        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 h-full mb-10 lg:mb-0 ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 mb-10 lg:mb-0 lg:mt-0`}
+        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 h-full mb-10 lg:mb-0 ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 mb-10 lg:mb-0 lg:mt-0`}
       >
+        {/* Graphic Design Tab */}
+        <Tab
+          aria-label="Web Design Tab"
+          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus} ${styles.cursorPointer} `}
+          onClick={() => navigate(`/adam-kascak-portfolio/graphicdesign`)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              navigate(`/adam-kascak-portfolio/graphicdesign`);
+            }
+          }}
+        >
+          {({ hover }) => {
+            const ref = useRef(null);
+            const isVisible = useIsVisible(ref);
+
+            return (
+              <>
+                <div
+                  ref={ref}
+                  className="relative min-w-[80%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
+                >
+                  {/* For smaller screens, change image based on visibility */}
+                  <img
+                    src={serviceWebOff}
+                    alt="Graphic Design - Highlighted state"
+                    className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
+                      isVisible ? "opacity-0" : "opacity-100"
+                    }`}
+                  />
+                  <img
+                    src={serviceWeb}
+                    alt="Graphic Design - Default state"
+                    className={`lg:hidden dark:brightness-[0.7] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
+                      isVisible ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                  {/* For larger screens, change image based on hover */}
+                  <img
+                    src={serviceWebOff}
+                    alt="Graphic Design - Default state"
+                    className={`hidden lg:block dark:brightness-[0.7] ${
+                      hover ? "opacity-0" : "opacity-100"
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                      styles.transitionOpacity
+                    }`}
+                  />
+                  <img
+                    src={serviceWeb}
+                    alt="Graphic Design - Highlighted state"
+                    className={`hidden lg:block ${
+                      hover ? "opacity-100" : "opacity-0"
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                      styles.transitionOpacity
+                    }`}
+                  />
+                </div>
+                <h2 className="mb-4 uppercase font-bold text-center text-PBlack text-base">
+                  {t(`home.graphicDesign`)}
+                </h2>
+              </>
+            );
+          }}
+        </Tab>
+
         {/* 3D Graphics Tab */}
         <Tab
           aria-label="3D Graphics Tab"
@@ -47,7 +117,7 @@ const Card = () => {
             const isVisible = useIsVisible(ref);
             return (
               <>
-                <div className="relative min-w-[80%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out">
+                <div className="relative min-w-[20%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out">
                   <div className="scene">
                     <div
                       className={`cube transition-transform duration-500 ease-in-out`}
@@ -82,72 +152,8 @@ const Card = () => {
                     </div>
                   </div>
                 </div>
-                <h2 className="mb-4 text-center text-PBlack text-base">
+                <h2 className="mb-4 uppercase font-bold text-center text-PBlack text-base">
                   {t(`home.3dGraphics`)}
-                </h2>
-              </>
-            );
-          }}
-        </Tab>
-
-        {/* Graphic Design Tab */}
-        <Tab
-          aria-label="Graphic Design Tab"
-          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus} ${styles.cursorPointer} `}
-          onClick={() => navigate(`/adam-kascak-portfolio/graphicdesign`)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              navigate(`/adam-kascak-portfolio/graphicdesign`);
-            }
-          }}
-        >
-          {({ hover }) => {
-            const ref = useRef(null);
-            const isVisible = useIsVisible(ref);
-
-            return (
-              <>
-                <div
-                  ref={ref}
-                  className="relative min-w-[80%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
-                >
-                  {/* For smaller screens, change image based on visibility */}
-                  <img
-                    src={GraphicDesignOn}
-                    alt="Graphic Design - Highlighted state"
-                    className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
-                      isVisible ? "opacity-100" : "opacity-0"
-                    }`}
-                  />
-                  <img
-                    src={GraphicDesignOff}
-                    alt="Graphic Design - Default state"
-                    className={`lg:hidden dark:brightness-[0.7] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
-                      isVisible ? "opacity-0" : "opacity-100"
-                    }`}
-                  />
-                  {/* For larger screens, change image based on hover */}
-                  <img
-                    src={GraphicDesignOff}
-                    alt="Graphic Design - Default state"
-                    className={`hidden lg:block dark:brightness-[0.7] ${
-                      hover ? "opacity-0" : "opacity-100"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
-                      styles.transitionOpacity
-                    }`}
-                  />
-                  <img
-                    src={GraphicDesignOn}
-                    alt="Graphic Design - Highlighted state"
-                    className={`hidden lg:block ${
-                      hover ? "opacity-100" : "opacity-0"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
-                      styles.transitionOpacity
-                    }`}
-                  />
-                </div>
-                <h2 className="mb-4 text-center text-PBlack text-base">
-                  {t(`home.graphicDesign`)}
                 </h2>
               </>
             );
@@ -193,14 +199,14 @@ const Card = () => {
                 >
                   {/* For smaller screens, change image based on visibility */}
                   <img
-                    src={IllustrationsOn}
+                    src={serviceIllustration}
                     alt="Illustrations - Highlighted state"
                     className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-100" : "opacity-0"
                     }`}
                   />
                   <img
-                    src={IllustrationsOff}
+                    src={serviceIllustrationOff}
                     alt="Illustrations - Default state"
                     className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-0" : "opacity-100"
@@ -208,7 +214,7 @@ const Card = () => {
                   />
                   {/* For larger screens, change image based on hover */}
                   <img
-                    src={IllustrationsOff}
+                    src={serviceIllustrationOff}
                     alt="Illustrations - Default state"
                     className={`hidden lg:block ${
                       hover ? "opacity-0" : "opacity-100"
@@ -217,7 +223,7 @@ const Card = () => {
                     }`}
                   />
                   <img
-                    src={IllustrationsOn}
+                    src={serviceIllustration}
                     alt="Illustrations - Default state"
                     className={`hidden lg:block ${
                       hover ? "opacity-100" : "opacity-0"
@@ -226,8 +232,73 @@ const Card = () => {
                     }`}
                   />
                 </div>
-                <h2 className="mb-4 text-center text-PBlack text-base">
+                <h2 className="mb-4 uppercase font-bold text-center text-PBlack text-base">
                   {t(`home.illustrations`)}
+                </h2>
+              </>
+            );
+          }}
+        </Tab>
+
+        {/* Services Tab */}
+        <Tab
+          aria-label="Services Tab"
+          className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus} ${styles.cursorPointer}`}
+          onClick={() => navigate(`/adam-kascak-portfolio/services`)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              navigate(`/adam-kascak-portfolio/services`);
+            }
+          }}
+        >
+          {({ hover }) => {
+            const ref = useRef(null);
+            const isVisible = useIsVisible(ref);
+
+            return (
+              <>
+                <div
+                  ref={ref}
+                  className="relative min-w-[80%] mx-4 mt-4 mb-4 bg-PGrey py-20 flex items-center justify-center h-80 transition-transform duration-300 ease-in-out"
+                >
+                  {/* For smaller screens, change image based on visibility */}
+                  <img
+                    src={service}
+                    alt="About Me - Highlighted state"
+                    className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
+                      isVisible ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                  <img
+                    src={serviceOff}
+                    alt="About Me - Default state"
+                    className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
+                      isVisible ? "opacity-0" : "opacity-100"
+                    }`}
+                  />
+
+                  {/* For larger screens, change image based on hover */}
+                  <img
+                    src={serviceOff}
+                    alt="About Me - Default state"
+                    className={`hidden lg:block ${
+                      hover ? "opacity-0" : "opacity-100"
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                      styles.transitionOpacity
+                    }`}
+                  />
+                  <img
+                    src={service}
+                    alt="About Me - Highlighted state"
+                    className={`hidden lg:block ${
+                      hover ? "opacity-100" : "opacity-0"
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                      styles.transitionOpacity
+                    }`}
+                  />
+                </div>
+                <h2 className="mb-4 uppercase font-bold text-center text-PBlack text-base">
+                  {t(`home.services`)}
                 </h2>
               </>
             );
@@ -291,7 +362,7 @@ const Card = () => {
                     }`}
                   />
                 </div>
-                <h2 className="mb-4 text-center text-PBlack text-base">
+                <h2 className="mb-4 uppercase font-bold text-center text-PBlack text-base">
                   {t(`home.aboutMe`)}
                 </h2>
               </>

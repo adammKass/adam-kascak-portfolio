@@ -12,6 +12,7 @@ import { AnimatePresence } from "framer-motion";
 import {
   About,
   Contact,
+  Services,
   DesignDetails,
   DGraphics,
   GraphicDesign,
@@ -78,6 +79,15 @@ function AnimatedRoutes() {
           element={
             <PageWrapper>
               <About />
+            </PageWrapper>
+          }
+        />
+
+        <Route
+          path="/adam-kascak-portfolio/services"
+          element={
+            <PageWrapper>
+              <Services />
             </PageWrapper>
           }
         />

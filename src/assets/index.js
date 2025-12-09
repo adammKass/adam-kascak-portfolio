@@ -27,18 +27,32 @@ import PortfolioIllustrationsShowcase from "./GraphicDesign/Portfolio/Illustrati
 import PortfolioFontShowcase from "./GraphicDesign/Portfolio/FontShowcase.svg";
 import PortfolioColorPalette from "./GraphicDesign/Portfolio/ColorPalette.svg";
 
-//Cats
-import CatsLight from "./GraphicDesign/Cats/CatsLight.svg";
-import CatsDark from "./GraphicDesign/Cats/CatsDark.svg";
-import Cat1 from "./GraphicDesign/Cats/cat1.svg";
-import Cat2 from "./GraphicDesign/Cats/cat2.svg";
-import Cat3 from "./GraphicDesign/Cats/cat3.svg";
-import Cat4 from "./GraphicDesign/Cats/cat4.svg";
-import Cat5 from "./GraphicDesign/Cats/cat5.svg";
-import Cat6 from "./GraphicDesign/Cats/cat6.svg";
-import Cat7 from "./GraphicDesign/Cats/cat7.svg";
-import Cat8 from "./GraphicDesign/Cats/cat8.svg";
-import Cat9 from "./GraphicDesign/Cats/cat9.svg";
+//Horn
+import HornColors from "./GraphicDesign/Horn/Horn_Colors.jpg";
+import HornLogo from "./GraphicDesign/Horn/Horn_Logo.jpg";
+import HornLogoShowcase from "./GraphicDesign/Horn/Horn_LogoShowcase.jpg";
+import HornMobile from "./GraphicDesign/Horn/Horn_Mobile.jpg";
+import HornDesktop from "./GraphicDesign/Horn/Horn_Desktop Full.jpg";
+import HornThumb from "./GraphicDesign/Horn/Horn_ThumbNail.jpg";
+import HornWireframe from "./GraphicDesign/Horn/Horn_Wireframe.png";
+
+//Torse
+import TorseDesktop from "./GraphicDesign/Torse/Torse_Desktop.png";
+import TorseLoading from "./GraphicDesign/Torse/Torse_Loading.png";
+import TorseMobile from "./GraphicDesign/Torse/Torse_mobile.jpg";
+import TorseShading from "./GraphicDesign/Torse/Torse_shading.png";
+import TorseThumb from "./GraphicDesign/Torse/Torse_thumb.jpg";
+import TorseWireframe from "./GraphicDesign/Torse/Torse_wireframe.png";
+import TorseThumbnail from "./GraphicDesign/Torse/Torse_Thumbnail.jpg";
+
+//ScrollLock
+import CofDesktop from "./GraphicDesign/ScrollLock/Cof_Desktop.jpg";
+import CofDesktop2 from "./GraphicDesign/ScrollLock/Cof_Desktop2.jpg";
+import CofMobile from "./GraphicDesign/ScrollLock/Cof_Mobile.jpg";
+import VirDesktop from "./GraphicDesign/ScrollLock/Vir_Desktop.jpg";
+import VirLandscape from "./GraphicDesign/ScrollLock/Vir_Landscape.jpg";
+import VirMobile from "./GraphicDesign/ScrollLock/Vir_Mobile.jpg";
+import ScrollLockThumb from "./GraphicDesign/ScrollLock/ScrollLock_Thumb.jpg";
 
 //Underwater
 import UnderwaterDesignStyles from "./GraphicDesign/Underwater/Design Styles.svg";
@@ -57,6 +71,7 @@ import linkedin from "./logos/linkedin.png";
 import artstation from "./logos/artstation.svg";
 import behance from "./logos/behance.svg";
 import profile from "./profile.jpg";
+import portrait from "./portrait.png";
 
 // Illustrations
 import kohutM_avif from "./Illustrations/kohut/kohut-M.avif";
@@ -103,6 +118,13 @@ import arrowLeft from "./icons/arrow-left.svg";
 import arrowRight from "./icons/arrow-right.svg";
 import sk from "./icons/sk.svg";
 import uk from "./icons/uk.svg";
+import serviceWeb from "./icons/ServicesIcons/service-web.svg";
+import service from "./icons/ServicesIcons/service.svg";
+import serviceOff from "./icons/ServicesIcons/service-off.svg";
+import serviceWebOff from "./icons/ServicesIcons/service-web-off.svg";
+import service3D from "./icons/ServicesIcons/service-3d.svg";
+import serviceIllustration from "./icons/ServicesIcons/service-illustration.svg";
+import serviceIllustrationOff from "./icons/ServicesIcons/service-illustration-off.svg";
 
 export {
   sign,
@@ -129,7 +151,15 @@ export {
   behance,
   sk,
   uk,
+  service,
+  serviceOff,
+  serviceWeb,
+  serviceWebOff,
+  service3D,
+  serviceIllustration,
+  serviceIllustrationOff,
   profile,
+  portrait,
   kohutM_jpg,
   kohutM_avif,
   kohutM_webp,
@@ -163,17 +193,6 @@ export {
   PortfolioIllustrationsShowcase,
   PortfolioFontShowcase,
   PortfolioColorPalette,
-  CatsLight,
-  CatsDark,
-  Cat1,
-  Cat2,
-  Cat3,
-  Cat4,
-  Cat5,
-  Cat6,
-  Cat7,
-  Cat8,
-  Cat9,
   UnderwaterBlogPage,
   UnderwaterBlogPost,
   UnderwaterEditUserPage,
@@ -184,4 +203,25 @@ export {
   UnderwaterUserPage,
   UnderwaterLandingPageMobile,
   UnderwaterDesignStyles,
+  HornColors,
+  HornLogo,
+  HornLogoShowcase,
+  HornWireframe,
+  HornThumb,
+  HornDesktop,
+  HornMobile,
+  TorseThumb,
+  TorseThumbnail,
+  TorseDesktop,
+  TorseMobile,
+  TorseLoading,
+  TorseWireframe,
+  TorseShading,
+  CofDesktop,
+  CofDesktop2,
+  CofMobile,
+  VirDesktop,
+  VirLandscape,
+  VirMobile,
+  ScrollLockThumb,
 };

@@ -1,6 +1,6 @@
 const styles = {
   // Main box size
-  boxWidth: "xl:max-w-[1280px] w-full",
+  boxWidth: "xl:max-w-[1440px] w-full",
   focus: "",
   cards:
     "bg-PWhite border-4 rounded-sm shadow-2xl border-PBlack min-w-42 basis-1/4 ",
@@ -13,8 +13,14 @@ const styles = {
   cursorAuto:
     "cursor-[url('/cursors/cursor-auto.svg')_0_0,default] dark:cursor-[url('/cursors/cursor-auto_dark.svg')_0_0,default]",
 
+  headingMain:
+    "text-3xl sm:text-5xl lg:text-6xl font-black uppercase border-b-2 pb-4 lg:pb-8 border-black text-center",
+
   // Paddings and margins
   paddingXA: "px-10 lg:px-20",
+  mainMarginY: "my-8 lg:my-16",
+  marginB: "mb-8 md:mb-10",
+  paddingB: "pb-8 md:pb-10",
   marginX: "sm:mx-16 mx-6",
   marginY: "sm:my-16 my-6",
 

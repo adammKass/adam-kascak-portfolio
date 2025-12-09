@@ -9,7 +9,7 @@ import {
   Transition,
 } from "@headlessui/react";
 import { sign } from "../assets";
-import { navLinks } from "../constants";
+import { navLinks, navLinksContact } from "../constants";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import styles from "../style";
 
@@ -44,14 +44,18 @@ const Navbar = () => {
             <img
               src={sign}
               alt="Signature of Adam Kascak"
-              className={`${styles.iconSize} ${styles.iconHover}`}
+              className={`${styles.iconSize} ${styles.iconHover} p-0 lg:p-2`}
             />
           </Link>
 
           {/* Center the text */}
 
           {isHomepage && (
-            <h1 className={`${styles.cursorText}`}>{t(`home.title`)}</h1>
+            <h1
+              className={`${styles.cursorText} uppercase texy-xl font-medium`}
+            >
+              {t(`home.title`)}
+            </h1>
           )}
         </div>
 
@@ -59,11 +63,11 @@ const Navbar = () => {
         {!isHomepage && (
           <nav className="hidden md:flex">
             <TabGroup>
-              <TabList className="flex flex-row items-center gap-5">
+              <TabList className="flex flex-row items-center gap-2 lg:gap-5">
                 {navLinks.map((nav) => (
                   <Tab
                     key={nav.id}
-                    className={`bg-PWhite font-extralight hover:text-PBlack group ${styles.focus} ${styles.cursorPointer}`}
+                    className={`bg-PWhite font-light hover:text-PBlack group ${styles.focus} ${styles.cursorPointer} uppercase`}
                     onClick={() => navigate(nav.to)}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
@@ -81,6 +85,12 @@ const Navbar = () => {
             </TabGroup>
           </nav>
         )}
+        <Link
+          to={navLinksContact.to}
+          className={`hidden md:block rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-black/80 w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
+        >
+          {t(`contactCTA`)}
+        </Link>
 
         {/* Hamburger menu for smaller screens */}
         <Menu className={`md:hidden ${styles.cursorPointer}`} as="div">
@@ -128,6 +138,14 @@ const Navbar = () => {
                       </Link>
                     </MenuItem>
                   ))}
+                  <MenuItem as="div" className="w-full">
+                    <Link
+                      to={navLinksContact.to}
+                      className="text-PBlack font-extralight text-xl lg:text-4xl"
+                    >
+                      {t(`contactCTA`)}
+                    </Link>
+                  </MenuItem>
                   <MenuItem
                     as="div"
                     className="flex items-center justify-start gap-8"

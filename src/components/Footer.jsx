@@ -1,6 +1,6 @@
 import styles from "../style";
 import useDarkMode from "./utils/useDarkMode";
-import { moon, sun } from "../assets";
+import { artstation, behance, linkedin, moon, sun } from "../assets";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
@@ -11,48 +11,89 @@ const Footer = () => {
   return (
     <footer className="w-full border-t border-PBlack">
       <div
-        className={`w-full py-4 flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 justify-between items-center ${styles.boxWidth} ${styles.paddingXA} mx-auto`}
+        className={`w-full py-4 flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center ${styles.boxWidth} ${styles.paddingXA} mx-auto`}
       >
-        {/* Footer Text */}
-        <small
-          className={`text-center text-sm lg:text-base ${styles.cursorText}`}
-        >
-          {t(`footer.rights`)}
-        </small>
-
-        {/* Language Switcher and Dark Mode Toggle */}
-        <div className="flex items-center justify-start gap-8">
-          {/* Language Switcher */}
-          <LanguageSwitcher />
-
-          {/* Dark Mode Toggle */}
-          <div className="flex items-center gap-2">
-            {/* Light Mode Icon */}
+        <div className="flex flex-row justify-center gap-12">
+          <a
+            href="https://www.artstation.com/adamkascak1"
+            className="flex items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              src={sun}
-              alt="light mode"
-              className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
+              src={artstation}
+              alt="artstation"
+              className={`w-10 h-10 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
             />
+          </a>
 
-            {/* Toggle Button */}
-            <button
-              aria-label="Toggle dark mode"
-              onClick={() => setIsDark(!isDark)}
-              className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition ${styles.focus} ${styles.cursorPointer} group`}
-            >
-              <span
-                className={`inline-block h-4 w-4 transform rounded-full bg-PGrey transition group-hover:bg-PBlack duration-300 ease-in-out ${
-                  isDark ? "translate-x-6" : "translate-x-1"
-                }`}
+          <a
+            href="www.linkedin.com/in/adam-kascak-2006b3350"
+            className="flex items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={linkedin}
+              alt="linkedin"
+              className={`w-7 h-6 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
+            />
+          </a>
+          <a
+            href="https://www.behance.net/adamkascak#"
+            className="flex items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={behance}
+              alt="behance"
+              className={`w-7 h-6 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
+            />
+          </a>
+        </div>
+        <div className="flex flex-col md:flex-row gap-8 items-center justify-between">
+          {/* Footer Text */}
+          <small
+            className={`text-center text-sm lg:text-base ${styles.cursorText}`}
+          >
+            {t(`footer.rights`)}
+          </small>
+
+          {/* Language Switcher and Dark Mode Toggle */}
+          <div className="flex items-center justify-start gap-8">
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+
+            {/* Dark Mode Toggle */}
+            <div className="flex items-center gap-2">
+              {/* Light Mode Icon */}
+              <img
+                src={sun}
+                alt="light mode"
+                className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
               />
-            </button>
 
-            {/* Dark Mode Icon */}
-            <img
-              src={moon}
-              alt="dark mode"
-              className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
-            />
+              {/* Toggle Button */}
+              <button
+                aria-label="Toggle dark mode"
+                onClick={() => setIsDark(!isDark)}
+                className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition ${styles.focus} ${styles.cursorPointer} group`}
+              >
+                <span
+                  className={`inline-block h-4 w-4 transform rounded-full bg-PGrey transition group-hover:bg-PBlack duration-300 ease-in-out ${
+                    isDark ? "translate-x-6" : "translate-x-1"
+                  }`}
+                />
+              </button>
+
+              {/* Dark Mode Icon */}
+              <img
+                src={moon}
+                alt="dark mode"
+                className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
+              />
+            </div>
           </div>
         </div>
       </div>

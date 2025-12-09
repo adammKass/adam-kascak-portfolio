@@ -5,8 +5,9 @@
 /* Base Styles */
 
 :root {
-  font-family: "Montserrat Alternates", sans-serif;
-  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.7;
   font-weight: 400;
   --primary: 255 255 255; /* White */
   --primaryDark: 166 166 166; /* Darker grey */
@@ -16,6 +17,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -38,28 +40,42 @@ body {
 /* Fonts import */
 
 @theme {
-  --font-display: "MontserratAlternates", "sans-serif";
+  --font-display: "Lato", "sans-serif";
+  --font-league: "League Spartan", "sans-serif";
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("./assets/fonts/MontserratAlternates-ExtraLight.ttf")
-    format("truetype");
-  font-weight: lighter;
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("./assets/fonts/MontserratAlternates-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("./assets/fonts/MontserratAlternates-Bold.ttf") format("truetype");
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Bold.ttf") format("truetype");
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("./assets/fonts/LeagueSpartan-VariableFont.ttf") format("truetype");
+  font-weight: 200 900;
   font-style: normal;
 }
 
@@ -94,8 +110,8 @@ body {
 
 .scene {
   perspective: 800px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .cube {
   width: 100%;
@@ -115,22 +131,22 @@ body {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 .front {
-  transform: translateZ(50px);
+  transform: translateZ(40px);
 }
 .back {
-  transform: rotateY(180deg) translateZ(50px);
+  transform: rotateY(180deg) translateZ(40px);
 }
 .right {
-  transform: rotateY(90deg) translateZ(50px);
+  transform: rotateY(90deg) translateZ(40px);
 }
 .left {
-  transform: rotateY(-90deg) translateZ(50px);
+  transform: rotateY(-90deg) translateZ(40px);
 }
 .top {
-  transform: rotateX(90deg) translateZ(50px);
+  transform: rotateX(90deg) translateZ(40px);
 }
 .bottom {
-  transform: rotateX(-90deg) translateZ(50px);
+  transform: rotateX(-90deg) translateZ(40px);
 }
 
 /* Skip to main button styling */

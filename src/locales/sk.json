@@ -10,9 +10,9 @@
     "3dGraphics": "3D Grafika",
     "graphicDesign": "Grafický Dizajn",
     "illustrations": "Ilustrácie",
-    "aboutMe": "O Mne",
-    "contact": "Kontakt"
+    "aboutMe": "O Mne"
   },
+  "contactCTA": "Kontakt",
   "graphicsLinks": {
     "SD": {
       "title": "Substance Designer Prax",
@@ -217,7 +217,20 @@
   "about": {
     "intro": "Volám sa Adam Kaščák. Som nadšený pre rôzne oblasti spojené s grafikou a počítačmi. Mám titul z informatiky a predchádzajúce skúsenosti ako 3D umelec, ale moje ďalšie oblasti odbornosti zahŕňajú grafický dizajn, webový vývoj a ilustrácie.",
     "hobbies": "Keď nepracujem, rád sledujem animované filmy alebo čítam rôzne ilustrované knihy. Kedykoľvek mám príležitosť, rád plávam, potápam sa alebo trávim čo najviac času pri mori.",
-    "alt": "Adam Kaščák sa usmieva pred plachetnicou"
+    "alt": "Adam Kaščák sa usmieva pred plachetnicou",
+    "experienceTitle": "Skúsenosti",
+    "experience": {
+      "exe": {
+        "company": "exe a.s.",
+        "role": "DTP Specialist",
+        "time": "May 2025 - Present"
+      },
+      "centurion": {
+        "company": "Centurion Developments",
+        "role": "Junior Level Designer / 3D Artist",
+        "time": "January 2024 - August 2024"
+      }
+    }
   },
   "footer": {
     "rights": "©2025 Adam Kaščák. Všetky práva vyhradené"

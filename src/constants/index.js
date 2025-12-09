@@ -34,38 +34,40 @@ import {
   stillLife4_jpg,
   stillLife4_avif,
   stillLife4_webp,
-  UnderwaterDesignStyles,
-  UnderwaterLandingPage,
-  UnderwaterLandingPageMobile,
-  UnderwaterBlogPage,
-  UnderwaterBlogPost,
-  UnderwaterImagePage,
-  UnderwaterImagePageMobile,
-  UnderwaterUserPage,
-  UnderwaterEditUserPage,
-  UnderwaterThumb,
-  CatsThumb,
-  CatsLight,
-  CatsDark,
-  Cat2,
-  Cat3,
-  Cat4,
-  Cat5,
-  Cat6,
-  Cat7,
-  Cat8,
-  Cat9,
-  Cat1,
+  serviceWeb,
+  service3D,
+  serviceIllustration,
+  HornThumb,
+  HornColors,
+  HornLogo,
+  HornLogoShowcase,
+  HornWireframe,
+  HornDesktop,
+  HornMobile,
+  TorseThumb,
+  TorseDesktop,
+  TorseLoading,
+  TorseMobile,
+  TorseWireframe,
+  TorseShading,
+  CofDesktop,
+  CofDesktop2,
+  CofMobile,
+  VirDesktop,
+  VirLandscape,
+  VirMobile,
+  TorseThumbnail,
+  ScrollLockThumb,
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "3dGraphics",
-    to: "/adam-kascak-portfolio/dgraphics",
-  },
-  {
     id: "graphicDesign",
     to: "/adam-kascak-portfolio/graphicdesign",
+  },
+  {
+    id: "3dGraphics",
+    to: "/adam-kascak-portfolio/dgraphics",
   },
   {
     id: "illustrations",
@@ -76,10 +78,15 @@ export const navLinks = [
     to: "/adam-kascak-portfolio/about",
   },
   {
-    id: "contact",
-    to: "/adam-kascak-portfolio/contact",
+    id: "services",
+    to: "/adam-kascak-portfolio/services",
   },
 ];
+
+export const navLinksContact = {
+  id: "contact",
+  to: "/adam-kascak-portfolio/contact",
+};
 
 export const GraphicsLinks = [
   {
@@ -106,6 +113,75 @@ export const GraphicsLinks = [
 
 export const DesignLinks = [
   {
+    id: "Horn",
+    thumb: HornThumb,
+    images: [
+      {
+        image: HornThumb,
+      },
+      {
+        image: HornColors,
+      },
+      {
+        image: HornLogo,
+      },
+      {
+        image: HornLogoShowcase,
+      },
+      {
+        image: HornWireframe,
+      },
+      {
+        image: HornDesktop,
+      },
+      {
+        image: HornMobile,
+      },
+    ],
+  },
+  {
+    id: "Torse",
+    thumb: TorseThumbnail,
+    images: [
+      {
+        image: TorseThumb,
+      },
+      {
+        image: TorseDesktop,
+      },
+      {
+        image: TorseLoading,
+      },
+      {
+        image: TorseMobile,
+      },
+      {
+        image: TorseWireframe,
+      },
+      {
+        image: TorseShading,
+      },
+    ],
+  },
+  {
+    id: "ScrollLock",
+    thumb: ScrollLockThumb,
+    images: [
+      {
+        image: CofDesktop,
+      },
+      {
+        image: CofDesktop2,
+      },
+      {
+        image: VirDesktop,
+      },
+      {
+        image: VirLandscape,
+      },
+    ],
+  },
+  {
     id: "Portfolio",
     thumb: PortfolioThumb,
     images: [
@@ -117,78 +193,6 @@ export const DesignLinks = [
       },
       {
         image: PortfolioColorPalette,
-      },
-    ],
-  },
-  {
-    id: "Divers Lenses",
-    thumb: UnderwaterThumb,
-    images: [
-      {
-        image: UnderwaterDesignStyles,
-      },
-      {
-        image: UnderwaterLandingPage,
-      },
-      {
-        image: UnderwaterLandingPageMobile,
-      },
-      {
-        image: UnderwaterBlogPage,
-      },
-      {
-        image: UnderwaterBlogPost,
-      },
-      {
-        image: UnderwaterImagePage,
-      },
-      {
-        image: UnderwaterImagePageMobile,
-      },
-      {
-        image: UnderwaterUserPage,
-      },
-      {
-        image: UnderwaterEditUserPage,
-      },
-    ],
-  },
-  {
-    id: "Cats",
-    thumb: CatsThumb,
-    images: [
-      {
-        image: CatsLight,
-      },
-      {
-        image: CatsDark,
-      },
-      {
-        image: Cat1,
-      },
-      {
-        image: Cat2,
-      },
-      {
-        image: Cat3,
-      },
-      {
-        image: Cat4,
-      },
-      {
-        image: Cat5,
-      },
-      {
-        image: Cat6,
-      },
-      {
-        image: Cat7,
-      },
-      {
-        image: Cat8,
-      },
-      {
-        image: Cat9,
       },
     ],
   },
@@ -266,5 +270,29 @@ export const IllustrationLinks = [
       avif: stillLife4_avif,
       webp: stillLife4_webp,
     },
+  },
+];
+
+export const experienceTitles = [
+  {
+    id: "exe",
+  },
+  {
+    id: "centurion",
+  },
+];
+
+export const services = [
+  {
+    id: "web",
+    image: serviceWeb,
+  },
+  {
+    id: "3d",
+    image: service3D,
+  },
+  {
+    id: "illustration",
+    image: serviceIllustration,
   },
 ];

@@ -6,6 +6,14 @@ import { useNavigate } from "react-router-dom";
 import styles from "../../style";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
 import { t } from "i18next";
+import { motion } from "framer-motion";
+import {
+  containerFadeStagger,
+  fadeUp,
+  fadeUpSmall,
+  staggerContainer,
+  viewportOnce,
+} from "../../constants/variants";
 
 // Illustrations Subpage Component
 
@@ -16,17 +24,25 @@ const Illustrations = () => {
       className={`absolute top-0 left-0 w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
     >
       <Navbar />
-      <h1 className="sr-only">{t(`navbar.illustrations`)}</h1>
 
-      <TabGroup
+      <div
         as="main"
         id="main-content"
-        className={`columns-xs ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-10 lg:mb-52 mt-10 lg:mt-32`}
+        className={`${styles.boxWidth} ${styles.paddingXA} ${styles.mainMarginY} mx-auto`}
       >
-        <TabList>
-          {IllustrationLinks.map((ilu) => {
+        <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
+          {t(`navbar.illustrations`)}
+        </h1>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          variants={fadeUp(0.3)}
+          className={`columns-xs mx-auto ${styles.mainMarginY}`}
+        >
+          {IllustrationLinks.map((ilu, index) => {
             return (
-              <Tab
+              <motion.div
                 aria-label="Image fullscreen"
                 key={ilu.id}
                 className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover} ${styles.focus} ${styles.cursorPointer}`}
@@ -47,11 +63,11 @@ const Illustrations = () => {
                     loading="lazy"
                   />
                 </picture>
-              </Tab>
+              </motion.div>
             );
           })}
-        </TabList>
-      </TabGroup>
+        </motion.div>
+      </div>
       <Footer></Footer>
     </div>
   );

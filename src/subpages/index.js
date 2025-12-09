@@ -2,6 +2,7 @@ import Home from "./Home/Home";
 import Card from "./Home/Card";
 import Contact from "./Contact/Contact";
 import About from "./About/About";
+import Services from "./Services/Services";
 import NotFound from "./NotFound/NotFound";
 import DGraphics from "./DGraphics/DGraphics";
 import GraphicDesign from "./GraphicDesign/GraphicDesign";
@@ -14,6 +15,7 @@ export {
   Home,
   Contact,
   About,
+  Services,
   NotFound,
   DGraphics,
   GraphicDesign,
