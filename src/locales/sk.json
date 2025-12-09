@@ -2,15 +2,17 @@
   "home": {
     "title": "Adam Kaščák - Umelec/Dizajnér",
     "3dGraphics": "3D Grafika",
-    "graphicDesign": "Grafický Dizajn",
+    "graphicDesign": "Web Dizajn",
     "illustrations": "Ilustrácie",
-    "aboutMe": "O Mne"
+    "aboutMe": "O Mne",
+    "services": "Služby"
   },
   "navbar": {
     "3dGraphics": "3D Grafika",
-    "graphicDesign": "Grafický Dizajn",
+    "graphicDesign": "Web Dizajn",
     "illustrations": "Ilustrácie",
-    "aboutMe": "O Mne"
+    "aboutMe": "O Mne",
+    "services": "Služby"
   },
   "contactCTA": "Kontakt",
   "graphicsLinks": {
@@ -38,134 +40,141 @@
   },
   "designLinks": {
     "Portfolio": {
-      "title": "Portfólio Webstránka",
-      "alt": "Webová ikona portfóliovej webstránky Adama Kaščáka",
-      "textShort": "Osobný projekt. Chcel som vytvoriť webstránku, ktorá by prezentovala niektoré z mojich prác z rôznych oblastí vizuálneho umenia.",
-      "type": "Web Dizajn",
+      "title": "Osobná Portfóliová Webstránka",
+      "alt": "Webová ikona predstavujúca osobné portfólio Adama Kascaka",
+      "textShort": "Kurátorsky zostavená prezentácia vybraných diel z oblasti vizuálneho umenia a dizajnu.",
+      "type": "Web Design",
       "tools": "Dizajn: Figma, Krita, Adobe Illustrator \n Programovanie: React, Tailwind CSS",
       "year": "2025",
-      "text": "Osobný projekt. Chcel som vytvoriť webstránku, ktorá by prezentovala niektoré z mojich prác z rôznych oblastí vizuálneho umenia. Tiež som chcel, aby táto webstránka kombinovala moju lásku k ilustrovaniu, takže som na domovskej stránke použil jednoduché uhlové ilustrácie. Chcel som zachovať farebnú paletu čierno-bielu, pretože rád pracujem prevažne s čiernou a bielou pre väčšinu svojich ilustrácií. Na tejto webstránke sú použité celkovo 4 farby: biela, svetlo sivá, tmavo sivá a čierna.\nPoužité fonty sú všetky geometrické sans-serif. Kruhové tvary Montserrat Alternates pekne dopĺňajú ostré hrany ilustrácií a obdĺžnikov na webstránke. Na niektorých miestach som tiež použil Futura PT, tentokrát pre ostré hrany niektorých jeho symbolov, ako sú A a F.\nWebstránku som vytvoril od začiatku do konca vrátane webového vývoja. Použil som framework React s Tailwind CSS, pretože je to kombinácia, s ktorou som najviac pohodlný.",
+      "text": "Osobný projekt vytvorený na prezentáciu diel z viacerých oblastí vizuálneho umenia. Do dizajnu som zakomponoval aj svoju vášeň pre ilustráciu, čo viedlo k jednoduchým uhlovým ilustráciám na úvodnej stránke. Paleta je úmyselne minimalistická — biela, svetlosivá, tmavosivá a čierna — odrážajúca môj vzťah k monochromatickej tvorbe.\nPoužitá typografia vychádza z geometrických bezpätkových písiem. Okrúhle tvary Montserrat Alternates príjemne dopĺňajú ostré prvky rozmiestnené v rozhraní, zatiaľ čo Futura PT sa objavuje na vybraných miestach pre svoju čistú geometriu a charakteristické tvary.\nWebstránku som navrhol aj naprogramoval kompletne sám, s využitím Reactu a Tailwind CSS — kombinácie, s ktorou pracujem najefektívnejšie.",
       "images": [
         {
-          "title": "Prezentácia Ilustrácií",
-          "alt": "Prezentácia svetlých a tmavých variácií ilustrácií použitých na portfóliovej webstránke"
+          "title": "Variácie Ilustrácií",
+          "alt": "Svetlé a tmavé variácie ilustrácií použitých v portfóliu"
         },
         {
-          "title": "Prezentácia Fontov",
-          "alt": "Prezentácia fontov použitých na portfóliovej webstránke"
+          "title": "Výber Typografie",
+          "alt": "Prehľad použitej geometrickej bezpätkovej typografie"
         },
         {
-          "title": "Farebná Paleta",
-          "alt": "Prezentácia 4 farieb použitých na portfóliovej webstránke"
+          "title": "Monochromatická Paleta",
+          "alt": "Štyri monochromatické farby použité naprieč webom"
         }
       ]
     },
-    "Divers Lenses": {
-      "title": "Webstránka Diver's Lenses",
-      "alt": "Logo webstránky Diver's Lenses",
-      "textShort": "Osobný projekt. Chcel som zlepšiť svoje zručnosti s Figma - hlavne s vytváraním wireframov rôznych stránok webstránky, nielen úvodnej stránky. Rozhodol som sa navrhnúť webstránku na prezentáciu množstva fotografií.",
-      "type": "Web dizajn, wireframing",
-      "tools": "Dizajn: Figma",
-      "year": "2024",
-      "text": "Osobný projekt. Chcel som zlepšiť svoje zručnosti s Figma - hlavne s vytváraním wireframov rôznych stránok webstránky, nielen úvodnej stránky. Túto webstránku som vytvoril po absolvovaní kurzu Vako Shviliho o dizajne webstránok. Rozhodol som sa navrhnúť webstránku na prezentáciu množstva fotografií. Zvolil som tému podvodnej fotografie, hlavne preto, že voda a potápanie sú mi blízke.\nFarby boli, samozrejme, spojené s morom - modré a zelené, ktoré sa postupne stmavujú pri posúvaní nadol, čím simulujú potápanie v mori. Jednoduchý font Noto Sans bol zvolený pre jeho menej formálny a prívetivý vzhľad.\nNavigačný panel obsahuje odkaz na samostatný blog, tlačidlá na registráciu a vyhľadávací panel na rýchle vyhľadávanie obrázkov alebo fotografov. Pre úvodný banner som mal nápad prezentovať jeden z obrázkov na webstránke, ktorý by sa menil v priebehu času. Pätička obsahuje podrobnejšie odkazy a odkazy na sociálne siete.\nStránky iné ako úvodná stránka zostali iba ako wireframe. Niektoré z týchto stránok zahŕňajú hlavnú stránku blogu, stránku príspevku na blogu, stránku s jednotlivými obrázkami, stránku na úpravu používateľa atď.\nKrásne podvodné fotografie pre úvodnú stránku boli použité z Unsplash.",
-      "images": [
-        {
-          "title": "Dizajnové štýly",
-          "alt": "Prezentácia farieb a variácií fontov použitých na webstránke"
-        },
-        {
-          "title": "Úvodná stránka - Desktop",
-          "alt": "Desktopová verzia úvodnej stránky s podvodnými fotografiami"
-        },
-        {
-          "title": "Úvodná stránka - Mobil",
-          "alt": "Mobilná verzia úvodnej stránky s podvodnými fotografiami"
-        },
-        {
-          "title": "Stránka blogu - Desktop",
-          "alt": "Wireframe desktopovej verzie hlavnej stránky blogu"
-        },
-        {
-          "title": "Stránka príspevku na blogu - Desktop",
-          "alt": "Wireframe desktopovej verzie stránky príspevku na blogu"
-        },
-        {
-          "title": "Stránka obrázku - Desktop",
-          "alt": "Wireframe desktopovej verzie stránky na prezentáciu obrázku"
-        },
-        {
-          "title": "Stránka obrázku - Mobil",
-          "alt": "Wireframe mobilnej verzie stránky na prezentáciu obrázku"
-        },
-        {
-          "title": "Stránka používateľa - Desktop",
-          "alt": "Wireframe desktopovej verzie stránky zobrazujúcej prihláseného používateľa"
-        },
-        {
-          "title": "Stránka na úpravu používateľa - Desktop",
-          "alt": "Wireframe desktopovej verzie stránky s možnosťami na úpravu profilu používateľa"
-        }
-      ]
-    },
-    "Cats": {
-      "title": "Ilustrácie Mačiek",
-      "alt": "Ukážka vektorovej ilustrácie veľkej mačky",
-      "textShort": "Osobný projekt. Chcel som vytvoriť niečo zábavné na zlepšenie zručností v Adobe Illustrator.",
-      "type": "Vektorová ilustrácia",
-      "tools": "Adobe Illustrator, Figma",
+
+    "Horn": {
+      "title": "Horn Box Gym Webstránka",
+      "alt": "Webová ikona predstavujúca web fiktívneho boxerského gymu v Bratislave",
+      "textShort": "Plne responzívna a prístupná webstránka pre fiktívny boxerský a fitness gym.",
+      "type": "Web Design",
+      "tools": "Dizajn: Figma, Adobe Illustrator \n Programovanie: HTML, CSS, Javascript",
       "year": "2025",
-      "text": "Osobný projekt. Chcel som vytvoriť niečo zábavné na zlepšenie zručností v Adobe Illustrator. Rozhodol som sa vytvoriť niekoľko vektorových ilustrácií mačiek. Chcel som ukázať rôzne tvary, tváre a vzory srsti mačiek. Ilustrácie mali byť od začiatku veľmi jednoduché. Rád používam veľa ostrých hrán a rovnakú šírku čiar vo svojich ilustráciách. Pre jednoduchosť som chcel použiť iba 3 farby, ale pridal som ešte jednu pre farbu očí. Aby všetky ilustrácie spolu ladili, použil som rovnaké farby pre všetky mačky.\nPoužil som Adobe Illustrator na vektorové ilustrácie a Figma na zostavenie finálneho obrázka a experimentovanie s farbami. Nakoniec som vytvoril dve farebné palety - jednu svetlú a jednu tmavú.",
+      "text": "H je fiktívna fitness značka inšpirovaná boxom, bojovými umeniami a kondičným tréningom. Cieľom bolo zachytiť energiu, disciplínu a charakter bojových športov a zároveň vytvoriť značku, ktorá zostáva prístupná aj rekreačným športovcom. Vizuálna identita spája výraznosť s priateľským vzhľadom — silná, no nie zastrašujúca.\nLogo, zobrazujúce štýlizovanú býčiu lebku, je zaoblené a zjednodušené, aby pôsobilo dynamicky, ale nie agresívne. Šikmé línie použité v rozložení podporujú dynamiku a pocit pohybu. Úvodná stránka obsahuje tieto sekcie: Home Banner | Vybavenie | Tréningy | Cenník | Tréneri | Recenzie | Galéria | Footer.\nProjekt bol navrhnutý vo Figme a vyvinutý pomocou HTML5, CSS a JavaScriptu so zameraním na responzivitu, prístupnosť a výkon.",
       "images": [
         {
-          "title": "Svetlé Mačky",
-          "alt": "Ukážka 9 vektorových ilustrácií mačiek vo svetlej farebnej variácii."
+          "title": "Náhľad Úvodnej Stránky",
+          "alt": "Náhľad webu Horn Box Gym"
         },
         {
-          "title": "Tmavé Mačky",
-          "alt": "Ukážka 9 vektorových ilustrácií mačiek v tmavej farebnej variácii."
+          "title": "Farebný Systém",
+          "alt": "Prehľad použitého farebného systému"
         },
         {
-          "title": "Mačka 1",
-          "alt": "Simple vector illustration of a medium sized cat."
+          "title": "Dizajn Loga",
+          "alt": "Prezentácia loga Horn Box Gym"
         },
         {
-          "title": "Mačka 2",
-          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+          "title": "Alternatívne Logo",
+          "alt": "Alternatívne zobrazenie loga"
         },
         {
-          "title": "Mačka 3",
-          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+          "title": "Logo so Svetlom",
+          "alt": "Logo zobrazené s dynamickým nasvietením"
         },
         {
-          "title": "Mačka 4",
-          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+          "title": "Wireframe vo Figme",
+          "alt": "Wireframe rozloženia vytvorený vo Figme"
         },
         {
-          "title": "Mačka 5",
-          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+          "title": "Desktop Rozloženie",
+          "alt": "Desktop verzia webstránky Horn Box Gym"
         },
         {
-          "title": "Mačka 6",
-          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
-        },
-        {
-          "title": "Mačka 7",
-          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
-        },
-        {
-          "title": "Mačka 8",
-          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
-        },
-        {
-          "title": "Mačka 9",
-          "alt": "Jednoduchá vektorová ilustrácia stredne veľkej mačky."
+          "title": "Mobilné Rozloženie",
+          "alt": "Mobilná verzia webstránky Horn Box Gym"
         }
       ]
     },
-    "type": "Typ Projektu",
+
+    "Torse": {
+      "title": "Torse Design Studio — Animovaná Landing Page",
+      "alt": "Náhľad moderného čierno-bieleho webu interiérového štúdia",
+      "textShort": "Moderná animovaná landing page pre fiktívne interiérové štúdio so zameraním na minimalizmus a pohyb.",
+      "type": "Web Design",
+      "tools": "Dizajn: Figma, Photoshop, Blender \n Programovanie: React, Tailwind, GSAP",
+      "year": "2025",
+      "text": "Torse — vysokokontrastná landing page vytvorená pre fiktívne interiérové dizajnérske štúdio. Dizajn stavia na odvážnom minimalizme, využíva čierno-bielu paletu a písmo League Spartan, ktoré podčiarkujú moderný charakter. Rozhranie bolo navrhnuté vo Figme a vyvinuté v Reacte, Tailwind CSS a GSAP, čím vznikli plynulé a elegantné animácie.\nHero vizuál bol renderovaný v Blenderi pomocou Freestyle, aby získal architektonický line-art štýl. Video procesu od Transient at Large je dostupné na YouTube.\nStránka je nasadená pomocou GitHub Pages.",
+      "images": [
+        {
+          "title": "Náhľad Stránky",
+          "alt": "Náhľad landing page Torse Design Studio"
+        },
+        {
+          "title": "Desktop Zobrazenie",
+          "alt": "Desktop verzia webu Torse"
+        },
+        {
+          "title": "Načítavacia Animácia",
+          "alt": "Animácia načítania na desktop verzii"
+        },
+        {
+          "title": "Mobilné Zobrazenie",
+          "alt": "Mobilná verzia landing page Torse"
+        },
+        {
+          "title": "Wireframe v Blenderi",
+          "alt": "Wireframe vizualizácie vytvorený v Blenderi"
+        },
+        {
+          "title": "Ukážka Tieňovania",
+          "alt": "Čierno-biela ukážka tieňovania v Blenderi"
+        }
+      ]
+    },
+
+    "ScrollLock": {
+      "title": "ScrollLock Parallax Zážitok",
+      "alt": "Náhľad moderných landing page s parallax animáciami pre kaviareň a streetwear značku",
+      "textShort": "Dve responzívne moderné landing page s plynulým parallax pohybom a scroll-lock interakciami.",
+      "type": "Web Design",
+      "tools": "Dizajn: Figma \n Programovanie: React, Tailwind, GSAP, Motion, Lenis",
+      "year": "2025",
+      "text": "Dve animované landing page vytvorené pomocou GSAP a Motion, z ktorých každá ponúka odlišnú interpretáciu scroll-lock parallax efektu. Prvá verzia používa horizontálny slider, druhá vertikálne scroll-snapping pre plynulý a riadený spôsob prechádzania obsahom.",
+      "images": [
+        {
+          "title": "Kaviareň — Desktop",
+          "alt": "Desktop zobrazenie landing page pre kaviareň"
+        },
+        {
+          "title": "Kaviareň — Alternatíva",
+          "alt": "Alternatívny desktop pohľad na stránku kaviarne"
+        },
+        {
+          "title": "Streetwear — Desktop",
+          "alt": "Desktop zobrazenie streetwear landing page"
+        },
+        {
+          "title": "Streetwear — Na šírku",
+          "alt": "Landscape zobrazenie streetwear landing page"
+        }
+      ]
+    },
+
+    "type": "Typ projektu",
     "tools": "Nástroje",
     "year": "Rok",
-    "more": "Prečítajte si viac"
+    "more": "Zobraziť viac"
   },
   "illustrationLinks": {
     "kohut": {
@@ -215,28 +224,69 @@
     }
   },
   "about": {
-    "intro": "Volám sa Adam Kaščák. Som nadšený pre rôzne oblasti spojené s grafikou a počítačmi. Mám titul z informatiky a predchádzajúce skúsenosti ako 3D umelec, ale moje ďalšie oblasti odbornosti zahŕňajú grafický dizajn, webový vývoj a ilustrácie.",
-    "hobbies": "Keď nepracujem, rád sledujem animované filmy alebo čítam rôzne ilustrované knihy. Kedykoľvek mám príležitosť, rád plávam, potápam sa alebo trávim čo najviac času pri mori.",
-    "alt": "Adam Kaščák sa usmieva pred plachetnicou",
+    "intro": "Volám sa Adam Kaščák. Som freelance webový vývojár a dizajnér pôsobiaci v Nitre, špecializujem sa na tvorbu moderných, čistých a profesionálnych webstránok.",
+    "hobbies": "Vďaka skúsenostiam v oblasti 3D grafiky aj ilustrácie rád prepájam ručne maľované prvky alebo 3D modely s moderným webdizajnom.",
+    "alt": "Adam Kascak usmiaty pred plachetnicou",
     "experienceTitle": "Skúsenosti",
     "experience": {
       "exe": {
         "company": "exe a.s.",
-        "role": "DTP Specialist",
-        "time": "May 2025 - Present"
+        "role": "DTP Špecialista",
+        "time": "Máj 2025 - Súčasnosť"
       },
       "centurion": {
         "company": "Centurion Developments",
-        "role": "Junior Level Designer / 3D Artist",
-        "time": "January 2024 - August 2024"
+        "role": "Junior Level Dizajnér / 3D Grafik",
+        "time": "Január 2024 - August 2024"
       }
     }
   },
+  "services": {
+    "title": "Služby",
+    "description": "Rozvíjajte svoj projekt pomocou pôsobivého brandingu, balenia, webdizajnu a ilustrácií.",
+    "services": {
+      "web": {
+        "title": "Webdizajn a Vývoj",
+        "areas": "Wireframing - UI Dizajn - Prototypovanie - Vývoj",
+        "about": "Môžem redizajnovať váš súčasný web alebo vytvoriť úplne novú landing page a implementovať ju pomocou moderných nástrojov, ako sú Motion, Tailwind alebo GSAP."
+      },
+      "3d": {
+        "title": "3D Assety a Environment Art",
+        "areas": "Modelovanie - Textúrovanie - Optimalizácia - Vegetácia - Architektúra",
+        "about": "Tvorím 3D assety od začiatku až po finálnu verziu, vrátane modelovania, textúr, optimalizácie a osvetlenia scény. Špecializujem sa na rekvizity, modulárnu architektúru a prírodné objekty."
+      },
+      "illustration": {
+        "title": "Ilustrácie",
+        "areas": "Vektor - Infografiky - Portréty - Tuš",
+        "about": "Tvorím jednoduché no výrazné ikony a vektorové grafiky, ale aj tradičné ilustrácie so zameraním na portréty a architektúru."
+      }
+    },
+    "getInTouch": "Ak máte záujem o spoluprácu, neváhajte ma kontaktovať.",
+    "getInTouchButton": "Kontaktovať"
+  },
+
   "footer": {
     "rights": "©2025 Adam Kaščák. Všetky práva vyhradené"
   },
   "notFound": {
     "error": "404 - Stránka sa nenašla",
     "return": "Vrátiť sa na Domovskú Stránku"
+  },
+  "form": {
+    "title": "Kontakt",
+    "description": "Neváhajte mi zanechať správu cez tento formulár alebo ma kontaktovať na",
+    "name": "Meno*",
+    "email": "Emailová adresa*",
+    "phone": "Telefónne číslo",
+    "subject": "Predmet*",
+    "message": "Správa*",
+    "messageHint": "Popíšte, čo by ste chceli vytvoriť.",
+    "submit": "Odoslať",
+
+    "errors": {
+      "invalidEmail": "Prosím zadajte platnú emailovú adresu.",
+      "emptySubject": "Predmet nemôže byť prázdny.",
+      "emptyMessage": "Správa nemôže byť prázdna."
+    }
   }
 }

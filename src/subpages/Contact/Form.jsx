@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   containerFadeStagger,
   fadeUpSmall,
@@ -8,6 +9,34 @@ import styles from "../../style";
 import { motion } from "framer-motion";
 
 const Form = () => {
+  const { t } = useTranslation();
+  const isValidEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const subject = formData.get("subject");
+    const message = formData.get("message");
+
+    if (!subject.trim()) {
+      setError(formText[currentLang].errors.emptySubject);
+      return;
+    }
+
+    if (!message.trim()) {
+      setError(formText[currentLang].errors.emptyMessage);
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      setError(formText[currentLang].errors.invalidEmail);
+      return;
+    }
+  };
   return (
     <motion.form
       variants={containerFadeStagger({ delay: 0.1, stagger: 0.2 })}
@@ -15,16 +44,18 @@ const Form = () => {
       whileInView="visible"
       viewport={viewportOnce}
       className="w-full"
+      onSubmit={handleSubmit}
     >
       <motion.h1
         variants={fadeUpSmall}
         className={`${styles.headingMain} ${styles.paddingB}`}
       >
-        Contact
+        {t(`form.title`)}
       </motion.h1>
       <motion.p variants={fadeUpSmall} className="max-w-prose mt-8 lg:mt-10">
-        Feel free to leave a message via this form or contact me at{" "}
+        {t(`form.description`)}
         <a href="mailto:adam.kascak@protonmail.com" className="font-bold">
+          {" "}
           adam.kascak@protonmail.com
         </a>
       </motion.p>
@@ -38,14 +69,14 @@ const Form = () => {
           className="col-span-full md:col-span-1"
         >
           <label htmlFor="name" className="block text-sm/6 font-medium">
-            Name*
+            {t(`form.name`)}
           </label>
           <div className="mt-2">
             <input
               id="name"
               name="name"
               type="text"
-              className="block w-full border border-PBlack px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
+              className="block w-full border border-PBlack bg-PWhite px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
             />
           </div>
         </motion.div>
@@ -54,7 +85,7 @@ const Form = () => {
           className="col-span-full md:col-span-1"
         >
           <label htmlFor="email" className="block text-sm/6 font-medium ">
-            Email address*
+            {t(`form.email`)}
           </label>
           <div className="mt-2">
             <input
@@ -62,7 +93,7 @@ const Form = () => {
               name="email"
               type="email"
               autoComplete="email"
-              className="block w-full border border-PBlack px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
+              className="block w-full border border-PBlack bg-PWhite px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
             />
           </div>
         </motion.div>
@@ -73,9 +104,9 @@ const Form = () => {
         >
           <label
             htmlFor="phone"
-            className="block text-sm/6 font-medium text-gray-900"
+            className="block text-sm/6 font-medium text-PBlack"
           >
-            Phone Number
+            {t(`form.phone`)}
           </label>
           <div className="mt-2">
             <input
@@ -83,7 +114,7 @@ const Form = () => {
               name="phone"
               type="tel"
               autoComplete="phone"
-              className="block w-full border border-PBlack px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
+              className="block w-full border border-PBlack bg-PWhite px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
             />
           </div>
         </motion.div>
@@ -92,14 +123,14 @@ const Form = () => {
           className="col-span-full md:col-span-1"
         >
           <label htmlFor="subject" className="block text-sm/6 font-medium">
-            Subject*
+            {t(`form.subject`)}
           </label>
           <div className="mt-2">
             <input
               id="subject"
               name="subject"
               type="text"
-              className="block w-full border border-PBlack px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
+              className="block w-full border border-PBlack bg-PWhite px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
             />
           </div>
         </motion.div>
@@ -107,21 +138,22 @@ const Form = () => {
         <motion.div variants={fadeUpSmall} className="col-span-full">
           <label
             htmlFor="message"
-            className="block text-sm/6 font-medium text-gray-900"
+            className="block text-sm/6 font-medium text-PBlack"
           >
-            Message*
+            {t(`form.message`)}
           </label>
           <div className="mt-2">
             <textarea
               id="message"
               name="message"
               rows={3}
-              className="block w-full border border-PBlack px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
+              className="block w-full border border-PBlack 
+              bg-PWhite px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-PBlack sm:text-sm/6"
               defaultValue={""}
             />
           </div>
           <p className="mt-3 text-sm/6 text-gray-600">
-            Describe what you'd like to be made.
+            {t(`form.messageHint`)}
           </p>
         </motion.div>
       </motion.div>
@@ -129,9 +161,9 @@ const Form = () => {
       <div className="mt-6 flex items-center justify-center md:justify-start">
         <button
           type="submit"
-          className={`rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-black/80 w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
+          className={`rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-PGrey w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
         >
-          Submit
+          {t(`form.submit`)}
         </button>
       </div>
     </motion.form>

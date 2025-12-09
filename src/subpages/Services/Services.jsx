@@ -47,7 +47,7 @@ const Services = () => {
                       <motion.img
                         src={image}
                         alt={t(`services.services.${id}.title`)}
-                        className="shrink-0 p-4"
+                        className="shrink-0 p-4 dark:brightness-[0.7]"
                         width={120}
                         height={120}
                         variants={fadeUpSmall}
@@ -90,7 +90,7 @@ const Services = () => {
           <p>{t(`services.getInTouch`)}</p>
           <Link
             to={navLinksContact.to}
-            className={`rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-black/80 w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
+            className={`rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-PGrey w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
           >
             {t(`services.getInTouchButton`)}
           </Link>

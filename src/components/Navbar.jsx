@@ -51,9 +51,7 @@ const Navbar = () => {
           {/* Center the text */}
 
           {isHomepage && (
-            <h1
-              className={`${styles.cursorText} uppercase texy-xl font-medium`}
-            >
+            <h1 className={`${styles.cursorText} uppercase font-medium pr-4`}>
               {t(`home.title`)}
             </h1>
           )}
@@ -87,7 +85,7 @@ const Navbar = () => {
         )}
         <Link
           to={navLinksContact.to}
-          className={`hidden md:block rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-black/80 w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
+          className={`hidden md:block rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-PGrey w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
         >
           {t(`contactCTA`)}
         </Link>

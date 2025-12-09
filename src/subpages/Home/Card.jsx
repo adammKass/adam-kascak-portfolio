@@ -69,7 +69,7 @@ const Card = () => {
                   <img
                     src={serviceWeb}
                     alt="Graphic Design - Default state"
-                    className={`lg:hidden dark:brightness-[0.7] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
+                    className={`lg:hidden dark:brightness-[0.9] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-100" : "opacity-0"
                     }`}
                   />
@@ -77,18 +77,18 @@ const Card = () => {
                   <img
                     src={serviceWebOff}
                     alt="Graphic Design - Default state"
-                    className={`hidden lg:block dark:brightness-[0.7] ${
+                    className={`hidden lg:block  ${
                       hover ? "opacity-0" : "opacity-100"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-40 ${
                       styles.transitionOpacity
                     }`}
                   />
                   <img
                     src={serviceWeb}
                     alt="Graphic Design - Highlighted state"
-                    className={`hidden lg:block ${
+                    className={`hidden lg:block dark:brightness-[0.9] ${
                       hover ? "opacity-100" : "opacity-0"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-40 ${
                       styles.transitionOpacity
                     }`}
                   />
@@ -201,7 +201,7 @@ const Card = () => {
                   <img
                     src={serviceIllustration}
                     alt="Illustrations - Highlighted state"
-                    className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
+                    className={`lg:hidden dark:brightness-[0.9] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-100" : "opacity-0"
                     }`}
                   />
@@ -218,16 +218,16 @@ const Card = () => {
                     alt="Illustrations - Default state"
                     className={`hidden lg:block ${
                       hover ? "opacity-0" : "opacity-100"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-40 ${
                       styles.transitionOpacity
                     }`}
                   />
                   <img
                     src={serviceIllustration}
                     alt="Illustrations - Default state"
-                    className={`hidden lg:block ${
+                    className={`hidden dark:brightness-[0.9] lg:block ${
                       hover ? "opacity-100" : "opacity-0"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-40 ${
                       styles.transitionOpacity
                     }`}
                   />
@@ -265,7 +265,7 @@ const Card = () => {
                   <img
                     src={service}
                     alt="About Me - Highlighted state"
-                    className={`lg:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
+                    className={`lg:hidden dark:brightness-[0.9] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 transition-opacity duration-300 ${
                       isVisible ? "opacity-100" : "opacity-0"
                     }`}
                   />
@@ -283,16 +283,16 @@ const Card = () => {
                     alt="About Me - Default state"
                     className={`hidden lg:block ${
                       hover ? "opacity-0" : "opacity-100"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-40 ${
                       styles.transitionOpacity
                     }`}
                   />
                   <img
                     src={service}
                     alt="About Me - Highlighted state"
-                    className={`hidden lg:block ${
+                    className={`hidden lg:block dark:brightness-[0.9] ${
                       hover ? "opacity-100" : "opacity-0"
-                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-44 ${
+                    } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-48 w-40 ${
                       styles.transitionOpacity
                     }`}
                   />

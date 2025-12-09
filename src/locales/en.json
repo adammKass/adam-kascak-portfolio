@@ -40,139 +40,143 @@
   },
   "designLinks": {
     "Portfolio": {
-      "title": "Portfolio Website",
-      "alt": "Web icon of Adam Kascak's portfolio website",
-      "textShort": "Personal project. I wanted to make a website showcasing some of my work from different areas of visual arts.",
+      "title": "Personal Portfolio Website",
+      "alt": "Web icon representing Adam Kascak's personal portfolio",
+      "textShort": "A curated presentation of selected visual art and design work, built as a personal portfolio website.",
       "type": "Web Design",
       "tools": "Design: Figma, Krita, Adobe Illustrator \n Programming: React, Tailwind CSS",
       "year": "2025",
-      "text": "Personal project. I wanted to make a website showcasing some of my work from different areas of visual arts. I also wanted this website to combine my love for illustrating, so of course simple angular illustrations were used on the home page. I wanted to keep the color palette black and white, as I also like to work mostly with black and white for most of my illustrations. There are a total of 4 colors used on this website: white, light grey, dark grey, and black.\nFonts used are all geometric sans-serif. Circular shapes of Montserrat Alternates complement nicely with sharp edges of illustrations and rectangles on the website. In some places, I also used Futura PT, this time for sharp edges on some of its symbols, like A and F.\nThe website was created by me from start to finish, including web development. I used the React framework with Tailwind CSS, as this is the combination I'm most comfortable with.",
+      "text": "A personal project designed to present selected work from multiple visual art disciplines. I incorporated my passion for illustration, creating simple angular visuals featured on the homepage. The color palette is intentionally minimal — white, light grey, dark grey, and black — reflecting my affinity for monochromatic artwork.\nThe typography uses geometric sans-serif fonts. The rounded shapes of Montserrat Alternates complement the sharp elements present in the layout, while Futura PT appears in select sections for its clean geometric structure and distinctive character forms.\nThis website was fully designed and developed by me using React and Tailwind CSS, the framework combination I find most efficient for rapid and scalable development.",
       "images": [
         {
-          "title": "Illustration Showcase",
-          "alt": "Showcase of light and dark variations of illustrations used in portfolio website"
+          "title": "Illustration Variations",
+          "alt": "Light and dark illustration variations used throughout the portfolio website"
         },
         {
-          "title": "Fonts Showcase",
-          "alt": "Showcase of fonts used in portfolio website"
+          "title": "Typography Selection",
+          "alt": "Overview of geometric sans-serif typography used in the portfolio"
         },
         {
-          "title": "Color Palette",
-          "alt": "Showcase of 4 colors used across the portfolio website"
+          "title": "Monochrome Palette",
+          "alt": "Four-color monochrome palette applied across the website"
         }
       ]
     },
+
     "Horn": {
       "title": "Horn Box Gym Website",
-      "alt": "Web icon of website of boxing studio in Bratislava",
-      "textShort": "Fully responsive and accessible website of fictional boxing gym based in Bratislava.",
+      "alt": "Web icon representing a fictional boxing gym website in Bratislava",
+      "textShort": "A fully responsive and accessible website concept for a fictional boxing and fitness gym.",
       "type": "Web Design",
       "tools": "Design: Figma, Adobe Illustrator \n Programming: HTML, CSS, Javascript",
       "year": "2025",
-      "text": "H is a fictional fitness brand built around the spirit of boxing, martial arts, and conditioning training. The goal was to capture the raw energy and discipline of combat sports while keeping the brand approachable and inspiring for everyday athletes The design concept emphasizes boldness and strength while maintaining an approachable and friendly look — powerful but not intimidating. The logo, featuring a stylized bull’s skull, is rounded and simplified to convey energy and determination without aggression. Angled elements are used throughout the layout to enhance a sense of motion and dynamism. The landing page includes the following sections:  Home Banner | Equipment | Trainings | Prices | Instructors | Reviews | Gallery | Footer The design was created in Figma and developed using HTML5, CSS, and JavaScript, with a strong focus on responsive design across all devices, SEO optimization, and accessibility.",
+      "text": "H is a fictional fitness brand inspired by boxing, martial arts, and high-intensity conditioning. The goal was to express the energy, discipline, and character of combat sports while keeping the brand accessible to everyday athletes. The visual identity balances boldness with approachability — strong but not intimidating.\nThe logo, depicting a stylized bull’s skull, is rounded and simplified to maintain a dynamic but friendly appearance. Angled elements appear throughout the layout, reinforcing a sense of motion. The landing page includes the following sections: Home Banner | Equipment | Trainings | Prices | Instructors | Reviews | Gallery | Footer.\nThe project was designed in Figma and developed with HTML5, CSS, and JavaScript, with a strong focus on responsiveness, accessibility, and optimized performance.",
       "images": [
         {
-          "title": "Thumbnail",
-          "alt": "Thumbnail of website of boxing studio"
+          "title": "Landing Page Thumbnail",
+          "alt": "Thumbnail preview of the Horn Box Gym website"
         },
         {
-          "title": "Colors Showcase",
-          "alt": "Showcase of colors used in website"
+          "title": "Color System",
+          "alt": "Overview of the brand’s color system"
         },
         {
-          "title": "Logo Showcase",
-          "alt": "Showcase of logo"
+          "title": "Logo Design",
+          "alt": "Presentation of the Horn Box Gym logo"
         },
         {
-          "title": "Logo Showcase",
-          "alt": "Showcase of logo"
+          "title": "Alternate Logo View",
+          "alt": "Alternative rendering of the gym’s logo"
         },
         {
-          "title": "Logo Showcase",
-          "alt": "Showcase of logo in dynamic lighting"
+          "title": "Logo Lighting",
+          "alt": "Logo presented with dramatic lighting effects"
         },
         {
-          "title": "Wireframe in Figma",
-          "alt": "Wireframe in Figma"
+          "title": "Figma Wireframe",
+          "alt": "Wireframe layout created in Figma"
         },
         {
-          "title": "Full Desktop version",
-          "alt": "Desktop Version"
+          "title": "Desktop Layout",
+          "alt": "Full desktop layout of the Horn Box Gym website"
         },
         {
-          "title": "Mobile version",
-          "alt": "Mobile Version"
+          "title": "Mobile Layout",
+          "alt": "Mobile layout of the Horn Box Gym website"
         }
       ]
     },
+
     "Torse": {
-      "title": "Torse Animation Landing Page",
-      "alt": "Thumbnail of black and white interior design studio",
-      "textShort": "Fully responsive and accessible website of fictional interior design studio using modern animations",
+      "title": "Torse Design Studio — Animated Landing Page",
+      "alt": "Preview thumbnail of a modern black-and-white interior design studio website",
+      "textShort": "A modern animated landing page for a fictional interior design studio, focused on minimalism and motion.",
       "type": "Web Design",
       "tools": "Design: Figma, Photoshop, Blender \n Programming: React, Tailwind, GSAP",
       "year": "2025",
-      "text": "Torse — Interior Design Studio Landing Page A sleek and high-contrast web landing page concept for a fictional interior design studio. The design emphasizes bold minimalism, featuring a black-and-white color palette and League Spartan typography to convey modernity and strength. Design created in Figma. Developed with React, Tailwind CSS, and GSAP for smooth, dynamic animations. Hero Visual: Rendered in Blender using Freestyle for a stylized, architectural illustration look. Video showcasing the process by Transient at Large is available on Youtube: https://www.youtube.com/watch?v=LElPE7R7Ka0 Explore the live page on GitHub Pages:: https://adammkass.github.io/torse/ ",
+      "text": "Torse — a high-contrast landing page concept for a fictional interior design studio. The visual direction embraces bold minimalism, using a strict black-and-white palette and League Spartan typography to create a contemporary and confident aesthetic. The design was created in Figma and developed using React, Tailwind CSS, and GSAP to produce fluid, polished animations.\nThe hero visual was rendered in Blender using Freestyle for a stylized architectural line-art appearance. A behind-the-scenes rendering process by Transient at Large is available on YouTube.\nThe live page is published via GitHub Pages.",
       "images": [
         {
-          "title": "Thumbnail",
-          "alt": "Thumbnail of website of interior design studio"
+          "title": "Landing Page Thumbnail",
+          "alt": "Thumbnail of the Torse interior design studio landing page"
         },
         {
-          "title": "Desktop version",
-          "alt": "Desktop Version"
+          "title": "Desktop View",
+          "alt": "Desktop layout of the Torse landing page"
         },
         {
-          "title": "Desktop Loading",
-          "alt": "Desktop Loading Animation"
+          "title": "Loading Animation",
+          "alt": "Loading animation displayed on the desktop version"
         },
         {
-          "title": "Mobile version",
-          "alt": "Mobile Version"
+          "title": "Mobile View",
+          "alt": "Mobile layout of the Torse landing page"
         },
         {
-          "title": "Wireframe in Blender",
-          "alt": "Wireframe view of interior in Blender"
+          "title": "Blender Wireframe",
+          "alt": "Wireframe rendering of the hero visual created in Blender"
         },
         {
-          "title": "Shading",
-          "alt": "Showcase of Black and White shading in Blender"
+          "title": "Shading Preview",
+          "alt": "Black-and-white shading preview rendered in Blender"
         }
       ]
     },
+
     "ScrollLock": {
-      "title": "ScrollLock Parallax effect",
-      "alt": "Thumbnail of modern landing pages of coffee shop and streetwear fashion brand",
-      "textShort": "Fully responsive modern websites using sleek parallax scrolling to achieve scrolllock effect.",
+      "title": "ScrollLock Parallax Experience",
+      "alt": "Thumbnail preview of modern coffee shop and streetwear landing pages with parallax animation",
+      "textShort": "Two responsive landing pages featuring smooth parallax motion and scroll-lock interactions.",
       "type": "Web Design",
       "tools": "Design: Figma \n Programming: React, Tailwind, GSAP, Motion, Lenis",
       "year": "2025",
-      "text": "Two landing pages using two animation libraries, GSAP an Motion achieving same effect in two versions. Obne version is horizontall slider and other one is vertical scrolling with snap. ",
+      "text": "Two animated landing pages created using GSAP and Motion, each producing a unique take on the scroll-lock parallax experience. One layout uses a horizontal slider format, while the other features vertical scroll-snapping for a guided, fluid browsing interaction.",
       "images": [
         {
-          "title": "Cof Desktop View",
-          "alt": "Desktop view"
+          "title": "Coffee Shop — Desktop View",
+          "alt": "Desktop view of the coffee shop parallax landing page"
         },
         {
-          "title": "Cof Desktop View",
-          "alt": "Desktop View"
-        },
-
-        {
-          "title": "Virignon Desktop View",
-          "alt": "Desktop View"
+          "title": "Coffee Shop — Alternate View",
+          "alt": "Alternate desktop view of the coffee shop landing page"
         },
         {
-          "title": "Virignon Landscape View",
-          "alt": "Landcsape"
+          "title": "Streetwear — Desktop View",
+          "alt": "Desktop view of the streetwear landing page"
+        },
+        {
+          "title": "Streetwear — Landscape View",
+          "alt": "Landscape orientation of the streetwear landing page"
         }
       ]
     },
+
     "type": "Project Type",
     "tools": "Tools",
     "year": "Year",
     "more": "Read more"
   },
+
   "illustrationLinks": {
     "kohut": {
       "title": "Roosters in Key West",
@@ -222,15 +226,10 @@
   },
 
   "about": {
-    "intro": "My name is Adam Kaščák. I'm a freelance web developer and designer based in Nitra, SLovakia. I focus on designing and creating modern and professional websites.",
-    "hobbies": "With background in both 3D graphics and illustration, I enjoy blending 3D models or hand-painted artwork with web design",
-    "alt": "Adam Kascak smiling in front of sailing ship",
+    "intro": "My name is Adam Kaščák. I am a freelance web developer and designer based in Nitra, Slovakia, specializing in creating modern, clean, and professional websites.",
+    "hobbies": "With experience in both 3D graphics and illustration, I enjoy combining hand-painted artwork or 3D elements with contemporary web design.",
+    "alt": "Adam Kascak smiling in front of a sailing ship",
     "experienceTitle": "Experience",
-    "SD": {
-      "title": "Substance Designer Practice",
-      "alt": "Render of rock material created using Substance Designer",
-      "text": "Here are some of the materials I created using Substance Designer. The aim of this practice was to improve my skills in Substance Designer."
-    },
     "experience": {
       "exe": {
         "company": "exe a.s.",
@@ -246,22 +245,22 @@
   },
   "services": {
     "title": "Services",
-    "description": "Develop your passion project with eye catching branding, packaging, web design & illustrations.",
+    "description": "Develop your passion project with impactful branding, packaging, web design, and illustrations.",
     "services": {
       "web": {
         "title": "Web Design and Development",
         "areas": "Wireframing - UI Design - Prototyping - Development",
-        "about": "I can redesign or design brand new landing page for your brand and implement it using modern tools, such as Motion, Tailwind or GSAP"
+        "about": "I can redesign your current website or create a completely new landing page, implementing it with modern tools such as Motion, Tailwind, or GSAP."
       },
       "3d": {
         "title": "3D Assets and Environment Art",
         "areas": "Modeling - Texturing - Optimization - Vegetation - Architecture",
-        "about": "I have skills to create 3D assets from scratch to finish, including optimization and lighting in scene. I specialise mostly on props, modular architecture and nature props."
+        "about": "I create 3D assets from start to finish, including modeling, texturing, optimization, and lighting. I specialize in props, modular architecture, and nature-related assets."
       },
       "illustration": {
         "title": "Illustrations",
         "areas": "Vector - Infographics - Portraits - Ink",
-        "about": "I can create simple yet striking icons and vector graphics, or I can create traditional illustrations, mostly focusing on portraits and architecture."
+        "about": "I can create simple yet striking icons and vector graphics, as well as traditional illustrations, with a focus on portraits and architectural themes."
       }
     },
     "getInTouch": "If you're interested in working together, feel free to contact me.",
@@ -274,5 +273,22 @@
   "notFound": {
     "error": "404 - Page not Found",
     "return": "Return to Homepage"
+  },
+  "form": {
+    "title": "Contact",
+    "description": "Feel free to leave a message via this form or contact me at",
+    "name": "Name*",
+    "email": "Email address*",
+    "phone": "Phone Number",
+    "subject": "Subject*",
+    "message": "Message*",
+    "messageHint": "Describe what you'd like to be made.",
+    "submit": "Submit",
+
+    "errors": {
+      "invalidEmail": "Please enter a valid email address.",
+      "emptySubject": "Subject cannot be empty.",
+      "emptyMessage": "Message cannot be empty."
+    }
   }
 }

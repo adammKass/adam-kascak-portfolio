@@ -18,11 +18,7 @@ import TombThumb from "./GraphicsThumbnails/TombThumb.jpg";
 
 // Design Thumbnails
 import PortfolioThumb from "./GraphicDesign/Portfolio/PortfolioThumb.svg";
-import UnderwaterThumb from "./GraphicDesign/Underwater/UnderwaterThumb.svg";
-import CatsThumb from "./GraphicDesign/Cats/CatsThumb.svg";
-
 //Graphic Design
-//Portfolio
 import PortfolioIllustrationsShowcase from "./GraphicDesign/Portfolio/IllustrationsShowcase.svg";
 import PortfolioFontShowcase from "./GraphicDesign/Portfolio/FontShowcase.svg";
 import PortfolioColorPalette from "./GraphicDesign/Portfolio/ColorPalette.svg";
@@ -54,23 +50,11 @@ import VirLandscape from "./GraphicDesign/ScrollLock/Vir_Landscape.jpg";
 import VirMobile from "./GraphicDesign/ScrollLock/Vir_Mobile.jpg";
 import ScrollLockThumb from "./GraphicDesign/ScrollLock/ScrollLock_Thumb.jpg";
 
-//Underwater
-import UnderwaterDesignStyles from "./GraphicDesign/Underwater/Design Styles.svg";
-import UnderwaterBlogPage from "./GraphicDesign/Underwater/Desktop - Blog Page.svg";
-import UnderwaterBlogPost from "./GraphicDesign/Underwater/Desktop - Blog Post.svg";
-import UnderwaterEditUserPage from "./GraphicDesign/Underwater/Desktop - Edit User Page.svg";
-import UnderwaterImagePage from "./GraphicDesign/Underwater/Desktop - Image Page.svg";
-import UnderwaterImagePageMobile from "./GraphicDesign/Underwater/Mobile - Image Page.svg";
-import UnderwaterLandingPage from "./GraphicDesign/Underwater/Desktop - Landing Page.svg";
-import UnderwaterManagePortfolioPage from "./GraphicDesign/Underwater/Desktop - Manage Portfolio Page.svg";
-import UnderwaterUserPage from "./GraphicDesign/Underwater/Desktop - User Page.svg";
-import UnderwaterLandingPageMobile from "./GraphicDesign/Underwater/Mobile - Landing Page.svg";
-
 // Contact
 import linkedin from "./logos/linkedin.png";
 import artstation from "./logos/artstation.svg";
 import behance from "./logos/behance.svg";
-import profile from "./profile.jpg";
+import github from "./logos/github.svg";
 import portrait from "./portrait.png";
 
 // Illustrations
@@ -149,6 +133,7 @@ export {
   linkedin,
   artstation,
   behance,
+  github,
   sk,
   uk,
   service,
@@ -158,7 +143,6 @@ export {
   service3D,
   serviceIllustration,
   serviceIllustrationOff,
-  profile,
   portrait,
   kohutM_jpg,
   kohutM_avif,
@@ -188,21 +172,9 @@ export {
   stillLife4_webp,
   stillLife4_avif,
   PortfolioThumb,
-  UnderwaterThumb,
-  CatsThumb,
-  PortfolioIllustrationsShowcase,
-  PortfolioFontShowcase,
   PortfolioColorPalette,
-  UnderwaterBlogPage,
-  UnderwaterBlogPost,
-  UnderwaterEditUserPage,
-  UnderwaterImagePage,
-  UnderwaterImagePageMobile,
-  UnderwaterLandingPage,
-  UnderwaterManagePortfolioPage,
-  UnderwaterUserPage,
-  UnderwaterLandingPageMobile,
-  UnderwaterDesignStyles,
+  PortfolioFontShowcase,
+  PortfolioIllustrationsShowcase,
   HornColors,
   HornLogo,
   HornLogoShowcase,

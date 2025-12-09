@@ -58,6 +58,10 @@ import {
   VirMobile,
   TorseThumbnail,
   ScrollLockThumb,
+  artstation,
+  behance,
+  linkedin,
+  github,
 } from "../assets";
 
 export const navLinks = [
@@ -279,6 +283,29 @@ export const experienceTitles = [
   },
   {
     id: "centurion",
+  },
+];
+
+export const socials = [
+  {
+    id: "artstation",
+    to: "https://www.artstation.com/adamkascak1",
+    image: artstation,
+  },
+  {
+    id: "behance",
+    to: "https://www.behance.net/adamkascak#",
+    image: behance,
+  },
+  {
+    id: "github",
+    to: "https://github.com/adammKass",
+    image: github,
+  },
+  {
+    id: "linked",
+    to: "www.linkedin.com/in/adam-kascak-2006b3350",
+    image: linkedin,
   },
 ];
 

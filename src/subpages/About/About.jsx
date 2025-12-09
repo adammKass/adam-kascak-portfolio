@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Footer, Navbar } from "../../components";
 import styles from "../../style";
-import { artstation, behance, linkedin, portrait, profile } from "../../assets";
+import { portrait } from "../../assets";
 import { experienceTitles, navLinksContact, services } from "../../constants";
 import { Link } from "react-router-dom";
 import {
@@ -24,7 +24,7 @@ const About = () => {
       <Navbar />
       <main
         id="main-content"
-        className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mx-auto`}
+        className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mt-8 lg:mt-0  mx-auto`}
       >
         <motion.div
           initial="hidden"
@@ -73,7 +73,7 @@ const About = () => {
               </div>
             </section>
           </section>
-          <div className="col-span-full md:col-span-1 aspect-square rounded-lg mx-auto self-center max-w-3xl">
+          <div className="col-span-full md:col-span-1 aspect-square rounded-lg mx-auto self-center max-w-3xl dark:brightness-[0.7]">
             <img
               src={portrait}
               alt={t(`about.alt`)}
@@ -92,7 +92,7 @@ const About = () => {
           <p>{t(`services.getInTouch`)}</p>
           <Link
             to={navLinksContact.to}
-            className={`rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-black/80 w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
+            className={`rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-PGrey w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
           >
             {t(`services.getInTouchButton`)}
           </Link>
