@@ -106,6 +106,30 @@
         }
       ]
     },
+    "BielaLinia": {
+      "title": "Biela Linia Website",
+      "alt": "Thumbnail showcasing a fictional website of household cleaning company in Nitra",
+      "textShort": "A fully responsive and accessible website concept for a fictional household cleaning company.",
+      "type": "Web Design",
+      "tools": "React, Tailwind, Motion",
+      "year": "2025",
+      "text": "Biela Linia is a fictional household cleaning company based in Nitra. This project was created as a trial for a web development company. I was handed design in Figma and the goal was to create a landing page with full screen snapping sections. I kept the layout as was in design file but I had to tweak it slightly to proper functionality and tweak design for more modern and sophisticated look. The landing page includes the following sections: Home Banner | Services |  Testimonials | FAQ | Gallery | Footer.\nThe project was developed with React, Tailwind, and Motion, with a strong focus on responsiveness and optimized performance.",
+      "images": [
+        {
+          "title": "Landing Page Thumbnail",
+          "alt": "Thumbnail preview of the Biela Linia website"
+        },
+
+        {
+          "title": "Desktop Layout",
+          "alt": "Full desktop layout of the Biela Linia website"
+        },
+        {
+          "title": "Responsive Layout",
+          "alt": "Layout of the Biela Linia website for mobile and tablet devices"
+        }
+      ]
+    },
 
     "Torse": {
       "title": "Torse Design Studio — Animated Landing Page",

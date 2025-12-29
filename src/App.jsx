@@ -21,6 +21,7 @@ import {
   IllustrationsDetails,
   NotFound,
 } from "./subpages";
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Loading state
@@ -51,6 +52,7 @@ function App() {
   // Render the main application with routes
   return (
     <Router>
+      <ScrollToTop />
       <AnimatedRoutes />
     </Router>
   );

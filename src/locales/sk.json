@@ -107,6 +107,30 @@
       ]
     },
 
+    "BielaLinia": {
+      "title": "Webová stránka Biela Linia",
+      "alt": "Náhľad zobrazujúci fiktívnu webovú stránku spoločnosti na upratovanie domácností v Nitre",
+      "textShort": "Plne responzívny a prístupný koncept webovej stránky pre fiktívnu spoločnosť na upratovanie domácností.",
+      "type": "Webdizajn",
+      "tools": "React, Tailwind, Motion",
+      "year": "2025",
+      "text": "Biela Linia je fiktívna spoločnosť na upratovanie domácností so sídlom v Nitre. Tento projekt bol vytvorený ako test pre webovú vývojársku spoločnosť. Dostala som návrh vo Figme a cieľom bolo vytvoriť landing page s celoobrazovkovými sekciami so snap efektom. Rozloženie som zachovala podľa dizajnového súboru, no bolo potrebné ho mierne upraviť pre správnu funkčnosť a vylepšiť dizajn pre modernejší a sofistikovanejší vzhľad. Landing page obsahuje nasledujúce sekcie: Úvodný banner | Služby | Referencie | FAQ | Galéria | Pätička.\nProjekt bol vyvinutý pomocou technológií React, Tailwind a Motion, s dôrazom na responzivitu a optimalizovaný výkon.",
+      "images": [
+        {
+          "title": "Náhľad landing page",
+          "alt": "Náhľadový obrázok webovej stránky Biela Linia"
+        },
+        {
+          "title": "Desktopové rozloženie",
+          "alt": "Kompletné desktopové rozloženie webovej stránky Biela Linia"
+        },
+        {
+          "title": "Responzívne rozloženie",
+          "alt": "Rozloženie webovej stránky Biela Linia pre mobilné a tabletové zariadenia"
+        }
+      ]
+    },
+
     "Torse": {
       "title": "Torse Design Studio — Animovaná Landing Page",
       "alt": "Náhľad moderného čierno-bieleho webu interiérového štúdia",

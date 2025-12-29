@@ -62,6 +62,9 @@ import {
   behance,
   linkedin,
   github,
+  BielaLiniaThumb,
+  BielaLiniaDesktop,
+  BielaLiniaMobile,
 } from "../assets";
 
 export const navLinks = [
@@ -140,6 +143,21 @@ export const DesignLinks = [
       },
       {
         image: HornMobile,
+      },
+    ],
+  },
+  {
+    id: "BielaLinia",
+    thumb: BielaLiniaThumb,
+    images: [
+      {
+        image: BielaLiniaThumb,
+      },
+      {
+        image: BielaLiniaDesktop,
+      },
+      {
+        image: BielaLiniaMobile,
       },
     ],
   },

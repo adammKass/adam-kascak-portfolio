@@ -16,7 +16,6 @@ import {
   serviceWebOff,
 } from "../../assets";
 import { useNavigate } from "react-router-dom";
-import lottie from "lottie-web";
 
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
@@ -174,23 +173,6 @@ const Card = () => {
           {({ hover }) => {
             const ref = useRef(null);
             const isVisible = useIsVisible(ref);
-            const animationContainer = useRef(null);
-            useEffect(() => {
-              // Initialize the Lottie animation
-              const animation = lottie.loadAnimation({
-                container: animationContainer.current, // Reference to the container
-                renderer: "svg",
-                loop: true,
-                autoplay: true,
-                path: "adam-kascak-portfolio/animations/IllustrationsAnim.json", // Replace with the correct path to your animation JSON file
-              });
-
-              return () => {
-                // Cleanup the animation on component unmount
-                animation.destroy();
-              };
-            }, []);
-
             return (
               <>
                 <div

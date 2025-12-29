@@ -52,7 +52,7 @@ const About = () => {
               >
                 {experienceTitles.map(({ id }) => {
                   return (
-                    <article variants={staggerContainer(0.5)}>
+                    <article key={id} variants={staggerContainer(0.5)}>
                       <h3
                         variants={fadeUpSmall}
                         className="text-lg lg:text-2xl uppercase font-bold"

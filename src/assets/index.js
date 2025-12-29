@@ -32,6 +32,11 @@ import HornDesktop from "./GraphicDesign/Horn/Horn_Desktop Full.jpg";
 import HornThumb from "./GraphicDesign/Horn/Horn_ThumbNail.jpg";
 import HornWireframe from "./GraphicDesign/Horn/Horn_Wireframe.png";
 
+//BielaLinia
+import BielaLiniaMobile from "./GraphicDesign/BielaLinia/BielaLinia_Mobile.jpg";
+import BielaLiniaDesktop from "./GraphicDesign/BielaLinia/BielaLinia_Desktop Full.jpg";
+import BielaLiniaThumb from "./GraphicDesign/BielaLinia/BielaLinia_Thumb.jpg";
+
 //Torse
 import TorseDesktop from "./GraphicDesign/Torse/Torse_Desktop.png";
 import TorseLoading from "./GraphicDesign/Torse/Torse_Loading.png";
@@ -182,6 +187,9 @@ export {
   HornThumb,
   HornDesktop,
   HornMobile,
+  BielaLiniaDesktop,
+  BielaLiniaMobile,
+  BielaLiniaThumb,
   TorseThumb,
   TorseThumbnail,
   TorseDesktop,
