@@ -14,7 +14,7 @@ const styles = {
     "cursor-[url('/cursors/cursor-auto.svg')_0_0,default] dark:cursor-[url('/cursors/cursor-auto_dark.svg')_0_0,default]",
 
   headingMain:
-    "text-3xl sm:text-5xl lg:text-6xl font-black uppercase border-b-2 pb-4 lg:pb-8 border-black text-center",
+    "text-3xl sm:text-5xl lg:text-6xl font-black uppercase border-b-2 pb-4 lg:pb-8 border-PBlack text-center",
 
   // Paddings and margins
   paddingXA: "px-10 lg:px-20",
