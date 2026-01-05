@@ -67,7 +67,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         {/* Home Route */}
         <Route
-          path="/adam-kascak-portfolio"
+          path="/"
           element={
             <PageWrapper>
               <Home />
@@ -77,7 +77,7 @@ function AnimatedRoutes() {
 
         {/* About Route */}
         <Route
-          path="/adam-kascak-portfolio/about"
+          path="/about"
           element={
             <PageWrapper>
               <About />
@@ -86,7 +86,7 @@ function AnimatedRoutes() {
         />
 
         <Route
-          path="/adam-kascak-portfolio/services"
+          path="/services"
           element={
             <PageWrapper>
               <Services />
@@ -96,7 +96,7 @@ function AnimatedRoutes() {
 
         {/* Contact Route */}
         <Route
-          path="/adam-kascak-portfolio/contact"
+          path="/contact"
           element={
             <PageWrapper>
               <Contact />
@@ -106,7 +106,7 @@ function AnimatedRoutes() {
 
         {/* Digital Graphics Route */}
         <Route
-          path="/adam-kascak-portfolio/dgraphics"
+          path="/dgraphics"
           element={
             <PageWrapper>
               <DGraphics />
@@ -116,7 +116,7 @@ function AnimatedRoutes() {
 
         {/* Graphic Design Route */}
         <Route
-          path="/adam-kascak-portfolio/graphicdesign"
+          path="/graphicdesign"
           element={
             <PageWrapper>
               <GraphicDesign />
@@ -126,7 +126,7 @@ function AnimatedRoutes() {
 
         {/* Illustrations Route */}
         <Route
-          path="/adam-kascak-portfolio/illustrations"
+          path="/illustrations"
           element={
             <PageWrapper>
               <Illustrations />
@@ -136,7 +136,7 @@ function AnimatedRoutes() {
 
         {/* Illustration Details Route */}
         <Route
-          path="/adam-kascak-portfolio/illustrations/:id"
+          path="/illustrations/:id"
           element={
             <PageWrapper>
               <IllustrationsDetails />
@@ -146,7 +146,7 @@ function AnimatedRoutes() {
 
         {/* Graphic Design Details Route */}
         <Route
-          path="/adam-kascak-portfolio/graphicdesign/:id"
+          path="/graphicdesign/:id"
           element={
             <PageWrapper>
               <DesignDetails />

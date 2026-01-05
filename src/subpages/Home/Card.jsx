@@ -40,10 +40,10 @@ const Card = () => {
         <Tab
           aria-label="Web Design Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus} ${styles.cursorPointer} `}
-          onClick={() => navigate(`/adam-kascak-portfolio/graphicdesign`)}
+          onClick={() => navigate(`/graphicdesign`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/adam-kascak-portfolio/graphicdesign`);
+              navigate(`/graphicdesign`);
             }
           }}
         >
@@ -104,10 +104,10 @@ const Card = () => {
         <Tab
           aria-label="3D Graphics Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus} ${styles.cursorPointer}`}
-          onClick={() => navigate(`/adam-kascak-portfolio/dgraphics`)}
+          onClick={() => navigate(`/dgraphics`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/adam-kascak-portfolio/dgraphics`);
+              navigate(`/dgraphics`);
             }
           }}
         >
@@ -163,10 +163,10 @@ const Card = () => {
         <Tab
           aria-label="Illustrations Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus} ${styles.cursorPointer}`}
-          onClick={() => navigate(`/adam-kascak-portfolio/illustrations`)}
+          onClick={() => navigate(`/illustrations`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/adam-kascak-portfolio/illustrations`);
+              navigate(`/illustrations`);
             }
           }}
         >
@@ -226,10 +226,10 @@ const Card = () => {
         <Tab
           aria-label="Services Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus} ${styles.cursorPointer}`}
-          onClick={() => navigate(`/adam-kascak-portfolio/services`)}
+          onClick={() => navigate(`/services`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/adam-kascak-portfolio/services`);
+              navigate(`/services`);
             }
           }}
         >
@@ -291,10 +291,10 @@ const Card = () => {
         <Tab
           aria-label="About Me Tab"
           className={`group flex-1 flex-col justify-center items-center ${styles.cards} ${styles.transitionTransform} ${styles.focus} ${styles.cursorPointer}`}
-          onClick={() => navigate(`/adam-kascak-portfolio/about`)}
+          onClick={() => navigate(`/about`)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              navigate(`/adam-kascak-portfolio/about`);
+              navigate(`/about`);
             }
           }}
         >
