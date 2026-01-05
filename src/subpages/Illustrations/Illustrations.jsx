@@ -46,12 +46,10 @@ const Illustrations = () => {
                 aria-label="Image fullscreen"
                 key={ilu.id}
                 className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover} ${styles.focus} ${styles.cursorPointer}`}
-                onClick={() =>
-                  navigate(`/adam-kascak-portfolio/illustrations/${ilu.id}`)
-                }
+                onClick={() => navigate(`/${ilu.id}`)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
-                    navigate(`/adam-kascak-portfolio/illustrations/${ilu.id}`);
+                    navigate(`/${ilu.id}`);
                   }
                 }}
               >

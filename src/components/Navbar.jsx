@@ -40,7 +40,7 @@ const Navbar = () => {
       >
         {/* Wrap logo and text in a flex container */}
         <div className="flex flex-row items-center gap-12">
-          <Link to="/adam-kascak-portfolio" className={`${styles.focus}`}>
+          <Link to="/" className={`${styles.focus}`}>
             <img
               src={sign}
               alt="Signature of Adam Kascak"

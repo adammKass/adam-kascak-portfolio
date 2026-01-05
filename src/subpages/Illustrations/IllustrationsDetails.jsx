@@ -25,15 +25,11 @@ const IllustrationsDetails = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "ArrowLeft") {
-        navigate(
-          `/adam-kascak-portfolio/illustrations/${IllustrationLinks[prevIndex].id}`
-        );
+        navigate(`/${IllustrationLinks[prevIndex].id}`);
       } else if (e.key === "ArrowRight") {
-        navigate(
-          `/adam-kascak-portfolio/illustrations/${IllustrationLinks[nextIndex].id}`
-        );
+        navigate(`/${IllustrationLinks[nextIndex].id}`);
       } else if (e.key === "Escape") {
-        navigate(`/adam-kascak-portfolio/illustrations/`);
+        navigate(`/illustrations/`);
       }
     };
 
@@ -58,7 +54,7 @@ const IllustrationsDetails = () => {
       {/* Close Button */}
       <button
         className="absolute top-4 right-4 lg:top-12 lg:right-20"
-        onClick={() => navigate(`/adam-kascak-portfolio/illustrations/`)} // Go back to the illustrations list
+        onClick={() => navigate(`/illustrations/`)} // Go back to the illustrations list
       >
         <img
           src={cross}
@@ -73,9 +69,7 @@ const IllustrationsDetails = () => {
         {/* Previous Button */}
         <button
           onClick={() =>
-            navigate(
-              `/adam-kascak-portfolio/illustrations/${IllustrationLinks[prevIndex].id}`
-            )
+            navigate(`/illustrations/${IllustrationLinks[prevIndex].id}`)
           }
         >
           <img
@@ -109,9 +103,7 @@ const IllustrationsDetails = () => {
         {/* Next Button */}
         <button
           onClick={() =>
-            navigate(
-              `/adam-kascak-portfolio/illustrations/${IllustrationLinks[nextIndex].id}`
-            )
+            navigate(`/illustrations/${IllustrationLinks[nextIndex].id}`)
           }
         >
           <img
