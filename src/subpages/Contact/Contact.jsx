@@ -18,7 +18,7 @@ const Contact = () => {
         id="main-content"
         className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mx-auto ${styles.mainMarginY}`}
       >
-        {/* <Form></Form> */}
+        <Form></Form>
       </main>
       <Footer></Footer>
     </div>

@@ -16,7 +16,7 @@ const NotFound = () => {
           {t(`notFound.error`)}
         </h1>
         <Link
-          to={"/adam-kascak-portfolio"}
+          to={"/"}
           className={`font-bold text-lg sm:text-xl text-PBlack hover:opacity-50 lg:text-2xl w-fit ${styles.focus} ${styles.cursorPointer}`}
         >
           {t(`notFound.return`)}
