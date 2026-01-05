@@ -298,7 +298,7 @@
   },
   "form": {
     "title": "Kontakt",
-    "description": "Neváhajte mi zanechať správu cez tento formulár alebo ma kontaktovať na",
+    "description": "Neváhajte ma kontaktovať na",
     "name": "Meno*",
     "email": "Emailová adresa*",
     "phone": "Telefónne číslo",

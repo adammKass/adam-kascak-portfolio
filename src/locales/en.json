@@ -300,7 +300,7 @@
   },
   "form": {
     "title": "Contact",
-    "description": "Feel free to leave a message via this form or contact me at",
+    "description": "Feel free to contact me at",
     "name": "Name*",
     "email": "Email address*",
     "phone": "Phone Number",

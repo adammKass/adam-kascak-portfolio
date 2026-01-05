@@ -26,15 +26,15 @@ import PortfolioColorPalette from "./GraphicDesign/Portfolio/ColorPalette.svg";
 //Horn
 import HornColors from "./GraphicDesign/Horn/Horn_Colors.jpg";
 import HornLogo from "./GraphicDesign/Horn/Horn_Logo.jpg";
-import HornLogoShowcase from "./GraphicDesign/Horn/Horn_LogoShowcase.jpg";
-import HornMobile from "./GraphicDesign/Horn/Horn_Mobile.jpg";
-import HornDesktop from "./GraphicDesign/Horn/Horn_Desktop Full.jpg";
+import HornLogoShowcase from "./GraphicDesign/Horn/Horn_LogoShowcase.webp";
+import HornMobile from "./GraphicDesign/Horn/Horn_Mobile.webp";
+import HornDesktop from "./GraphicDesign/Horn/Horn_Desktop Full.webp";
 import HornThumb from "./GraphicDesign/Horn/Horn_ThumbNail.jpg";
 import HornWireframe from "./GraphicDesign/Horn/Horn_Wireframe.png";
 
 //BielaLinia
 import BielaLiniaMobile from "./GraphicDesign/BielaLinia/BielaLinia_Mobile.jpg";
-import BielaLiniaDesktop from "./GraphicDesign/BielaLinia/BielaLinia_Desktop Full.jpg";
+import BielaLiniaDesktop from "./GraphicDesign/BielaLinia/BielaLinia_Desktop Full.webp";
 import BielaLiniaThumb from "./GraphicDesign/BielaLinia/BielaLinia_Thumb.jpg";
 
 //Torse
@@ -47,10 +47,10 @@ import TorseWireframe from "./GraphicDesign/Torse/Torse_wireframe.png";
 import TorseThumbnail from "./GraphicDesign/Torse/Torse_Thumbnail.jpg";
 
 //ScrollLock
-import CofDesktop from "./GraphicDesign/ScrollLock/Cof_Desktop.jpg";
-import CofDesktop2 from "./GraphicDesign/ScrollLock/Cof_Desktop2.jpg";
+import CofDesktop from "./GraphicDesign/ScrollLock/Cof_Desktop.webp";
+import CofDesktop2 from "./GraphicDesign/ScrollLock/Cof_Desktop2.webp";
 import CofMobile from "./GraphicDesign/ScrollLock/Cof_Mobile.jpg";
-import VirDesktop from "./GraphicDesign/ScrollLock/Vir_Desktop.jpg";
+import VirDesktop from "./GraphicDesign/ScrollLock/Vir_Desktop.webp";
 import VirLandscape from "./GraphicDesign/ScrollLock/Vir_Landscape.jpg";
 import VirMobile from "./GraphicDesign/ScrollLock/Vir_Mobile.jpg";
 import ScrollLockThumb from "./GraphicDesign/ScrollLock/ScrollLock_Thumb.jpg";
