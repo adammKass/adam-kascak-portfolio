@@ -70,29 +70,29 @@ import {
 export const navLinks = [
   {
     id: "graphicDesign",
-    to: "/adam-kascak-portfolio/graphicdesign",
+    to: "/graphicdesign",
   },
   {
     id: "3dGraphics",
-    to: "/adam-kascak-portfolio/dgraphics",
+    to: "/dgraphics",
   },
   {
     id: "illustrations",
-    to: "/adam-kascak-portfolio/illustrations",
+    to: "/illustrations",
   },
   {
     id: "aboutMe",
-    to: "/adam-kascak-portfolio/about",
+    to: "/about",
   },
   {
     id: "services",
-    to: "/adam-kascak-portfolio/services",
+    to: "/services",
   },
 ];
 
 export const navLinksContact = {
   id: "contact",
-  to: "/adam-kascak-portfolio/contact",
+  to: "/contact",
 };
 
 export const GraphicsLinks = [
