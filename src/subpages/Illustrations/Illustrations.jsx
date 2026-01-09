@@ -44,7 +44,9 @@ const Illustrations = () => {
             return (
               <motion.div
                 aria-label="Image fullscreen"
+                role="button"
                 key={ilu.id}
+                tabIndex={0}
                 className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover} ${styles.focus} ${styles.cursorPointer}`}
                 onClick={() => navigate(`/illustrations/${ilu.id}`)}
                 onKeyDown={(e) => {

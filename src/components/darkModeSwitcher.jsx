@@ -1,4 +1,5 @@
 import { moon, sun } from "../assets";
+import styles from "../style";
 import useDarkMode from "./utils/useDarkMode";
 
 const darkModeSwitcher = () => {
@@ -17,8 +18,8 @@ const darkModeSwitcher = () => {
       >
         <span
           className={`inline-block h-4 w-4 transform rounded-full bg-PGrey transition ${
-            isDark ? "translate-x-6" : "translate-x-1"
-          }`}
+            styles.cursorPointer
+          } ${isDark ? "translate-x-6" : "translate-x-1"}`}
         />
       </button>
       <img

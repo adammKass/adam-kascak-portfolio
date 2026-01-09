@@ -21,10 +21,9 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isHomepage =
-    location.pathname === "/adam-kascak-portfolio" ||
-    location.pathname === "/adam-kascak-portfolio/" ||
-    window.location.href ===
-      "https://adammkass.github.io/adam-kascak-portfolio/";
+    location.pathname === "/" ||
+    location.pathname === "//" ||
+    window.location.href === "https://adamkascak.com/";
   const { t } = useTranslation();
 
   return (

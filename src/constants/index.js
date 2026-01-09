@@ -81,12 +81,12 @@ export const navLinks = [
     to: "/illustrations",
   },
   {
-    id: "aboutMe",
-    to: "/about",
-  },
-  {
     id: "services",
     to: "/services",
+  },
+  {
+    id: "aboutMe",
+    to: "/about",
   },
 ];
 
@@ -302,6 +302,9 @@ export const experienceTitles = [
   {
     id: "centurion",
   },
+  {
+    id: "school",
+  },
 ];
 
 export const socials = [
@@ -322,7 +325,7 @@ export const socials = [
   },
   {
     id: "linked",
-    to: "www.linkedin.com/in/adam-kascak-2006b3350",
+    to: "https://linkedin.com/in/adam-kascak-2006b3350",
     image: linkedin,
   },
 ];
@@ -339,5 +342,32 @@ export const services = [
   {
     id: "illustration",
     image: serviceIllustration,
+  },
+];
+
+export const faqs = [
+  {
+    id: "1",
+  },
+  {
+    id: "2",
+  },
+  {
+    id: "3",
+  },
+  {
+    id: "4",
+  },
+  {
+    id: "5",
+  },
+  {
+    id: "6",
+  },
+  {
+    id: "7",
+  },
+  {
+    id: "8",
   },
 ];

@@ -1,9 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { Footer, Navbar } from "../../components";
+
 import styles from "../../style";
-import { experienceTitles, navLinksContact, services } from "../../constants";
+import {
+  experienceTitles,
+  faqs,
+  navLinksContact,
+  services,
+} from "../../constants";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   containerFadeStagger,
   fadeUp,
@@ -11,6 +17,12 @@ import {
   staggerContainer,
   viewportOnce,
 } from "../../constants/variants";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
+import { Fragment } from "react";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -79,6 +91,46 @@ const Services = () => {
               })}
             </div>
           </section>
+          <motion.aside
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={fadeUp(0.3)}
+            className="col-span-full lg:col-span-1 mt-6 lg:mt-0 pt-6 lg:pt-0 lg:pl-12 border-t-2 lg:border-l-2 lg:border-t-0 border-PBlack flex flex-col gap-4"
+          >
+            <h2 className="font-bold text-center lg:text-left">
+              {t(`faqs.title`)}
+            </h2>
+            <motion.div className="w-full space-y-2">
+              {faqs.map((faq, index) => (
+                <Disclosure key={faq.id} as="div">
+                  {({ open }) => (
+                    <>
+                      <DisclosureButton className="w-full border-b pb-2 border-PBlack text-left font-medium uppercase">
+                        {t(`faqs.questions.${faq.id}.question`)}
+                      </DisclosureButton>
+
+                      <AnimatePresence initial={false}>
+                        {open && (
+                          <DisclosurePanel static as={Fragment}>
+                            <motion.div
+                              initial={{ opacity: 0, y: -12 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: -12 }}
+                              transition={{ duration: 0.2, ease: "easeInOut" }}
+                              className="py-2 text-sm text-PGreyDark"
+                            >
+                              {t(`faqs.questions.${faq.id}.answer`)}
+                            </motion.div>
+                          </DisclosurePanel>
+                        )}
+                      </AnimatePresence>
+                    </>
+                  )}
+                </Disclosure>
+              ))}
+            </motion.div>
+          </motion.aside>
         </div>
         <motion.div
           className="flex flex-col justify-center items-center gap-2 py-12 border-t-2 border-PBlack text-center "

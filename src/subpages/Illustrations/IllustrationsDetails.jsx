@@ -25,9 +25,9 @@ const IllustrationsDetails = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "ArrowLeft") {
-        navigate(`/${IllustrationLinks[prevIndex].id}`);
+        navigate(`/illustrations/${IllustrationLinks[prevIndex].id}`);
       } else if (e.key === "ArrowRight") {
-        navigate(`/${IllustrationLinks[nextIndex].id}`);
+        navigate(`/illustrations/${IllustrationLinks[nextIndex].id}`);
       } else if (e.key === "Escape") {
         navigate(`/illustrations/`);
       }

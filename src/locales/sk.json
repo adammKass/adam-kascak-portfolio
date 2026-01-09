@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Adam Kaščák - Umelec/Dizajnér",
+    "title": "Adam Kaščák - Web Dizajn a 3D modelovanie",
     "3dGraphics": "3D Grafika",
     "graphicDesign": "Web Dizajn",
     "illustrations": "Ilustrácie",
@@ -262,6 +262,11 @@
         "company": "Centurion Developments",
         "role": "Junior Level Dizajnér / 3D Grafik",
         "time": "Január 2024 - August 2024"
+      },
+      "school": {
+        "company": "Univerzita Konštantína FIlozofa v Nitre",
+        "role": "Študent Aplikovanej Informatiky",
+        "time": "September 2021 - August 2025"
       }
     }
   },
@@ -311,6 +316,43 @@
       "invalidEmail": "Prosím zadajte platnú emailovú adresu.",
       "emptySubject": "Predmet nemôže byť prázdny.",
       "emptyMessage": "Správa nemôže byť prázdna."
+    }
+  },
+  "faqs": {
+    "title": "FAQ",
+    "questions": {
+      "1": {
+        "question": "Aké služby ponúkate?",
+        "answer": "Ponúkam web dizajn a vývoj, tvorbu 3D assetov a environment artu, ako aj ilustrácie. Zahŕňa to celý proces od wireframov a UI dizajnu až po hotové webstránky, optimalizované 3D assety a ilustrácie prispôsobené konkrétnemu projektu."
+      },
+      "2": {
+        "question": "Ako prebieha váš dizajnový a vývojový proces?",
+        "answer": "Každý projekt začína pochopením vašich cieľov a cieľovej skupiny. Nasleduje návrh konceptu, dizajn alebo modelovanie, úpravy na základe spätnej väzby a finálne odovzdanie. Komunikácia a spätná väzba sú súčasťou každého kroku."
+      },
+      "3": {
+        "question": "Viete prerobiť existujúcu webstránku alebo produkt?",
+        "answer": "Áno. Môžem vylepšiť alebo kompletne prerobiť existujúce webstránky, vizuály alebo assety. Zahŕňa to úpravu UI, zlepšenie použiteľnosti, vizuálne doladenie a prípadnú modernizáciu pomocou súčasných nástrojov."
+      },
+      "4": {
+        "question": "Na aký typ 3D assetov sa špecializujete?",
+        "answer": "Špecializujem sa na rekvizity, modulárnu architektúru, vegetáciu a environmentálne assety. Všetky 3D modely sú optimalizované na výkon a vhodné pre hry, real-time aplikácie alebo vizuálne prezentácie."
+      },
+      "5": {
+        "question": "Zabezpečujete dizajn aj samotnú realizáciu?",
+        "answer": "Áno. Pri webových projektoch zabezpečujem celý proces – od dizajnu až po vývoj. Vďaka tomu je výsledok konzistentný, technicky kvalitný a vizuálne prepracovaný."
+      },
+      "6": {
+        "question": "Čo môžem očakávať ako finálny výstup?",
+        "answer": "Získate profesionálne spracovaný výstup pripravený na reálne použitie – či už ide o funkčnú webstránku, optimalizované 3D assety alebo hotové ilustrácie. Všetko je prispôsobené konkrétnej platforme a účelu."
+      },
+      "7": {
+        "question": "Pre koho sú tieto služby určené?",
+        "answer": "Služby sú vhodné pre jednotlivcov, startupy aj štúdiá, ktoré chcú vybudovať alebo zlepšiť svoju vizuálnu identitu – či už ide o landing page, digitálny produkt alebo komplexnú prezentáciu značky."
+      },
+      "8": {
+        "question": "Nenašli ste presne tú službu, ktorú hľadáte?",
+        "answer": "Neváhajte ma kontaktovať — rád sa porozprávam o vašom projekte a možnostiach spolupráce."
+      }
     }
   }
 }

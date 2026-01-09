@@ -37,6 +37,40 @@ body {
   box-sizing: border-box;
 }
 
+a,
+button {
+  cursor: url("/cursors/cursor-pointer.svg") 0 0, pointer;
+}
+
+.dark a,
+.dark button {
+  cursor: url("/cursors/cursor-pointer_dark.svg") 0 0, pointer;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  cursor: url("/cursors/cursor-text.svg") 0 10, text;
+}
+
+.dark p,
+.dark span,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark li {
+  cursor: url("/cursors/cursor-text_dark.svg") 0 10, text;
+}
+
 /* Fonts import */
 
 @theme {

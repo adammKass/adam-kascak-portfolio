@@ -30,7 +30,7 @@ const DesignDetails = () => {
 
         {/* Responsive Details Section */}
         <section
-          className={`flex flex-col gap-4 md:gap-8 self-center max-w-[780px] w-full ${styles.mainMarginY} ${styles.cursorText} `}
+          className={`flex flex-col gap-4 md:gap-8 self-center max-w-[780px] w-full ${styles.mainMarginY} `}
         >
           <div className="border-b border-PBlack pb-4">
             <h2 className="mb-2 text-2xl lg:text-4xl">
@@ -54,7 +54,7 @@ const DesignDetails = () => {
 
         {/* Responsive Description */}
         <p
-          className={`leading-relaxed  self-center items-center max-w-[780px] mb-8 ${styles.cursorText}`}
+          className={`leading-relaxed  self-center items-center max-w-[780px] mb-8`}
         >
           {t(`designLinks.${link.id}.text`)}
         </p>
@@ -71,9 +71,7 @@ const DesignDetails = () => {
               className="rounded-lg border-4 shadow-2xl border-PBlack"
               loading="lazy"
             />
-            <figcaption
-              className={`text-sm lg:text-lg py-3 text-center ${styles.cursorText}`}
-            >
+            <figcaption className={`text-sm lg:text-lg py-3 text-center`}>
               {t(`designLinks.${link.id}.images.${index}.title`)}
             </figcaption>
           </figure>

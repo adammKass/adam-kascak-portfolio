@@ -44,7 +44,7 @@ const GraphicDesign = () => {
           >
             {DesignLinks.map((link, index) => (
               <Tab
-                className={`flex flex-col md:flex-row justify-center items-center md:justify-start md:items-center gap-2 md:gap-11 ${styles.tabHover} ${styles.cursorPointer}`}
+                className={`group flex flex-col md:flex-row justify-center items-center md:justify-start md:items-center gap-2 md:gap-11 ${styles.tabHover} ${styles.cursorPointer}`}
                 key={index}
                 onClick={() => navigate(link.id)}
                 onKeyDown={(e) => {
@@ -57,7 +57,7 @@ const GraphicDesign = () => {
                   <img
                     src={link.thumb}
                     alt={t(`designLinks.${link.id}.alt`)}
-                    className="object-fill saturate-0 rounded-lg"
+                    className="object-fill saturate-0 group-hover:saturate-100 rounded-lg"
                     loading="lazy"
                   />
                 </div>

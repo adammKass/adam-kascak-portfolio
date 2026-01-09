@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://adammKass.github.io/adam-kascak-portfolio/sitemap.xml
+Sitemap: https://adammkascak.com/sitemap.xml

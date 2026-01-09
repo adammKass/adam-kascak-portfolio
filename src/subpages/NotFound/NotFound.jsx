@@ -7,17 +7,18 @@ const NotFound = () => {
   const { t } = useTranslation();
   return (
     <div
-      className={`absolute top-0 left-0 w-full min-h-screen overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+      className={`absolute top-0 left-0 w-full min-h-screen h-dvh overflow-hidden bg-PWhite`}
     >
       <main
-        className={`flex flex-col justify-center items-center gap-2 h-full ${styles.boxWidth} ${styles.paddingXA} mx-auto mb-52 mt-10 lg:mt-32 border-y border-PBlack text-center text-PBlack`}
+        className={`h-full flex flex-col justify-center items-center gap-2 h-full ${styles.boxWidth} text-center text-PBlack`}
       >
-        <h1 className={`text-lg ${styles.cursorText}`}>
+        <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
           {t(`notFound.error`)}
         </h1>
+
         <Link
           to={"/"}
-          className={`font-bold text-lg sm:text-xl text-PBlack hover:opacity-50 lg:text-2xl w-fit ${styles.focus} ${styles.cursorPointer}`}
+          className={`max-w-prose font-bold uppercase text-center hover:opacity-50 ${styles.focus}`}
         >
           {t(`notFound.return`)}
         </Link>

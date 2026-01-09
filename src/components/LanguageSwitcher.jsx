@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
   const [language, setLanguage] = useState(i18n.language);
 
   const toggleLanguage = () => {
-    const newLanguage = language === "en" ? "sk" : "en";
+    const newLanguage = language === "sk" ? "en" : "sk";
     i18n.changeLanguage(newLanguage);
     setLanguage(newLanguage);
   };

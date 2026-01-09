@@ -27,7 +27,7 @@ const Footer = () => {
                 <img
                   src={image}
                   alt={id}
-                  className={`w-10 h-10 saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
+                  className={`w-10  saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
                 />
               </a>
             );

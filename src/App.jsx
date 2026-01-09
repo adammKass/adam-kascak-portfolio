@@ -8,7 +8,7 @@ import {
 
 import { PageWrapper } from "./components";
 import { sign } from "./assets";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   About,
   Contact,
@@ -30,31 +30,42 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false); // Hide loading screen after 200ms
-    }, 200);
+    }, 1000);
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
   // Render the loading screen if the app is still loading
-  if (isLoading) {
-    return (
-      <div className="absolute top-0 left-0 w-full h-screen flex justify-center items-center bg-PWhite z-10">
-        <div className="flex flex-col items-center">
-          <img src={sign} alt="loading" className="w-[58px] h-[58px] mb-4" />
-          <div className="w-24 h-1 bg-PGrey">
-            <div className="h-full bg-PBlack animate-pulse"></div>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   // Render the main application with routes
   return (
-    <Router>
-      <ScrollToTop />
-      <AnimatedRoutes />
-    </Router>
+    <>
+      <AnimatePresence>
+        {isLoading && (
+          <motion.div
+            className="fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-PWhite z-50"
+            initial={{ y: 0 }}
+            exit={{ y: "-100vh" }}
+            transition={{ duration: 0.6, ease: [0.77, 0, 0.175, 1] }}
+          >
+            <div className="flex flex-col items-center">
+              <img
+                src={sign}
+                alt="loading"
+                className="w-[58px] h-[58px] mb-4 dark:filter dark:invert animate-pulse"
+              />
+              <div className="w-24 h-1 bg-PGrey">
+                <div className="h-full bg-PBlack animate-pulse"></div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <Router>
+        <ScrollToTop />
+        <AnimatedRoutes />
+      </Router>
+    </>
   );
 }
 

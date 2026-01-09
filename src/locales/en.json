@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Adam Kascak - Artist/Designer",
+    "title": "Adam Kascak - Web Design and 3D Modeling",
     "3dGraphics": "3D Graphics",
     "graphicDesign": "Web Design",
     "illustrations": "Illustrations",
@@ -264,6 +264,11 @@
         "company": "Centurion Developments",
         "role": "Junior Level Designer / 3D Artist",
         "time": "January 2024 - August 2024"
+      },
+      "school": {
+        "company": "Constantine the Philosopher University in Nitra",
+        "role": "Applied Informatics Student",
+        "time": "September 2021 - August 2025"
       }
     }
   },
@@ -313,6 +318,43 @@
       "invalidEmail": "Please enter a valid email address.",
       "emptySubject": "Subject cannot be empty.",
       "emptyMessage": "Message cannot be empty."
+    }
+  },
+  "faqs": {
+    "title": "FAQ",
+    "questions": {
+      "1": {
+        "question": "What services do you offer?",
+        "answer": "I offer web design and development, 3D assets and environment art, and illustration services. This includes everything from wireframing and UI design to fully developed websites, optimized 3D assets, and custom illustrations tailored to your project’s needs."
+      },
+      "2": {
+        "question": "What is your design and development process like?",
+        "answer": "Each project starts with understanding your goals and audience. I will take time to converse with you about precise requests and directions the project will take. In web design, I move through wireframing, mockup, development to final delivery. In 3D modeling and environment art I move from blockout, high poly to low poly workflow, texturing and optimization. With Illustration I first share with you first sketches and then decide where the illustration should go. Based on that I deliver final illustration. Communication and feedback are part of every step to ensure the result aligns with your vision."
+      },
+      "3": {
+        "question": "Can you redesign an existing website or product?",
+        "answer": "Yes. I can improve or completely redesign existing websites, visuals, or assets tailored to your vision. This includes updating the UI, improving usability, accessibility, optimization, SEO, refining visuals, and rebuilding with modern tools when needed."
+      },
+      "4": {
+        "question": "What kind of 3D assets do you specialize in?",
+        "answer": "I specialize in props, modular architecture, vegetation, and environment assets. All 3D work is optimized for performance and suitable for games, real-time applications, or visual presentations."
+      },
+      "5": {
+        "question": "Do you handle both design and implementation?",
+        "answer": "Yes. For web projects, I handle both design and development, ensuring consistency from concept to final implementation. This allows for smooth animations, clean layouts, and technically sound results."
+      },
+      "6": {
+        "question": "What can I expect as a final deliverable?",
+        "answer": "You’ll receive polished, production-ready work—whether that’s a website, optimized 3D assets, or finalized illustrations. WIth web I provide fully functioning and optimized website, ready to be deployed. WIth 3D assets I provide you with 3D model with textures. I deliver illustrations in format and resolution we decided upon."
+      },
+      "7": {
+        "question": "Who are these services best suited for?",
+        "answer": "These services are ideal for individuals, startups, and studios looking to build or refine a strong visual presence—whether that’s a landing page, a digital product, or a cohesive visual identity."
+      },
+      "8": {
+        "question": "Didn’t find the exact service you’re looking for?",
+        "answer": "Feel free to get in touch — I’d be happy to discuss your project and see how I can help."
+      }
     }
   }
 }

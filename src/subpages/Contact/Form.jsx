@@ -53,7 +53,10 @@ const Form = () => {
       </motion.h1>
       <motion.p variants={fadeUpSmall} className="max-w-prose mt-8 lg:mt-10">
         {t(`form.description`)}
-        <a href="mailto:adam.kascak@protonmail.com" className="font-bold">
+        <a
+          href="mailto:adam.kascak@protonmail.com"
+          className="font-bold hover:opacity-50"
+        >
           {" "}
           adam.kascak@protonmail.com
         </a>
