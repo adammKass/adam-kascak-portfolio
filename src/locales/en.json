@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Adam Kascak - Web Design and 3D Modeling",
+    "title": "Adam Kascak - Web Design and 3D | Nitra",
     "3dGraphics": "3D Graphics",
     "graphicDesign": "Web Design",
     "illustrations": "Illustrations",
@@ -42,7 +42,7 @@
     "Portfolio": {
       "title": "Personal Portfolio Website",
       "alt": "Web icon representing Adam Kascak's personal portfolio",
-      "textShort": "A curated presentation of selected visual art and design work, built as a personal portfolio website.",
+      "textShort": "My personal portfolio website, showcasing selected works from various computer graphics disciplines.",
       "type": "Web Design",
       "tools": "Design: Figma, Krita, Adobe Illustrator \n Programming: React, Tailwind CSS",
       "year": "2025",
@@ -83,10 +83,6 @@
         {
           "title": "Logo Design",
           "alt": "Presentation of the Horn Box Gym logo"
-        },
-        {
-          "title": "Alternate Logo View",
-          "alt": "Alternative rendering of the gym’s logo"
         },
         {
           "title": "Logo Lighting",
@@ -168,7 +164,7 @@
     },
 
     "ScrollLock": {
-      "title": "ScrollLock Parallax Experience",
+      "title": "ScrollLock Parallax Landing Pages",
       "alt": "Thumbnail preview of modern coffee shop and streetwear landing pages with parallax animation",
       "textShort": "Two responsive landing pages featuring smooth parallax motion and scroll-lock interactions.",
       "type": "Web Design",
@@ -189,7 +185,7 @@
           "alt": "Desktop view of the streetwear landing page"
         },
         {
-          "title": "Streetwear — Landscape View",
+          "title": "Streetwear — Mobile Landscape View",
           "alt": "Landscape orientation of the streetwear landing page"
         }
       ]
@@ -198,7 +194,9 @@
     "type": "Project Type",
     "tools": "Tools",
     "year": "Year",
-    "more": "Read more"
+    "more": "Read more",
+    "toTop": "To Top",
+    "deployed": "Deployed live on"
   },
 
   "illustrationLinks": {

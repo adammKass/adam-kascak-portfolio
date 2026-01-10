@@ -50,6 +50,19 @@ const DesignDetails = () => {
             </h2>
             <p>{t(`designLinks.${link.id}.year`)}</p>
           </div>
+          <div className="border-b border-PBlack pb-4">
+            <h2 className="mb-2 text-2xl lg:text-4xl uppercase font-medium">
+              {t(`designLinks.deployed`)}
+            </h2>
+            <a
+              href={link.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl hover:opacity-50"
+            >
+              {link.live}
+            </a>
+          </div>
         </section>
 
         {/* Responsive Description */}
@@ -85,7 +98,7 @@ const DesignDetails = () => {
             alt="To top"
             className={`rotate-90 self-center ${styles.iconSize} ${styles.iconHover}`}
           />
-          <p>To Top</p>
+          <p>{t(`designLinks.toTop`)}</p>
         </button>
       </main>
       <Footer></Footer>

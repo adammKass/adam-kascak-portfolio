@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Adam Kaščák - Web Dizajn a 3D modelovanie",
+    "title": "Adam Kaščák - Web Dizajn a 3D | Nitra",
     "3dGraphics": "3D Grafika",
     "graphicDesign": "Web Dizajn",
     "illustrations": "Ilustrácie",
@@ -40,13 +40,13 @@
   },
   "designLinks": {
     "Portfolio": {
-      "title": "Osobná Portfóliová Webstránka",
+      "title": "Osobná webová stránka",
       "alt": "Webová ikona predstavujúca osobné portfólio Adama Kascaka",
-      "textShort": "Kurátorsky zostavená prezentácia vybraných diel z oblasti vizuálneho umenia a dizajnu.",
+      "textShort": "Moja webová stránka, prezentujúca vybrané diela z rôznych disciplín počítačovej grafiky.",
       "type": "Web Design",
       "tools": "Dizajn: Figma, Krita, Adobe Illustrator \n Programovanie: React, Tailwind CSS",
       "year": "2025",
-      "text": "Osobný projekt vytvorený na prezentáciu diel z viacerých oblastí vizuálneho umenia. Do dizajnu som zakomponoval aj svoju vášeň pre ilustráciu, čo viedlo k jednoduchým uhlovým ilustráciám na úvodnej stránke. Paleta je úmyselne minimalistická — biela, svetlosivá, tmavosivá a čierna — odrážajúca môj vzťah k monochromatickej tvorbe.\nPoužitá typografia vychádza z geometrických bezpätkových písiem. Okrúhle tvary Montserrat Alternates príjemne dopĺňajú ostré prvky rozmiestnené v rozhraní, zatiaľ čo Futura PT sa objavuje na vybraných miestach pre svoju čistú geometriu a charakteristické tvary.\nWebstránku som navrhol aj naprogramoval kompletne sám, s využitím Reactu a Tailwind CSS — kombinácie, s ktorou pracujem najefektívnejšie.",
+      "text": "Osobný projekt vytvorený na prezentáciu diel z viacerých oblastí vizuálneho umenia. Do dizajnu som zakomponoval aj svoju vášeň pre ilustráciu, čo viedlo k jednoduchým ilustráciám na úvodnej stránke. Paleta je úmyselne minimalistická — biela, svetlosivá, tmavosivá a čierna — odrážajúca môj vzťah k monochromatickej tvorbe.\nPoužitá typografia vychádza z geometrických bezpätkových písiem. Okrúhle tvary Montserrat Alternates príjemne dopĺňajú ostré prvky rozmiestnené v rozhraní, zatiaľ čo Futura PT sa objavuje na vybraných miestach pre svoju čistú geometriu a charakteristické tvary.\nWebstránku som navrhol aj naprogramoval kompletne sám, s využitím Reactu a Tailwind CSS — kombinácie, s ktorou pracujem najefektívnejšie.",
       "images": [
         {
           "title": "Variácie Ilustrácií",
@@ -70,7 +70,7 @@
       "type": "Web Design",
       "tools": "Dizajn: Figma, Adobe Illustrator \n Programovanie: HTML, CSS, Javascript",
       "year": "2025",
-      "text": "H je fiktívna fitness značka inšpirovaná boxom, bojovými umeniami a kondičným tréningom. Cieľom bolo zachytiť energiu, disciplínu a charakter bojových športov a zároveň vytvoriť značku, ktorá zostáva prístupná aj rekreačným športovcom. Vizuálna identita spája výraznosť s priateľským vzhľadom — silná, no nie zastrašujúca.\nLogo, zobrazujúce štýlizovanú býčiu lebku, je zaoblené a zjednodušené, aby pôsobilo dynamicky, ale nie agresívne. Šikmé línie použité v rozložení podporujú dynamiku a pocit pohybu. Úvodná stránka obsahuje tieto sekcie: Home Banner | Vybavenie | Tréningy | Cenník | Tréneri | Recenzie | Galéria | Footer.\nProjekt bol navrhnutý vo Figme a vyvinutý pomocou HTML5, CSS a JavaScriptu so zameraním na responzivitu, prístupnosť a výkon.",
+      "text": "Horn je fiktívna fitness značka inšpirovaná boxom, bojovými umeniami a kondičným tréningom. Cieľom bolo zachytiť energiu, disciplínu a charakter bojových športov a zároveň vytvoriť značku, ktorá zostáva prístupná aj rekreačným športovcom. Vizuálna identita spája výraznosť s priateľským vzhľadom — silná, no nie zastrašujúca.\nLogo, zobrazujúce štýlizovanú býčiu lebku, je zaoblené a zjednodušené, aby pôsobilo dynamicky, ale nie agresívne. Šikmé línie použité v rozložení podporujú dynamiku a pocit pohybu. Úvodná stránka obsahuje tieto sekcie: Home Banner | Vybavenie | Tréningy | Cenník | Tréneri | Recenzie | Galéria | Footer.\nProjekt bol navrhnutý vo Figme a vyvinutý pomocou HTML5, CSS a JavaScriptu so zameraním na responzivitu, prístupnosť a výkon.",
       "images": [
         {
           "title": "Náhľad Úvodnej Stránky",
@@ -83,10 +83,6 @@
         {
           "title": "Dizajn Loga",
           "alt": "Prezentácia loga Horn Box Gym"
-        },
-        {
-          "title": "Alternatívne Logo",
-          "alt": "Alternatívne zobrazenie loga"
         },
         {
           "title": "Logo so Svetlom",
@@ -110,11 +106,11 @@
     "BielaLinia": {
       "title": "Webová stránka Biela Linia",
       "alt": "Náhľad zobrazujúci fiktívnu webovú stránku spoločnosti na upratovanie domácností v Nitre",
-      "textShort": "Plne responzívny a prístupný koncept webovej stránky pre fiktívnu spoločnosť na upratovanie domácností.",
+      "textShort": "Plne responzívny koncept webovej stránky pre fiktívnu spoločnosť na upratovanie domácností.",
       "type": "Webdizajn",
       "tools": "React, Tailwind, Motion",
       "year": "2025",
-      "text": "Biela Linia je fiktívna spoločnosť na upratovanie domácností so sídlom v Nitre. Tento projekt bol vytvorený ako test pre webovú vývojársku spoločnosť. Dostala som návrh vo Figme a cieľom bolo vytvoriť landing page s celoobrazovkovými sekciami so snap efektom. Rozloženie som zachovala podľa dizajnového súboru, no bolo potrebné ho mierne upraviť pre správnu funkčnosť a vylepšiť dizajn pre modernejší a sofistikovanejší vzhľad. Landing page obsahuje nasledujúce sekcie: Úvodný banner | Služby | Referencie | FAQ | Galéria | Pätička.\nProjekt bol vyvinutý pomocou technológií React, Tailwind a Motion, s dôrazom na responzivitu a optimalizovaný výkon.",
+      "text": "Biela Linia je fiktívna spoločnosť na upratovanie domácností so sídlom v Nitre. Tento projekt bol vytvorený ako test pre webovú vývojársku spoločnosť. Dostal som návrh vo Figme a cieľom bolo vytvoriť landing page so sekciami pokrývajúce celú obrazovku so snap efektom. Rozloženie som zachoval podľa dizajnu, no bolo potrebné ho mierne upraviť pre správnu funkčnosť a vylepšiť dizajn pre modernejší a sofistikovanejší vzhľad. Landing page obsahuje nasledujúce sekcie: Úvodný banner | Služby | Referencie | FAQ | Galéria | Pätička.\nProjekt bol vyvinutý pomocou technológií React, Tailwind a Motion, s dôrazom na responzivitu a optimalizovaný výkon.",
       "images": [
         {
           "title": "Náhľad landing page",
@@ -138,7 +134,7 @@
       "type": "Web Design",
       "tools": "Dizajn: Figma, Photoshop, Blender \n Programovanie: React, Tailwind, GSAP",
       "year": "2025",
-      "text": "Torse — vysokokontrastná landing page vytvorená pre fiktívne interiérové dizajnérske štúdio. Dizajn stavia na odvážnom minimalizme, využíva čierno-bielu paletu a písmo League Spartan, ktoré podčiarkujú moderný charakter. Rozhranie bolo navrhnuté vo Figme a vyvinuté v Reacte, Tailwind CSS a GSAP, čím vznikli plynulé a elegantné animácie.\nHero vizuál bol renderovaný v Blenderi pomocou Freestyle, aby získal architektonický line-art štýl. Video procesu od Transient at Large je dostupné na YouTube.\nStránka je nasadená pomocou GitHub Pages.",
+      "text": "Torse — vysokokontrastná landing page vytvorená pre fiktívne interiérové dizajnové štúdio. Dizajn stavia na vysoko-kontrastnom minimalizme, využíva čierno-bielu paletu a písmo League Spartan, ktoré podčiarkuje moderný charakter. Rozhranie bolo navrhnuté vo Figme a vyvinuté v Reacte, Tailwind CSS a GSAP, čím vznikli plynulé a elegantné animácie.\nHero vizuál bol renderovaný v Blenderi pomocou Freestyle, aby získal architektonický line-art štýl. Video procesu od Transient at Large je dostupné na YouTube.\nStránka je nasadená pomocou GitHub Pages.",
       "images": [
         {
           "title": "Náhľad Stránky",
@@ -161,14 +157,14 @@
           "alt": "Wireframe vizualizácie vytvorený v Blenderi"
         },
         {
-          "title": "Ukážka Tieňovania",
-          "alt": "Čierno-biela ukážka tieňovania v Blenderi"
+          "title": "Ukážka Shadingu",
+          "alt": "Čierno-biela ukážka Shadingu v Blenderi"
         }
       ]
     },
 
     "ScrollLock": {
-      "title": "ScrollLock Parallax Zážitok",
+      "title": "ScrollLock Parallax Landing Pages",
       "alt": "Náhľad moderných landing page s parallax animáciami pre kaviareň a streetwear značku",
       "textShort": "Dve responzívne moderné landing page s plynulým parallax pohybom a scroll-lock interakciami.",
       "type": "Web Design",
@@ -189,7 +185,7 @@
           "alt": "Desktop zobrazenie streetwear landing page"
         },
         {
-          "title": "Streetwear — Na šírku",
+          "title": "Streetwear — Mobil landscape",
           "alt": "Landscape zobrazenie streetwear landing page"
         }
       ]
@@ -198,8 +194,11 @@
     "type": "Typ projektu",
     "tools": "Nástroje",
     "year": "Rok",
-    "more": "Zobraziť viac"
+    "more": "Zobraziť viac",
+    "toTop": "Návrat na začiatok",
+    "deployed": "Dostupné live na"
   },
+
   "illustrationLinks": {
     "kohut": {
       "title": "Kohúty v Key West",
@@ -248,8 +247,8 @@
     }
   },
   "about": {
-    "intro": "Volám sa Adam Kaščák. Som freelance webový vývojár a dizajnér pôsobiaci v Nitre, špecializujem sa na tvorbu moderných, čistých a profesionálnych webstránok.",
-    "hobbies": "Vďaka skúsenostiam v oblasti 3D grafiky aj ilustrácie rád prepájam ručne maľované prvky alebo 3D modely s moderným webdizajnom.",
+    "intro": "Volám sa Adam Kaščák. Som freelance webový vývojár a dizajnér pôsobiaci v Nitre, špecializujem sa na tvorbu moderných, minimalistických a profesionálnych webstránok.",
+    "hobbies": "Vďaka skúsenostiam v oblastiach 3D grafiky a ilustrácií rád prepájam ručne maľované prvky alebo 3D modely s moderným webdizajnom.",
     "alt": "Adam Kascak usmiaty pred plachetnicou",
     "experienceTitle": "Skúsenosti",
     "experience": {

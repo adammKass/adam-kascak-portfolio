@@ -122,6 +122,7 @@ export const DesignLinks = [
   {
     id: "Horn",
     thumb: HornThumb,
+    live: "https://adammkass.github.io/horn/",
     images: [
       {
         image: HornThumb,
@@ -149,6 +150,7 @@ export const DesignLinks = [
   {
     id: "BielaLinia",
     thumb: BielaLiniaThumb,
+    live: "https://bielalinia.pages.dev/",
     images: [
       {
         image: BielaLiniaThumb,
@@ -164,6 +166,7 @@ export const DesignLinks = [
   {
     id: "Torse",
     thumb: TorseThumbnail,
+    live: "https://adammkass.github.io/torse/",
     images: [
       {
         image: TorseThumb,
@@ -188,6 +191,7 @@ export const DesignLinks = [
   {
     id: "ScrollLock",
     thumb: ScrollLockThumb,
+    live: "https://adammkass.github.io/Veri/",
     images: [
       {
         image: CofDesktop,
@@ -206,6 +210,7 @@ export const DesignLinks = [
   {
     id: "Portfolio",
     thumb: PortfolioThumb,
+    live: "https://adamkascak.com/",
     images: [
       {
         image: PortfolioIllustrationsShowcase,
