@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372.36 293.46">
+  <defs>
+    <style>
+      .e {
+        stroke-width: 5px;
+      }
+
+      .e, .f, .g, .h {
+        fill: #a7a9ac;
+        stroke: #a7a9ac;
+        stroke-miterlimit: 10;
+      }
+
+      .f {
+        stroke-width: 2px;
+      }
+
+      .g {
+        stroke-width: 4px;
+      }
+
+      .h {
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="Layer 5">
+    <g id="d" data-name="WEbDesign Icon">
+      <path class="h" d="M344.94,244.07H17.88c-8.22,0-14.88-6.66-14.88-14.88V17.88c0-8.22,6.66-14.88,14.88-14.88h327.06c8.22,0,14.88,6.66,14.88,14.88v211.31c0,8.22-6.66,14.88-14.88,14.88Z"/>
+      <line class="e" x1="122.29" y1="52.88" x2="359.82" y2="52.88"/>
+      <line class="g" x1="97.85" y1="52.88" x2="105.88" y2="52.88"/>
+      <line class="g" x1="74.43" y1="52.88" x2="82.46" y2="52.88"/>
+      <line class="g" x1="3" y1="52.88" x2="58.37" y2="52.88"/>
+      <rect class="f" x="294.69" y="22.56" width="15.06" height="15.06" rx="2.24" ry="2.24" transform="translate(109.79 -204.89) rotate(45)"/>
+      <rect class="f" x="324.22" y="22.56" width="15.06" height="15.06" rx="2.24" ry="2.24" transform="translate(118.44 -225.77) rotate(45)"/>
+      <rect class="f" x="265.9" y="22.56" width="15.06" height="15.06" rx="2.24" ry="2.24" transform="translate(101.36 -184.53) rotate(45)"/>
+      <rect class="f" x="26.99" y="22.3" width="70.74" height="16"/>
+      <path class="h" d="M156.33,145.39c0,34.7-28.13,62.82-62.82,62.82s-62.82-28.13-62.82-62.82c0-2.04-.36-11.73,4.39-23.12,8.81-21.14,31.49-39.87,58.43-39.71,31.94.19,62.82,26.86,62.82,62.82Z"/>
+      <path class="h" d="M153.59,127.3c-24.82-25.72-95.34-25.49-120.29-.14"/>
+      <path class="h" d="M33.82,164.73c24.61,25.72,94.55,25.49,119.29.14"/>
+      <path class="h" d="M111.72,205.35c25.72-24.61,25.49-94.55.14-119.29"/>
+      <path class="h" d="M74.28,85.83c-25.72,24.66-25.49,94.73-.14,119.52"/>
+      <line class="h" x1="30.68" y1="146.02" x2="156.33" y2="146.02"/>
+      <line class="h" x1="93" y1="82.06" x2="93" y2="207.71"/>
+      <g>
+        <rect class="f" x="216.51" y="204.85" width="147.7" height="23.76" rx="3.49" ry="3.49" transform="translate(223.4 -139.36) rotate(42.61)"/>
+        <polygon class="f" points="237.81 152.24 207.91 140.88 221.72 169.73 237.81 152.24"/>
+        <rect class="f" x="347.46" y="266.6" width="20.05" height="23.76" rx="3.75" ry="3.75" transform="translate(282.93 -168.5) rotate(42.61)"/>
+      </g>
+      <rect class="f" x="209.71" y="76.77" width="136" height="10.58"/>
+      <rect class="f" x="247.24" y="96.65" width="98.47" height="10.58"/>
+      <rect class="f" x="188.29" y="116.53" width="157.41" height="10.58"/>
+      <rect class="f" x="267" y="136.41" width="78.71" height="10.58"/>
+      <rect class="f" x="277.71" y="159.44" width="68" height="10.58"/>
+    </g>
+  </g>
+</svg>
