@@ -25,7 +25,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={image}
+                  src={image.src}
                   alt={id}
                   className={`w-10  saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out ${styles.focus} ${styles.cursorPointer}`}
                 />
@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               {/* Light Mode Icon */}
               <img
-                src={sun}
+                src={sun.src}
                 alt="light mode"
                 className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
               />
@@ -70,7 +70,7 @@ const Footer = () => {
 
               {/* Dark Mode Icon */}
               <img
-                src={moon}
+                src={moon.src}
                 alt="dark mode"
                 className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
               />

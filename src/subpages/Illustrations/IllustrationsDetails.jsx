@@ -57,7 +57,7 @@ const IllustrationsDetails = () => {
         onClick={() => navigate(`/illustrations/`)} // Go back to the illustrations list
       >
         <img
-          src={cross}
+          src={cross.src}
           alt="Close image"
           className={`${styles.iconSize} ${styles.iconHover} ${styles.cursorPointer}`}
         />
@@ -73,7 +73,7 @@ const IllustrationsDetails = () => {
           }
         >
           <img
-            src={arrowLeft}
+            src={arrowLeft.src}
             alt="Previous Image"
             className={`${styles.iconSize} ${styles.iconHover} ${styles.cursorPointer}`}
           />
@@ -83,12 +83,12 @@ const IllustrationsDetails = () => {
         <figure className="flex flex-col items-center">
           <picture>
             {/* AVIF format */}
-            <source srcSet={ilu.image.avif} type="image/avif" />
+            <source srcSet={ilu.image.avif.src} type="image/avif" />
             {/* WebP format */}
-            <source srcSet={ilu.image.webp} type="image/webp" />
+            <source srcSet={ilu.image.webp.src} type="image/webp" />
             {/* Fallback to JPG */}
             <img
-              src={ilu.image.jpg}
+              src={ilu.image.jpg.src}
               alt={t(`illustrationLinks.${ilu.id}.alt`)}
               className="max-h-[90vh] max-w-screen object-contain"
               loading="lazy"
@@ -107,7 +107,7 @@ const IllustrationsDetails = () => {
           }
         >
           <img
-            src={arrowRight}
+            src={arrowRight.src}
             alt="Next Image"
             className={`${styles.iconSize} ${styles.iconHover} ${styles.cursorPointer}`}
           />

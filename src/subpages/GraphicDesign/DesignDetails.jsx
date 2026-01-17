@@ -79,7 +79,7 @@ const DesignDetails = () => {
             className="w-full mb-10 rounded-sm flex flex-col items-center "
           >
             <img
-              src={ilu.image}
+              src={ilu.image.src}
               alt={t(`designLinks.${link.id}.images.${index}.alt`)}
               className="rounded-lg border-4 shadow-2xl border-PBlack"
               loading="lazy"
@@ -94,7 +94,7 @@ const DesignDetails = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <img
-            src={arrowLeft}
+            src={arrowLeft.src}
             alt="To top"
             className={`rotate-90 self-center ${styles.iconSize} ${styles.iconHover}`}
           />
