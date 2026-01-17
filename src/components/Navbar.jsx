@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex flex-row items-center gap-12">
           <Link to="/" className={`${styles.focus}`}>
             <img
-              src={sign}
+              src={sign.src}
               alt="Signature of Adam Kascak"
               className={`${styles.iconSize} ${styles.iconHover} p-0 lg:p-2`}
             />
@@ -74,7 +74,7 @@ const Navbar = () => {
                   >
                     <a className="text-PBlack hover:text-PBlack">
                       {t(`navbar.${nav.id}`)}
-                      <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-PBlack"></span>
+                      <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-PBlack"></span>
                     </a>
                   </Tab>
                 ))}

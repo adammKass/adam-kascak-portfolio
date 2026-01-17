@@ -7,7 +7,7 @@ const darkModeSwitcher = () => {
   return (
     <div className="flex items-center gap-2">
       <img
-        src={sun}
+        src={sun.src}
         alt="light mode"
         className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
       />
@@ -23,7 +23,7 @@ const darkModeSwitcher = () => {
         />
       </button>
       <img
-        src={moon}
+        src={moon.src}
         alt="dark mode"
         className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
       />

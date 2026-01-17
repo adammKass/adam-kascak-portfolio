@@ -50,7 +50,7 @@ function App() {
           >
             <div className="flex flex-col items-center">
               <img
-                src={sign}
+                src={sign.src}
                 alt="loading"
                 className="w-[58px] h-[58px] mb-4 dark:filter dark:invert animate-pulse"
               />

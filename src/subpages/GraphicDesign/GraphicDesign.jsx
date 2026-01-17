@@ -55,7 +55,7 @@ const GraphicDesign = () => {
               >
                 <div className="w-72 h-72 shrink-0 rounded-lg">
                   <img
-                    src={link.thumb}
+                    src={link.thumb.src}
                     alt={t(`designLinks.${link.id}.alt`)}
                     className="object-fill saturate-0 group-hover:saturate-100 rounded-lg"
                     loading="lazy"
