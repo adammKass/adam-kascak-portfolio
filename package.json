@@ -9,8 +9,7 @@
     "start": "next start",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist --dotfiles",
     "generate-sitemap": "node src/generate-sitemap.js"
   },
   "dependencies": {
