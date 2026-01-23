@@ -1,17 +1,17 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import LanguageSwitcher from "./LanguageSwitcher";
-import darkModeSwitcher from "./darkModeSwitcher";
-import PageWrapper from "./utils/PageWrapper";
+import ScrollToTopButton from "./ScrollToTopButton";
 import useIsVisible from "./utils/useIsVisible";
 import useDarkMode from "./utils/useDarkMode";
+import DarkModeSwitcher from "./DarkModeSwitcher";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export {
   Navbar,
   Footer,
-  darkModeSwitcher,
-  LanguageSwitcher,
-  PageWrapper,
+  ScrollToTopButton,
   useIsVisible,
   useDarkMode,
+  DarkModeSwitcher,
+  LanguageSwitcher,
 };

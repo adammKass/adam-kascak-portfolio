@@ -1,12 +1,8 @@
-import React, { useRef } from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import { useTranslations } from "next-intl";
+
 import { GraphicsLinks } from "../../constants";
 import styles from "../../style";
-import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import { Tab, TabGroup, TabList } from "@headlessui/react";
-import { motion } from "framer-motion";
+import * as motion from "motion/react-client";
 import {
   containerFadeStagger,
   fadeUp,
@@ -18,24 +14,17 @@ import {
 // 3D Graphics Subpage Component
 
 const DGraphics = () => {
-  const navigate = useNavigate(); // Navigation handler
-  const { t } = useTranslation(); // Translation hook
+  const t = useTranslations("graphicsLinks"); // Translation hook
 
   return (
-    <div
-      className={`absolute top-0 left-0 w-full bg-PWhite ${styles.cursorAuto}`}
-    >
-      {/* Navbar */}
-      <Navbar />
-
+    <div className={`flex flex-grow w-full bg-PWhite ${styles.cursorAuto}`}>
       {/* Main Content */}
-      <TabGroup
-        as="main"
+      <main
         id="main-content"
         className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mx-auto ${styles.mainMarginY}`}
       >
         <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
-          {t(`navbar.3dGraphics`)}
+          {t(`title`)}
         </h1>
         <motion.div
           initial="hidden"
@@ -43,28 +32,22 @@ const DGraphics = () => {
           viewport={viewportOnce}
           variants={fadeUp(0.3)}
         >
-          <TabList
-            className={`flex flex-col gap-4 md:gap-8 ${styles.mainMarginY}`}
-          >
+          <div className={`flex flex-col gap-4 md:gap-8 ${styles.mainMarginY}`}>
             {/* Render Graphics Links */}
             {GraphicsLinks.map((link, index) => {
               return (
-                <Tab
+                <a
+                  href={link.href}
+                  target="_blank"
                   key={index}
                   className={`flex flex-col md:flex-row justify-center items-center md:justify-start md:items-center gap-2 md:gap-11 ${styles.tabHover} ${styles.cursorPointer}`}
-                  onClick={() => window.open(link.href, "_blank")}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") {
-                      window.open(link.href, "_blank");
-                    }
-                  }}
                 >
                   {/* Thumbnail Image */}
                   <div className="w-72 h-72 shrink-0 rounded-lg">
                     <img
                       src={link.thumb.src}
-                      alt={t(`graphicsLinks.${link.id}.alt`)}
-                      className="object-fill saturate-0 group-hover:saturate-100 rounded-lg"
+                      alt={t(`${link.id}.alt`)}
+                      className="object-fill saturate-0 group-hover:saturate-100 rounded-lg transition-all duration-300"
                       loading="lazy"
                     />
                   </div>
@@ -73,30 +56,25 @@ const DGraphics = () => {
                   <div className="flex flex-col pt-2 md:pt-10 justify-center items-center md:justify-between md:items-start text-center md:text-start">
                     <div>
                       {/* Title */}
-                      <h2 className="uppercase">
-                        {t(`graphicsLinks.${link.id}.title`)}
-                      </h2>
+                      <h2 className="uppercase">{t(`${link.id}.title`)}</h2>
                       <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-PBlack mt-2 mb-4"></span>
                       {/* Description */}
-                      <p>{t(`graphicsLinks.${link.id}.text`)}</p>
+                      <p>{t(`${link.id}.text`)}</p>
                     </div>
 
                     {/* External Link */}
                     <p
                       className={`pb-10 pt-2 font-bold text-lg sm:text-xl lg:text-2xl text-PBlack group-hover:text-PBlack ${styles.focus} ${styles.cursorPointer}`}
                     >
-                      {t(`graphicsLinks.more`)}
+                      {t(`more`)}
                     </p>
                   </div>
-                </Tab>
+                </a>
               );
             })}
-          </TabList>
+          </div>
         </motion.div>
-      </TabGroup>
-
-      {/* Footer */}
-      <Footer />
+      </main>
     </div>
   );
 };

@@ -1,16 +1,18 @@
-import { useParams, useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+"use client";
+import { useRouter } from "../../i18n/navigation";
+import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 import { arrowLeft, arrowRight, cross } from "../../assets";
 import { IllustrationLinks } from "../../constants";
 import styles from "../../style";
+import { Link } from "../../i18n/navigation";
+import Image from "next/image";
 
 // Illustration Details Subpage Component
 
-const IllustrationsDetails = () => {
-  const { id } = useParams(); // Get the current illustration ID from the URL
-  const navigate = useNavigate(); // Navigation handler
-  const { t } = useTranslation(); // Translation hook
+const IllustrationsDetails = ({ id }) => {
+  const router = useRouter();
+  const t = useTranslations(); // Translation hook
 
   // Find the current illustration based on the ID
   const currentIndex = IllustrationLinks.findIndex((item) => item.id === id);
@@ -21,79 +23,55 @@ const IllustrationsDetails = () => {
     (currentIndex - 1 + IllustrationLinks.length) % IllustrationLinks.length;
   const nextIndex = (currentIndex + 1) % IllustrationLinks.length;
 
-  // Handle keyboard navigation (ArrowLeft, ArrowRight, Escape) for better UX
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "ArrowLeft") {
-        navigate(`/illustrations/${IllustrationLinks[prevIndex].id}`);
-      } else if (e.key === "ArrowRight") {
-        navigate(`/illustrations/${IllustrationLinks[nextIndex].id}`);
-      } else if (e.key === "Escape") {
-        navigate(`/illustrations/`);
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown); // Cleanup event listener
-    };
-  }, [navigate, prevIndex, nextIndex]);
-
-  // If the illustration is not found, display an error message
-  if (!ilu) {
-    return (
-      <h1 className="text-center text-2xl mt-20">Illustration Not Found</h1>
-    );
-  }
-
   return (
     <main
-      className={`absolute top-0 left-0 w-full min-h-screen bg-PWhite overflow-hidden flex items-center justify-center ${styles.cursorAuto}`}
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "ArrowLeft") {
+          router.push(`/illustrations/${IllustrationLinks[prevIndex].id}`);
+        }
+        if (e.key === "ArrowRight") {
+          router.push(`/illustrations/${IllustrationLinks[nextIndex].id}`);
+        }
+        if (e.key === "Escape") {
+          router.push("/illustrations/");
+        }
+      }}
+      className={`relative flex flex-grow w-full  bg-PWhite overflow-hidden flex items-center outline-none justify-center ${styles.cursorAuto} z-100 py-10`}
     >
       {/* Close Button */}
-      <button
-        className="absolute top-4 right-4 lg:top-12 lg:right-20"
-        onClick={() => navigate(`/illustrations/`)} // Go back to the illustrations list
+      <Link
+        className="absolute top-4 right-4 lg:top-25 lg:right-20"
+        href={`/illustrations/`}
       >
         <img
           src={cross.src}
           alt="Close image"
           className={`${styles.iconSize} ${styles.iconHover} ${styles.cursorPointer}`}
         />
-      </button>
+      </Link>
 
       <section
         className={`flex flex-row w-full justify-between items-center gap-4 lg:gap-16 px-4 lg:px-20`}
       >
         {/* Previous Button */}
-        <button
-          onClick={() =>
-            navigate(`/illustrations/${IllustrationLinks[prevIndex].id}`)
-          }
-        >
+        <Link href={`/illustrations/${IllustrationLinks[prevIndex].id}`}>
           <img
             src={arrowLeft.src}
             alt="Previous Image"
             className={`${styles.iconSize} ${styles.iconHover} ${styles.cursorPointer}`}
           />
-        </button>
+        </Link>
 
         {/* Illustration Display */}
         <figure className="flex flex-col items-center">
-          <picture>
-            {/* AVIF format */}
-            <source srcSet={ilu.image.avif.src} type="image/avif" />
-            {/* WebP format */}
-            <source srcSet={ilu.image.webp.src} type="image/webp" />
-            {/* Fallback to JPG */}
-            <img
-              src={ilu.image.jpg.src}
-              alt={t(`illustrationLinks.${ilu.id}.alt`)}
-              className="max-h-[90vh] max-w-screen object-contain"
-              loading="lazy"
-            />
-          </picture>
+          <Image
+            src={ilu.image.webp}
+            alt={t(`illustrationLinks.${ilu.id}.alt`)}
+            className="max-h-[90vh] max-w-screen object-contain"
+            width={ilu.image.width}
+            height={ilu.image.height}
+          />
 
           <h1 className={`mt-4 text-sm text-PBlack ${styles.cursorText}`}>
             {t(`illustrationLinks.${ilu.id}.title`)}
@@ -101,17 +79,13 @@ const IllustrationsDetails = () => {
         </figure>
 
         {/* Next Button */}
-        <button
-          onClick={() =>
-            navigate(`/illustrations/${IllustrationLinks[nextIndex].id}`)
-          }
-        >
+        <Link href={`/illustrations/${IllustrationLinks[nextIndex].id}`}>
           <img
             src={arrowRight.src}
             alt="Next Image"
             className={`${styles.iconSize} ${styles.iconHover} ${styles.cursorPointer}`}
           />
-        </button>
+        </Link>
       </section>
     </main>
   );

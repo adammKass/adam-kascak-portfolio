@@ -1,16 +1,16 @@
 import styles from "../style";
-import useDarkMode from "./utils/useDarkMode";
-import { artstation, behance, linkedin, moon, sun } from "../assets";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import { socials } from "../constants";
+import DarkModeSwitcher from "./DarkModeSwitcher";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Footer = () => {
-  const [isDark, setIsDark] = useDarkMode(); // Custom hook for dark mode
-  const { t } = useTranslation(); // Translation hook
+  const t = useTranslations("footer");
 
   return (
-    <footer className="w-full border-t border-PBlack">
+    <footer
+      className={`w-full border-t border-PBlack z-10 ${styles.cursorAuto}`}
+    >
       <div
         className={`w-full py-4 flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center ${styles.boxWidth} ${styles.paddingXA} mx-auto`}
       >
@@ -38,44 +38,10 @@ const Footer = () => {
           <small
             className={`text-center text-sm lg:text-base ${styles.cursorText}`}
           >
-            {t(`footer.rights`)}
+            {t(`rights`)}
           </small>
-
-          {/* Language Switcher and Dark Mode Toggle */}
-          <div className="flex items-center justify-start gap-8">
-            {/* Language Switcher */}
-            <LanguageSwitcher />
-
-            {/* Dark Mode Toggle */}
-            <div className="flex items-center gap-2">
-              {/* Light Mode Icon */}
-              <img
-                src={sun.src}
-                alt="light mode"
-                className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
-              />
-
-              {/* Toggle Button */}
-              <button
-                aria-label="Toggle dark mode"
-                onClick={() => setIsDark(!isDark)}
-                className={`relative inline-flex h-6 w-12 items-center rounded-full bg-PGreyDark transition ${styles.focus} ${styles.cursorPointer} group`}
-              >
-                <span
-                  className={`inline-block h-4 w-4 transform rounded-full bg-PGrey transition group-hover:bg-PBlack duration-300 ease-in-out ${
-                    isDark ? "translate-x-6" : "translate-x-1"
-                  }`}
-                />
-              </button>
-
-              {/* Dark Mode Icon */}
-              <img
-                src={moon.src}
-                alt="dark mode"
-                className="h-6 w-6 dark:brightness-[4] dark:saturate-0"
-              />
-            </div>
-          </div>
+          <LanguageSwitcher />
+          <DarkModeSwitcher />
         </div>
       </div>
     </footer>

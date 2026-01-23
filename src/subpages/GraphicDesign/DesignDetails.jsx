@@ -1,31 +1,25 @@
-import { useParams } from "react-router-dom";
-
-import { useTranslation } from "react-i18next";
-
-import { Footer, Navbar } from "../../components";
+import { useTranslations } from "next-intl";
 import { DesignLinks } from "../../constants";
 import styles from "../../style";
-import { arrowLeft } from "../../assets";
+import { ScrollToTopButton } from "../../components";
 
 // Graphic Design Details Subpage Component
 
-const DesignDetails = () => {
-  const { id } = useParams();
-  const { t } = useTranslation();
+const DesignDetails = ({ id }) => {
+  const t = useTranslations("designLinks");
   const link = DesignLinks.find((item) => item.id === id);
 
   return (
     <div
-      className={`absolute top-0 left-0 w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+      className={`flex flex-grow w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
     >
-      <Navbar />
       <main
         id="main-content"
         className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mx-auto ${styles.mainMarginY}`}
       >
         {/* Responsive Title */}
         <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
-          {t(`designLinks.${link.id}.title`)}
+          {t(`${link.id}.title`)}
         </h1>
 
         {/* Responsive Details Section */}
@@ -33,26 +27,20 @@ const DesignDetails = () => {
           className={`flex flex-col gap-4 md:gap-8 self-center max-w-[780px] w-full ${styles.mainMarginY} `}
         >
           <div className="border-b border-PBlack pb-4">
-            <h2 className="mb-2 text-2xl lg:text-4xl">
-              {t(`designLinks.type`)}
-            </h2>
-            <p>{t(`designLinks.${link.id}.type`)}</p>
+            <h2 className="mb-2 text-2xl lg:text-4xl">{t(`type`)}</h2>
+            <p>{t(`${link.id}.type`)}</p>
           </div>
           <div className="border-b border-PBlack pb-4">
-            <h2 className="mb-2 text-2xl lg:text-4xl">
-              {t(`designLinks.tools`)}
-            </h2>
-            <p>{t(`designLinks.${link.id}.tools`)}</p>
+            <h2 className="mb-2 text-2xl lg:text-4xl">{t(`tools`)}</h2>
+            <p>{t(`${link.id}.tools`)}</p>
           </div>
           <div className="border-b border-PBlack pb-4">
-            <h2 className="mb-2 text-2xl lg:text-4xl">
-              {t(`designLinks.year`)}
-            </h2>
-            <p>{t(`designLinks.${link.id}.year`)}</p>
+            <h2 className="mb-2 text-2xl lg:text-4xl">{t(`year`)}</h2>
+            <p>{t(`${link.id}.year`)}</p>
           </div>
           <div className="border-b border-PBlack pb-4">
             <h2 className="mb-2 text-2xl lg:text-4xl uppercase font-medium">
-              {t(`designLinks.deployed`)}
+              {t(`deployed`)}
             </h2>
             <a
               href={link.live}
@@ -69,7 +57,7 @@ const DesignDetails = () => {
         <p
           className={`leading-relaxed  self-center items-center max-w-[780px] mb-8`}
         >
-          {t(`designLinks.${link.id}.text`)}
+          {t(`${link.id}.text`)}
         </p>
 
         {/* Responsive Images Section */}
@@ -80,28 +68,17 @@ const DesignDetails = () => {
           >
             <img
               src={ilu.image.src}
-              alt={t(`designLinks.${link.id}.images.${index}.alt`)}
+              alt={t(`${link.id}.images.${index}.alt`)}
               className="rounded-lg border-4 shadow-2xl border-PBlack"
               loading="lazy"
             />
             <figcaption className={`text-sm lg:text-lg py-3 text-center`}>
-              {t(`designLinks.${link.id}.images.${index}.title`)}
+              {t(`${link.id}.images.${index}.title`)}
             </figcaption>
           </figure>
         ))}
-        <button
-          className="flex flex-col cursor-pointer self-center transition-all duration-300 ease-in-out hover:opacity-50 hover:-translate-y-3"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          <img
-            src={arrowLeft.src}
-            alt="To top"
-            className={`rotate-90 self-center ${styles.iconSize} ${styles.iconHover}`}
-          />
-          <p>{t(`designLinks.toTop`)}</p>
-        </button>
+        <ScrollToTopButton label={t("toTop")} />
       </main>
-      <Footer></Footer>
     </div>
   );
 };

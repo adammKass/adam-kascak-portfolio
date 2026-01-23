@@ -1,12 +1,10 @@
-import React from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "../../i18n/navigation";
 import { IllustrationLinks } from "../../constants";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import { useNavigate } from "react-router-dom";
+
 import styles from "../../style";
-import { Tab, TabGroup, TabList } from "@headlessui/react";
-import { t } from "i18next";
-import { motion } from "framer-motion";
+
+import * as motion from "motion/react-client";
 import {
   containerFadeStagger,
   fadeUp,
@@ -14,24 +12,23 @@ import {
   staggerContainer,
   viewportOnce,
 } from "../../constants/variants";
+import Image from "next/image";
 
 // Illustrations Subpage Component
 
 const Illustrations = () => {
-  const navigate = useNavigate();
+  const t = useTranslations("illustrationLinks");
   return (
     <div
-      className={`absolute top-0 left-0 w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
+      className={`flex flex-grow w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
     >
-      <Navbar />
-
       <div
         as="main"
         id="main-content"
         className={`${styles.boxWidth} ${styles.paddingXA} ${styles.mainMarginY} mx-auto`}
       >
         <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
-          {t(`navbar.illustrations`)}
+          {t(`title`)}
         </h1>
         <motion.div
           initial="hidden"
@@ -42,33 +39,25 @@ const Illustrations = () => {
         >
           {IllustrationLinks.map((ilu, index) => {
             return (
-              <motion.div
+              <Link
+                href={`/illustrations/${ilu.id}`}
                 aria-label="Image fullscreen"
                 role="button"
                 key={ilu.id}
-                tabIndex={0}
-                className={`w-full opacity-60 mb-10 border-4 shadow-2xl rounded-sm border-PBlack cursor-pointer ${styles.illustHover} ${styles.focus} ${styles.cursorPointer}`}
-                onClick={() => navigate(`/illustrations/${ilu.id}`)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    navigate(`/illustrations/${ilu.id}`);
-                  }
-                }}
+                className={`w-full opacity-60 my-10 ${styles.illustHover} ${styles.focus} ${styles.cursorPointer}`}
               >
-                <picture>
-                  <img
-                    src={ilu.image.jpg.src}
-                    alt={ilu.title}
-                    className="w-full "
-                    loading="lazy"
-                  />
-                </picture>
-              </motion.div>
+                <Image
+                  src={ilu.image.jpg}
+                  alt={ilu.id}
+                  width={ilu.image.jpg.width}
+                  height={ilu.image.jpg.height}
+                  className="w-full border-2 rounded-lg border-PBlack shadow-2xl"
+                />
+              </Link>
             );
           })}
         </motion.div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };

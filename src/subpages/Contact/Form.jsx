@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import {
   containerFadeStagger,
   fadeUpSmall,
@@ -6,10 +6,10 @@ import {
   viewportOnce,
 } from "../../constants/variants";
 import styles from "../../style";
-import { motion } from "framer-motion";
+import * as motion from "motion/react-client";
 
 const Form = () => {
-  const { t } = useTranslation();
+  const t = useTranslations("form");
   const isValidEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
@@ -43,16 +43,16 @@ const Form = () => {
       initial="hidden"
       whileInView="visible"
       viewport={viewportOnce}
-      className="w-full"
+      className="w-full flex items-center flex-col"
     >
       <motion.h1
         variants={fadeUpSmall}
-        className={`${styles.headingMain} ${styles.paddingB}`}
+        className={`${styles.headingMain} ${styles.paddingB} w-full`}
       >
-        {t(`form.title`)}
+        {t(`title`)}
       </motion.h1>
       <motion.p variants={fadeUpSmall} className="max-w-prose mt-8 lg:mt-10">
-        {t(`form.description`)}
+        {t(`description`)}
         <a
           href="mailto:adam.kascak@protonmail.com"
           className="font-bold hover:opacity-50"

@@ -1,9 +1,9 @@
-import { useTranslation } from "react-i18next";
-import { Footer, Navbar } from "../../components";
+import { useTranslations } from "next-intl";
+
 import styles from "../../style";
 import { portrait } from "../../assets";
-import { experienceTitles, navLinksContact, services } from "../../constants";
-import { Link } from "react-router-dom";
+import { experienceTitles, navLinksContact } from "../../constants";
+import { Link } from "../../i18n/navigation";
 import {
   containerFadeStagger,
   fadeUp,
@@ -11,17 +11,14 @@ import {
   staggerContainer,
   viewportOnce,
 } from "../../constants/variants";
-import { motion } from "framer-motion";
+import * as motion from "motion/react-client";
 
 // About Me Subpage Component
 
 const About = () => {
-  const { t } = useTranslation();
+  const t = useTranslations("about");
   return (
-    <div
-      className={`absolute top-0 left-0 w-full bg-PWhite ${styles.cursorAuto}`}
-    >
-      <Navbar />
+    <div className={`flex flex-grow w-full  bg-PWhite ${styles.cursorAuto}`}>
       <main
         id="main-content"
         className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mt-8 lg:mt-0  mx-auto`}
@@ -35,15 +32,13 @@ const About = () => {
         >
           <section className="col-span-full md:col-span-1 flex flex-col gap-4 md:gap-8 text-PBlack justify-center text-center md:text-start ">
             <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
-              {t(`navbar.aboutMe`)}
+              {t(`title`)}
             </h1>
-            <p className={` font-bold ${styles.cursorText} `}>
-              {t(`about.intro`)}
-            </p>
-            <p className={` ${styles.cursorText}`}>{t(`about.hobbies`)}</p>
+            <p className={` font-bold ${styles.cursorText} `}>{t(`intro`)}</p>
+            <p className={` ${styles.cursorText}`}>{t(`hobbies`)}</p>
             <section className="flex flex-col gap-8 mt-6 pt-6 border-t-2 border-PBlack items-center md:items-start text-center md:text-start">
               <h2 className={`text-2xl uppercase md:text-3xl font-bold`}>
-                {t(`about.experienceTitle`)}
+                {t(`experienceTitle`)}
               </h2>
 
               <div
@@ -57,15 +52,15 @@ const About = () => {
                         variants={fadeUpSmall}
                         className="text-lg lg:text-2xl uppercase font-bold"
                       >
-                        {t(`about.experience.${id}.company`)}
+                        {t(`experience.${id}.company`)}
                       </h3>
                       <div
                         variants={fadeUpSmall}
                         className="flex flex-col sm:flex-row gap-0 sm:gap-8 max-w-prose
                     justify-center md:justify-start"
                       >
-                        <span>{t(`about.experience.${id}.role`)}</span>
-                        <span>{t(`about.experience.${id}.time`)}</span>
+                        <span>{t(`experience.${id}.role`)}</span>
+                        <span>{t(`experience.${id}.time`)}</span>
                       </div>
                     </article>
                   );
@@ -76,7 +71,7 @@ const About = () => {
           <div className="col-span-full md:col-span-1 aspect-square rounded-lg mx-auto self-center max-w-3xl dark:brightness-[0.7]">
             <img
               src={portrait.src}
-              alt={t(`about.alt`)}
+              alt={t(`alt`)}
               className="object-fill rounded-lg"
               loading="lazy"
             />
@@ -89,16 +84,15 @@ const About = () => {
           whileInView="visible"
           viewport={viewportOnce}
         >
-          <p>{t(`services.getInTouch`)}</p>
+          <p>{t(`getInTouch`)}</p>
           <Link
-            to={navLinksContact.to}
+            href={navLinksContact.to}
             className={`rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-PGrey w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
           >
-            {t(`services.getInTouchButton`)}
+            {t(`getInTouchButton`)}
           </Link>
         </motion.div>
       </main>
-      <Footer></Footer>
     </div>
   );
 };

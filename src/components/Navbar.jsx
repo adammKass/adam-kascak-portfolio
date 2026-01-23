@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Menu,
   MenuButton,
@@ -10,24 +12,18 @@ import {
 } from "@headlessui/react";
 import { sign } from "../assets";
 import { navLinks, navLinksContact } from "../constants";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "../i18n/navigation";
 import styles from "../style";
 
-import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
-import DarkModeSwitcher from "./darkModeSwitcher";
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const isHomepage =
-    location.pathname === "/" ||
-    location.pathname === "//" ||
-    window.location.href === "https://adamkascak.com/";
-  const { t } = useTranslation();
+  const t = useTranslations("navbar");
 
   return (
-    <div className="w-full border-b border-PBlack shadow-md">
+    <div
+      className={`w-full border-b border-PBlack shadow-md z-20 ${styles.cursorAuto}`}
+    >
       <a
         href="#main-content"
         className="absolute top-0 left-0 p-2 bg-PBlack text-PWhite transform -translate-y-full transition-transform duration-300"
@@ -39,7 +35,10 @@ const Navbar = () => {
       >
         {/* Wrap logo and text in a flex container */}
         <div className="flex flex-row items-center gap-12">
-          <Link to="/" className={`${styles.focus}`}>
+          <Link
+            href="/"
+            className={`${styles.focus} flex flex-row items-center gap-5  `}
+          >
             <img
               src={sign.src}
               alt="Signature of Adam Kascak"
@@ -48,42 +47,30 @@ const Navbar = () => {
           </Link>
 
           {/* Center the text */}
-
-          {isHomepage && (
-            <h1 className={`${styles.cursorText} uppercase font-medium pr-4`}>
-              {t(`home.title`)}
-            </h1>
-          )}
         </div>
 
         {/* Show nav links if not on homepage */}
-        {!isHomepage && (
-          <nav className="hidden md:flex">
-            <TabGroup>
-              <TabList className="flex flex-row items-center gap-2 lg:gap-5">
-                {navLinks.map((nav) => (
-                  <Tab
-                    key={nav.id}
-                    className={`bg-PWhite font-light hover:text-PBlack group ${styles.focus} ${styles.cursorPointer} uppercase`}
-                    onClick={() => navigate(nav.to)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        navigate(nav.to);
-                      }
-                    }}
-                  >
-                    <a className="text-PBlack hover:text-PBlack">
-                      {t(`navbar.${nav.id}`)}
-                      <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-PBlack"></span>
-                    </a>
-                  </Tab>
-                ))}
-              </TabList>
-            </TabGroup>
-          </nav>
-        )}
+
+        <nav className="hidden md:flex">
+          <TabGroup>
+            <TabList className="flex flex-row items-center gap-2 lg:gap-5">
+              {navLinks.map((nav) => (
+                <Tab
+                  as={Link}
+                  href={nav.to}
+                  key={nav.id}
+                  className={`bg-PWhite font-light hover:text-PBlack group ${styles.focus} ${styles.cursorPointer} uppercase`}
+                >
+                  {t(`${nav.id}`)}
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-PBlack"></span>
+                </Tab>
+              ))}
+            </TabList>
+          </TabGroup>
+        </nav>
+
         <Link
-          to={navLinksContact.to}
+          href={navLinksContact.to}
           className={`hidden md:block rounded-md bg-PBlack px-6 py-2 text-PWhite transition-colors duration-300 hover:bg-PGrey w-fit focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-PBlack ${styles.focus} ${styles.cursorPointer} uppercase font-medium`}
         >
           {t(`contactCTA`)}
@@ -122,22 +109,18 @@ const Navbar = () => {
                   className={`origin-top transition-all w-full h-full z-40 bg-PWhite flex flex-col space-y-6 font-semibold pt-10 px-10 border-b border-PBlack duration-300 ease-in-out`}
                 >
                   {navLinks.map((nav) => (
-                    <MenuItem
-                      key={t(`navbar.${nav.id}`)}
-                      as="div"
-                      className="w-full"
-                    >
+                    <MenuItem key={t(`${nav.id}`)} as="div" className="w-full">
                       <Link
-                        to={nav.to}
+                        href={nav.to}
                         className="text-PBlack font-extralight text-xl lg:text-4xl"
                       >
-                        {t(`navbar.${nav.id}`)}
+                        {t(`${nav.id}`)}
                       </Link>
                     </MenuItem>
                   ))}
                   <MenuItem as="div" className="w-full">
                     <Link
-                      to={navLinksContact.to}
+                      href={navLinksContact.to}
                       className="text-PBlack font-extralight text-xl lg:text-4xl"
                     >
                       {t(`contactCTA`)}
@@ -146,10 +129,7 @@ const Navbar = () => {
                   <MenuItem
                     as="div"
                     className="flex items-center justify-start gap-8"
-                  >
-                    <LanguageSwitcher />
-                    <DarkModeSwitcher />
-                  </MenuItem>
+                  ></MenuItem>
                 </MenuItems>
               </Transition>
             </>

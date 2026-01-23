@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 // Utility hook to determine if a component is visible in the viewport
@@ -12,7 +14,7 @@ function useIsVisible(ref) {
       ([entry]) => {
         setIntersecting(entry.intersectionRatio >= 0.25); // Adjust value to control threshold
       },
-      { threshold: [0.25] }
+      { threshold: [0.25] },
     );
 
     observer.observe(ref.current); // Observe the DOM element

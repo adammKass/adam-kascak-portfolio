@@ -1,9 +1,19 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { moon, sun } from "../assets";
 import styles from "../style";
 import useDarkMode from "./utils/useDarkMode";
 
-const darkModeSwitcher = () => {
+const DarkModeSwitcher = () => {
   const [isDark, setIsDark] = useDarkMode();
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
+  if (!hydrated) return null; // Don't render until client has mounted
   return (
     <div className="flex items-center gap-2">
       <img
@@ -30,4 +40,4 @@ const darkModeSwitcher = () => {
     </div>
   );
 };
-export default darkModeSwitcher;
+export default DarkModeSwitcher;

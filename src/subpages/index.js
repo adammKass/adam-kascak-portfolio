@@ -1,25 +1,21 @@
 import Home from "./Home/Home";
-import Card from "./Home/Card";
-import Contact from "./Contact/Contact";
-import About from "./About/About";
 import Services from "./Services/Services";
-import NotFound from "./NotFound/NotFound";
-import DGraphics from "./DGraphics/DGraphics";
+import About from "./About/About";
 import GraphicDesign from "./GraphicDesign/GraphicDesign";
 import DesignDetails from "./GraphicDesign/DesignDetails";
+import DGraphics from "./DGraphics/DGraphics";
+import Contact from "./Contact/Contact";
 import Illustrations from "./Illustrations/Illustrations";
 import IllustrationsDetails from "./Illustrations/IllustrationsDetails";
 
 export {
-  Card,
   Home,
-  Contact,
-  About,
   Services,
-  NotFound,
-  DGraphics,
-  GraphicDesign,
+  About,
+  Contact,
   Illustrations,
   IllustrationsDetails,
+  GraphicDesign,
   DesignDetails,
+  DGraphics,
 };
