@@ -57,7 +57,7 @@ const Illustrations = () => {
               >
                 <picture>
                   <img
-                    src={ilu.image.jpg}
+                    src={ilu.image.jpg.src}
                     alt={ilu.title}
                     className="w-full "
                     loading="lazy"

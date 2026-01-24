@@ -75,7 +75,7 @@ const About = () => {
           </section>
           <div className="col-span-full md:col-span-1 aspect-square rounded-lg mx-auto self-center max-w-3xl dark:brightness-[0.7]">
             <img
-              src={portrait}
+              src={portrait.src}
               alt={t(`about.alt`)}
               className="object-fill rounded-lg"
               loading="lazy"

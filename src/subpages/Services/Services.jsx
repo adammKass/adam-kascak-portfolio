@@ -57,7 +57,7 @@ const Services = () => {
                       variants={staggerContainer(0.3)}
                     >
                       <motion.img
-                        src={image}
+                        src={image.src}
                         alt={t(`services.services.${id}.title`)}
                         className="shrink-0 p-4 dark:brightness-[0.7]"
                         width={120}
