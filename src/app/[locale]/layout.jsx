@@ -1,5 +1,5 @@
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { Footer, Navbar } from "../../components";
+import { FirstVisitLoader, Footer, Navbar } from "../../components";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
 import { setRequestLocale } from "next-intl/server";
@@ -77,6 +77,7 @@ export default async function RootLayout({ children, params }) {
     <html lang={locale} className="transition-colors duration-300 ease-in-out">
       <body>
         <div id="root" className="flex flex-col min-h-screen w-full">
+          <FirstVisitLoader />
           <NextIntlClientProvider>
             <Navbar />
             {children}

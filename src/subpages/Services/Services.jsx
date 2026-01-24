@@ -22,7 +22,11 @@ const Services = () => {
   const t = useTranslations("services");
   return (
     <div className={`flex flex-grow w-full bg-PWhite ${styles.cursorAuto}`}>
-      <main
+      <motion.main
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        variants={fadeUp(0.3)}
         id="main-content"
         className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mx-auto ${styles.mainMarginY}`}
       >
@@ -99,7 +103,7 @@ const Services = () => {
             {t(`getInTouchButton`)}
           </Link>
         </motion.div>
-      </main>
+      </motion.main>
     </div>
   );
 };

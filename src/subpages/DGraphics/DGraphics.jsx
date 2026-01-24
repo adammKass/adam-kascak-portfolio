@@ -19,19 +19,18 @@ const DGraphics = () => {
   return (
     <div className={`flex flex-grow w-full bg-PWhite ${styles.cursorAuto}`}>
       {/* Main Content */}
-      <main
+      <motion.main
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        variants={fadeUp(0.3)}
         id="main-content"
         className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mx-auto ${styles.mainMarginY}`}
       >
         <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
           {t(`title`)}
         </h1>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          variants={fadeUp(0.3)}
-        >
+        <div>
           <div className={`flex flex-col gap-4 md:gap-8 ${styles.mainMarginY}`}>
             {/* Render Graphics Links */}
             {GraphicsLinks.map((link, index) => {
@@ -73,8 +72,8 @@ const DGraphics = () => {
               );
             })}
           </div>
-        </motion.div>
-      </main>
+        </div>
+      </motion.main>
     </div>
   );
 };

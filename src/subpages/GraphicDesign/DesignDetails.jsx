@@ -2,7 +2,14 @@ import { useTranslations } from "next-intl";
 import { DesignLinks } from "../../constants";
 import styles from "../../style";
 import { ScrollToTopButton } from "../../components";
-
+import * as motion from "motion/react-client";
+import {
+  containerFadeStagger,
+  fadeUp,
+  fadeUpSmall,
+  staggerContainer,
+  viewportOnce,
+} from "../../constants/variants";
 // Graphic Design Details Subpage Component
 
 const DesignDetails = ({ id }) => {
@@ -13,7 +20,11 @@ const DesignDetails = ({ id }) => {
     <div
       className={`flex flex-grow w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
     >
-      <main
+      <motion.main
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        variants={fadeUp(0.3)}
         id="main-content"
         className={`flex flex-col ${styles.boxWidth} ${styles.paddingXA} mx-auto ${styles.mainMarginY}`}
       >
@@ -78,7 +89,7 @@ const DesignDetails = ({ id }) => {
           </figure>
         ))}
         <ScrollToTopButton label={t("toTop")} />
-      </main>
+      </motion.main>
     </div>
   );
 };

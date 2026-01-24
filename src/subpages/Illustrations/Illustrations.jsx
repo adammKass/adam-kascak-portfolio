@@ -22,21 +22,18 @@ const Illustrations = () => {
     <div
       className={`flex flex-grow w-full overflow-hidden bg-PWhite ${styles.cursorAuto}`}
     >
-      <div
-        as="main"
+      <motion.main
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        variants={fadeUp(0.3)}
         id="main-content"
         className={`${styles.boxWidth} ${styles.paddingXA} ${styles.mainMarginY} mx-auto`}
       >
         <h1 className={`${styles.headingMain} ${styles.paddingB}`}>
           {t(`title`)}
         </h1>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          variants={fadeUp(0.3)}
-          className={`columns-xs mx-auto ${styles.mainMarginY}`}
-        >
+        <div className={`columns-xs mx-auto ${styles.mainMarginY}`}>
           {IllustrationLinks.map((ilu, index) => {
             return (
               <Link
@@ -56,8 +53,8 @@ const Illustrations = () => {
               </Link>
             );
           })}
-        </motion.div>
-      </div>
+        </div>
+      </motion.main>
     </div>
   );
 };

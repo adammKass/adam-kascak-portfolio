@@ -12,6 +12,14 @@ import {
 } from "../../assets";
 import { useTranslations } from "next-intl";
 import ServiceCard from "./ServiceCard";
+import * as motion from "motion/react-client";
+import {
+  containerFadeStagger,
+  fadeUp,
+  fadeUpSmall,
+  staggerContainer,
+  viewportOnce,
+} from "../../constants/variants";
 
 // Main Cards Container
 const Home = () => {
@@ -21,7 +29,11 @@ const Home = () => {
       className={`flex flex-col flex-grow items-center justify-center ${styles.cursorAuto}`}
     >
       {/* Main Content - Tabs seperate for illustration handling*/}
-      <main
+      <motion.main
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        variants={fadeUp(0.3)}
         id="main-content"
         className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 h-full mb-10 lg:mb-0 ${styles.boxWidth} ${styles.paddingXA} mx-auto mt-10 mb-10 lg:mb-0 lg:mt-0`}
       >
@@ -59,7 +71,7 @@ const Home = () => {
           onImg={AboutMeOn}
           ariaLabel="About Me Card"
         />
-      </main>
+      </motion.main>
     </div>
   );
 };
